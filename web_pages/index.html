@@ -6,73 +6,31 @@
 		<title>Donaustuaf castle</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="Description" lang="en" content="ITN-DCH case study III">
-		<meta name="author" content="autore">
+		<meta name="author" content="Diego Bellido Castañeda">
 		<meta name="robots" content="index, follow">
 
 		<!-- icons -->
-		<!--<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">-->
-		<!--<link rel="shortcut icon" href="favicon.ico">-->
 		<link  rel="shortcut icon"  href="images/favicon.ico">
 
 		<!-- Bootstrap Core CSS file -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-
-
 		<!-- Override CSS file - add your own CSS rules -->
 		<link rel="stylesheet" href="assets/css/styles.css">
 
-
-		<!-- Conditional comment containing JS files for IE6 - 8 -->
-		<!--[if lt IE 9]>
-			<script src="assets/js/html5.js"></script>
-			<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
-	</head>
 	<body>
-		
+		<!-- GOOGLE MAPS !!!!!PASAR A CSS!!!!!!! -->
+		<style>
+     		#map2 {
+        		width: 1200px;
+        		height: 400px;
+      			}
+    	</style>
+	</head>
 
+		    <!--<header  id="header">-->
 
-		    <header  id="header">
-      <!--<div  id="head"   ><class="parallax" parallax-speed="2"
-        <h1  id="logo"  class="text-center"><img  class="img-circle"  src="images/imagen.png"
-
-             alt="">  <span  class="title">Donaustauf castle</span> <span
-
-             class="tagline">Mapping the history<br>
-            <a  href="">dbellido@arctron.de</a></span> </h1>
-      </div>-->
-     
-
-
-     <!-- <nav  class="navbar navbar-default navbar-sticky">
-        <div  class="container-fluid">
-          <div  class="navbar-header"> <button  type="button"  class="navbar-toggle"
-
-               data-toggle="collapse"  data-target="#bs-example-navbar-collapse-1">
-              <span  class="sr-only">Toggle navigation</span> <span  class="icon-bar"></span>
-              <span  class="icon-bar"></span> <span  class="icon-bar"></span> </button>
-          </div>
-          <div  class="navbar-collapse collapse">
-            <ul  class="nav navbar-nav">
-              <li  class="active"><a  href="index.html">Home</a></li>
-              <li><a  href="about.html">About me</a></li>
-              <li  class="dropdown"> <a  href="#"  class="dropdown-toggle"  data-toggle="dropdown">Other activities <b  class="caret"></b></a>
-                <ul  class="dropdown-menu">
-                  <li><a  href="Publications.html">Publications</a></li>
-                  <li><a  href="Dissemination.html">Dissemination</a></li>
-                  <li><a  href="Blog_Post.html">Blog Post</a></li>
-                </ul>
-              </li>
-              <li><a  href="blog.html">Blog</a></li>
-            </ul>
-          </div>-->
-          <!--/.nav-collapse  </div>
-      </nav>-->
-    <!--/header>-->
-  
-
-		<!-- Navigation -->
+		<!-- Navigation MENU-->
 	    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
 			<div class="container-fluid">
 
@@ -84,29 +42,38 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-						<a class="navbar-brand" href="index.html">Donaustauf castle</a>
+						<a class="navbar-brand" href="index.html">Donaustauf project</a>
 				</div>
 				<!-- /.navbar-header -->
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<!--<li><a href="#">Donaustauf</a></li>-->
-						
-						<!--<li><a href="castle.html">Donaustauf castle</a></li>-->
-						<!--<li><a href="#">Ciclo dei mesi</a></li>-->
+						<li><a href="data_acquisition.html">Data acquisition</a></li>
+						<li><a href="data_acquisition.html">Data processing</a></li>
+						<li><a href="data_acquisition.html">Data visualization</a></li>
+						<li><a href="data_acquisition.html">The castle</a></li>
 						<li class="dropdown">
 						       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">3D viewer <span class="caret"></span></a>
 						       <ul class="dropdown-menu">
 						       <li><a href="http://dbellido.github.io/Donaustauf_castle/Donaustauf/index.html">Point Cloud</a></li>
 						       <li role="separator" class="divider"></li>
 						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don/">Mesh</a></li>
-						         <!--<li><a href="#">February </a></li>
-						         <li><a href="#">April</a></li>
-						         -->
+						       	<li role="separator" class="divider"></li>
+						       	<li><a href="3D_viewer4.html">Options</a></li>
 						        </ul>
 						      </li>
-						<li><a href="data_acquisition.html">Data acquisition</a></li>       
+						      <li><a href="data_acquisition.html">4D</a></li>
+						      <li><a href="data_acquisition.html">Castles in Bayern</a></li>
+						      <li><a href="data_acquisition.html">Donaustauf Village</a></li>
+						      <li><a href="data_acquisition.html">Blog</a></li>
+						      <!-- BUSCAR
+						      <form class="navbar-form navbar-left" role="search">
+        						<div class="form-group">
+          							<input type="text" class="form-control" placeholder="Search">
+        						</div>
+        						<button type="submit" class="btn btn-default">Submit</button>
+     						 </form> -->   
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -115,109 +82,176 @@
 		</nav>
 		<!-- /.navbar -->
 
-		
-
-
-
 		<!-- Page Content -->
-		<div class="container-fluid">
-			<div ALIGN="center"><IMG class="img-responsive" SRC="assets/img/Tralala.jpg" ><br></br></div>
-			
-			<div class="row section clients topspace">
-				<div  class="row section clients topspace">
-          <h2  class="section-title"><span>History</span></h2>
-      </div>
-			</div>
 
-		
+		<div class="container-fluid">
+			
+			<!--IMAGEN DINÁMICA-->
+			<div ALIGN="center"><IMG class="img-responsive" SRC="assets/img/Tralala.jpg" ><br></br></div>
+
+			<!--FIRST SECTION THE PROJECT-->
+          
+				<div  class="row section clients topspace">
+        			<h2  class="section-title"><span>The project</span></h2>
+		    	</div>
+
+      			<!--FIRST P WHAT IS ITN-DCH-->	
+      			<div class="row">		
+				<div class="col-sm-12">
+					<p> The “Initial Training Network for Digital Cultural Heritage: Projecting our Past to the Future” with acronym <a  href="http://www.itn-dch.org/">ITN-DCH project</a>, is a Marie Curie fellowship project in the area of the e-documentation, e-preservation and CH protection funded by the European Union under the FP7 PEOPLE research framework. The Project started on the 1st of October 2013 and its consortium comprising of 14 full partners and 10 associate members covering the entire spectrum of European CH actors, ranging from academia, research institutions, industry, museums, archives and libraries. The project aims to train 20 fellows (16 ESR’s and 4 ER’s) in the topic of CH digital documentation, preservation and protection in order to create them a strong academic profile and market oriented skills which will significantly contribute to their career prospects. </p>
+					<p><a  href="http://www.itn-dch.org/">ITN-DCH project</a> aims to analyze, design, research, develop and validate an innovative multi-disciplinary and inter-sectorial research training framework that covers the entire lifecycle of digital CH research for a cost–effective preservation, documentation, protection and presentation of cultural heritage. CH is an integral element of Europe and vital for the creation of a common European identity and one of the greatest assets for steering Europe’s social, economic development and job creation. However, the current research training activities in CH are fragmented and mostly design to be of a single-discipline, failing to cover the whole lifecycle of Digital Cultural Heritage (DCH) research, which is by nature a multi-disciplinary and inter-sectorial research agenda.</p></div>
+				</div>
+				
+				<div class="row">
+					
+					<div class="col-sm-8">
+						
+						<p>ITN-DCH targets all aspects of CH ranging from tangible (books, newspapers, images, drawings, manuscripts, uniforms, maps, artefacts, archaeological sites, monuments) to intangible content (e.g., music, performing arts, folklore, theatrical performances) and their inter-relationships. The project aims  to boost the added value of CH assets by re-using them in real application environments (protection of CH, education, tourism industry, advertising, fashion, films, music, publishing, video games and TV) through research on (i) new personalized, interactive, mixed and augmented reality enabled e-services, (ii) new recommendations in data acquisition, (iii) new forms of representations (3D/4D) of both tangible /intangible assets and (iv) interoperable metadata forms that allow easy data exchange and archiving.</p>
+						<p>In order to make visible the training, four different CH assets were selected as official studies. 
+						<dl>
+							<dt><it>ITN-DCH CASE STUDY I: <a  href="http://www.itn-dch.eu/index.php/case-studies/asinou/">Panagia Asinou Church (Nicosia, Cyprus)</a> </it></dt>
+							<dt>ITN-DCH CASE STUDY II: <a  href="http://www.itn-dch.eu/index.php/case-studies/carnuntum/">Carnuntum (Carnuntum, Austria)</a></dt>
+							<dt>ITN-DCH CASE STUDY III: <a  href="http://www.itn-dch.eu/index.php/case-studies/donaustauf/">Donaustauf Castle (Donaustauf, Germany)</a></dt>
+							<dt>ITN-DCH CASE STUDY IV: <a  href="http://www.itn-dch.eu/index.php/case-studies/ilmendorf/">Ilmendorf (Archäologische Staatssammlung München, Germany)</a></dt>
+						</dl>
+					</p> 
+					</div>
+					<div class="col-sm-4">
+					
+						<figure class="margin-b-2">
+							<img class="img-responsive" src="images/DSC_0083.JPG" alt="">
+							<p  class="text-center">Figure 1: Surveying network in the castle</p>
+                  		</figure>
+					
+					</div>
+
+				</div>
+
+				<div class="row">
+									
+					<div class="col-sm-12">
+						<p>Within this context, the current website aims to introduce the different projects and activities regarding the castle. At the same time this space will be used as a communication and a visualization tool, where everybody interested can be able to access the obtained results as well as propose any suggesting to improve the knowedge about the monument.</p><br></br>
+				
+
+				<!--Segunda sección. The history-->
+				<div  class="row section clients topspace">
+          			<h2  class="section-title"><span>History</span></h2>
+      			</div>		
+
+				<div class="row">		
+				
+					<div class="col-sm-12">
 
 			<!-- /.row -->
-
-			<div class="row">
-				
-				
-				
-				<div class="col-sm-12">
-
-
-					<!--<p>History of the site</p>-->
+		
 					<p> East of Regensburg (southern Germany), the township of Donaustauf is situated. The small city is dominated by the ruins of the castle Donaustauf. The castle sits on a hilltop, approximately 100m above the Danube. It is the oldest castle mentioned in documents within the area of Regensburg. Between 914 and 930, several records can be found that mention a castle which is called Stauff (castellum quod dicitur Stuffo). It is assumed that the castle was erected by Bishop Tuto of Regensburg (893–930), as a defence against the Hungarian invasion. However, archaeological excavations revealed that at least the North-Eastern part of the hilltop was fortified about 500 B.C. already.</p>
+
+					</div>
+
+				</div>
 					
-					<div class="row">
+				<div class="row">
 					
-					
-					<div class="col-sm-6">
+					<div class="col-sm-5">
 					
 					<figure class="margin-b-2">
+							<a name="Figure2"></a>
 							<img class="img-responsive" src="assets/img/Imagen.png" alt="">
-						</figure>
+							<p  class="text-center">Figure 2: Gate F and Chapel</p>
+							
+                  	</figure>
 					
 					</div>
 					
-					<div class="col-sm-6">
-					
+					<div class="col-sm-7">
+
 					<p>Since the 10th century, the castle has had an eventful history: Just between 1132 and 1161 it was seized four times. Finally, the Donaustauf castle was sieged and conquered by Swedish troops in 1634. They destroyed the castle over several days of artillery fire, and explosions. After that, repairs were done but since 1648 it has been abandoned and used as a quarry. A cemetery is located within the outer castle walls, which is still in use today.</p>
 					<p>Over the centuries, sector fortifications have been built to protect the castle. In other words, the hill on which the castle stands was fortified from top to bottom and this fortification was adapted to the different needs of the time. The oldest part dates back to the 11th century, the last strengthening was carried out in 1620.</p>
-					<p>To protect the central part of the castle, six gates were built (A-F). Only four of them are visible today. The most impressive gate is the most inner gate to the bailey castle (gate F). (Figure 40) The entrance is covered by two groin vaults that are separated by a wide arch. In the first floor of the building even today the castle chapel is still visible.</p>	
+					<p>To protect the central part of the castle, six gates were built (A-F). Only four of them are visible today. The most impressive gate is the most inner gate to the bailey castle (gate F). <a href="index.html#Figure2">(Figure 2)</a>. The entrance is covered by two groin vaults that are separated by a wide arch. In the first floor of the building even today the castle chapel is still visible.</p>	
 					</p>
 					
 					</div>
 					
+				</div>
 					
-					</div>
+			<!--FIRST SECTION ACQUISITION PLAN-->		
 					
-					
-					</div>
-					</div>
-
-
-
 			<div  class="row section clients topspace">
-          <h2  class="section-title"><span>Acquisition plan</span></h2>
-      </div>
+         		 <h2  class="section-title"><span>Acquisition plan</span></h2>
+      		</div>
 
 
 			<!-- /.row -->
 
-			<div class="row">
-				
-				
-				
-				<div class="col-sm-12">
+			
+										
+				<!--<div class="col-sm-12">
 
-
-					<!--<p>History of the site</p>-->
+					<p>History of the site</p>
 					<p> Based on the field experience by ArcTron3D, a code of practise for digitisation is presented.
-The airborne technology will be used to create a model of the hilltop and the landscape. The landscape model will include the hilltop of the castle, the Danube, the town and part of the backcountry. The data-acquisition will be done using the ultra light paraglide trike and a Nikon D800E camera. To create a valid and useable result one will define a flight path before to ensure good coverage and overlapping of the pictures. There is already an existing 3D model. This dataset, which is available within ArcTron3D, can be used as a reference dataset by the fellows. For smaller areas of importance or to fill possible holes in the ground mesh, a UAV can be used. Depending on the resolution and the size of the area the cameras and lenses to be used as well as the flight altitude and duration should be taken into consideration among other important factors.
-</p>
+					The airborne technology will be used to create a model of the hilltop and the landscape. The landscape model will include the hilltop of the castle, the Danube, the town and part of the backcountry. The data-acquisition will be done using the ultra light paraglide trike and a Nikon D800E camera. To create a valid and useable result one will define a flight path before to ensure good coverage and overlapping of the pictures. There is already an existing 3D model. This dataset, which is available within ArcTron3D, can be used as a reference dataset by the fellows. Depending on the resolution and the size of the area the cameras and lenses to be used as well as the flight altitude and duration should be taken into consideration among other important factors.</P>-->
+
 					
-					<div class="row">
-					
-					
-					<div class="col-sm-4">
-					
-					<figure class="margin-b-2">
-							<img class="img-responsive" src="assets/img/Acquisition_plan.png" alt="">
-						</figure>
-					
-					</div>
-					
+				<div class="row">
+								
 					<div class="col-sm-8">
-					
-					<p>A ground plan using GPS sensors and/or laser scanners and the total stations could also be useful to verify and update existing plans as well as to georeference the object for further detailed studies of the chapel and the gate.</p>
-					<p>Made of Romanesque fabric, Gate F is one of the most interesting parts of the castle. Therefore, a detailed and precise documentation of it should be done. Different methods of terrestrial laser scanning, terrestrial photogrammetry and even airborne photogrammetry, using the UAV, can be applied.</p>
-					<p>On the preserved walls of the chapel there are traces of painting, dating back to the 12th century.  Since the walls of the chapel have recently been whitewashed it is not longer possible to see these tracings (Figure 40, Figure 41). However, there are drawings in books available to reconstruct the scenes on the wall. Given the available equipment in the consortium it will be interesting to see if one is able to discover the paintings underneath the whitewash. The paintings itself, as far as they have been documented yet, depicts for persons exchanging a book-shape like thing. Above there is a Latin inscription as well, referring to the Virgin Walpurga (known as Saint Walpurga 710-777/779). It might be interesting to try to figure out the whole story of the painting and the story that is depicted. Linking the paintings of the chapel wall with other content or even bringing the figures back to life will be a challenge for the task that concern the intangible CH part of the project.</p>	
+
+					<p> Based on the field experience by ArcTron3D, a code of practise for digitisation is presented.
+					The airborne technology will be used to create a model of the hilltop and the landscape. The landscape model will include the hilltop of the castle, the Danube, the town and part of the backcountry. The data-acquisition will be done using the ultra light paraglide trike and a Nikon D800E camera. To create a valid and useable result one will define a flight path before to ensure good coverage and overlapping of the pictures. There is already an existing 3D model. This dataset, which is available within ArcTron3D, can be used as a reference dataset by the fellows. Depending on the resolution and the size of the area the cameras and lenses to be used as well as the flight altitude and duration should be taken into consideration among other important factors.</P>
+				
+					<p>A ground plan using GPS sensors, laser scanner and total stations could also be useful to verify and update existing plans as well as to georeference the object for further detailed studies of the chapel and the gate.</p>
+					<p>Made of Romanesque fabric, Gate F is one of the most interesting parts of the castle. Therefore, a detailed and precise documentation of it should be done. Different methods of terrestrial laser scanning, terrestrial photogrammetry and even airborne photogrammetry can be applied.</p>
+					<p>On the preserved walls of the chapel there are traces of painting, dating back to the 12th century.  Since the walls of the chapel have recently been whitewashed it is not longer possible to see these tracings. However, there are drawings in books available to reconstruct the scenes on the wall. Given the available equipment in the consortium it will be interesting to see if one is able to discover the paintings underneath the whitewash. The paintings itself, as far as they have been documented yet, depicts for persons exchanging a book-shape like thing. Above there is a Latin inscription as well, referring to the Virgin Walpurga (known as Saint Walpurga 710-777/779). It might be interesting to try to figure out the whole story of the painting and the story that is depicted. Linking the paintings of the chapel wall with other content or even bringing the figures back to life will be a challenge for the task that concern the intangible CH part of the project.</p>	
 					<p>The chapel itself is of great historical value, being one of the few Romanesque chapels within the region since it still has some of the original plaster such as capitals, columns, arches, etc. Structured light scanning (SLS) methods in comparison to photogrammetry and infrared/hyperspectral imaging can be applied to document this part.</p>
 					<p>4D models of the gate would also be a possible task for the project fellows. 2D-Content such as the Merian sketch , can be brought into the project as well. Also there are some rough sketches by the American painter Joseph Mallord William Turner (1775-1851)  and other artists . So it should not be a problem to try to rebuild the gate over time based on research that has been done, the available sketches and the researched realised by the fellows. This will bring in the 4th dimension: “time”.</p>
 					
 					</div>
+
+					<div class="col-sm-4">
 					
+					<figure class="margin-b-2">
+							<img class="img-responsive" src="assets/img/Acquisition_plan.png" alt="">
+							<p  class="text-center">Figure 3: Plan of the ruins of the main castle with additional marking the location of the gates A to F</P>
+						</figure>
 					
 					</div>
 					
+				</div>
+
+					<div  class="row section clients topspace">
+          <h2  class="section-title"><span>Location</span></h2>
+      </div>
+
+      			
+			      
+
+      	            <div ALIGN="center" class="img-responsive" id="map2"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map2');
+        var mapOptions = new google.maps.Map(mapDiv, {
+          center: {lat: 49.031, lng: 12.20712},
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.SATELLITE,
+          
+      });
+
+		
+       		
+
+
+        
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+					
 					
 					</div>
 					</div>
+
+					<br></br>
+					
 
 
 
@@ -276,20 +310,32 @@ The airborne technology will be used to create a model of the hilltop and the la
             <div  class="widget-body">
               <p>+0179 31 98871<br>
                 <a  href="mailto:#">dbellido@arctron.de</a><br>
-                <a  href="mailto:#">becadiego@gmail.com</a><br>
+                <a  href="mailto:#">becadiego@gmail.com</a><br></p></div>
+                
                 <!--<br>
                 Posthorngäßchen 6 Regensburg (Deutschland) PZ: 93047</p>-->
             </div>
-          </div>
+
+
+        
+
+          
           <div  class="col-md-3 widget">
             <h3  class="widget-title">Follow us</h3>
             <div  class="widget-body">
               <p  class="follow-me-icons"> <a  href=""><i  class="fa fa-twitter fa-2"></i></a>
               	<a href="https://www.facebook.com/itndch/?ref=aymt_homepage_panel" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=32 height=32  /></a>
+              	<a href="https://www.linkedin.com/in/diego-bellido-1ab24b29?trk=hp-identity-name" target="_blank"><img alt="Siguenos en Linkedin" src="https://lh5.googleusercontent.com/-8C0OdSp_7ZA/T3nN0G_313I/AAAAAAAAAsU/6_Hbu6Of3qU/s32/linkedin32.png" width=32 height=32  /></a>
 
                 <!--<a  href=""><i  class="fa fa-dribbble fa-2"></i></a> <a  href=""><i
 
-                     class="fa fa-github fa-2"></i></a> --><a  href=""><i  class="fa fa-facebook fa-2"></i></a> <a  href=""><i  class="fa fa-linkedin fa-2"></i></a>
+                     class="fa fa-github fa-2"></i></a> --><a  href=""><i  class="fa fa-facebook fa-2"></i></a> 
+                     
+
+<a  href=""><i  class="fa fa-linkedin fa-2"></i></a>
+<a href="https://github.com/dbellido" target="_blank"><img alt="Siguenos en GitHub" src="C:\Donaustauf_web\donaustauf_web\web_pages\assets\img\GitHub.jpg" width=32 height=32  /></a>
+
+
               </p>
             </div>
           </div>
@@ -308,6 +354,7 @@ The airborne technology will be used to create a model of the hilltop and the la
                 <a  href="http://arqueologica8.webs.upv.es/">Arqueológica</a><br>
                 <!--<a  href="http://www.civildron.com/">Civildrón</a><br>-->
               </p>
+
             </div>
           </div>
         </div>
