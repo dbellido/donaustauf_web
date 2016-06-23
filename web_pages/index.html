@@ -19,6 +19,16 @@
 		<link rel="stylesheet" href="assets/css/styles.css">
 
 	<body>
+		<script src="../libs/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+		<script src="../libs/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+		<script src="../libs/three.js/build/three.js"></script>
+		<script src="../libs/other/stats.min.js"></script>
+		<script src="../libs/other/BinaryHeap.js"></script>
+		<script src="../libs/tween/tween.min.js"></script>
+		<script src="../libs/d3/d3.js"></script>
+		<script src="../libs/proj4/proj4.js"></script>
+		<script src="../libs/openlayers3/ol.js"></script>
+		<script src="../libs/potree/potree_v3.js"></script>
 		<!-- GOOGLE MAPS !!!!!PASAR A CSS!!!!!!! -->
 		<style>
      		#map2 {
@@ -26,7 +36,7 @@
         		height: 400px;
       			}
     	</style>
-	</head>
+	
 
 		    <!--<header  id="header">-->
 
@@ -271,6 +281,165 @@
 					</div>
 					
 				</div>
+
+<!--Segunda sección. The history-->
+				<div  class="row section clients topspace">
+          			<h2  class="section-title"><span>Our team</span></h2>
+      			</div>		
+
+				<div class="row">		
+				
+					<div class="col-sm-12">
+
+			<!-- /.row -->
+		
+					<p> Donaustauf castle is a long time project within the ITN-DCH project. The monument will be used for the different training activities of the different members providing a huge amount of data. In response to that this website has been create. It aims to present our work and at the same time show in an organized structure the different data and processed performed. Within a pipeline for the digitization of CH, metadata and paradata are registered in each step in order to produce reusable information.</p>
+
+					</div>
+
+				</div>
+					
+				<div class="row">
+					
+					<div class="col-sm-4">
+					
+					<figure class="margin-b-2">
+							<a name="Figure2"></a>
+							<img class="img-responsive" src="images/Our_team.jpg" alt="">
+							<p  class="text-center">Figure 4: ITN-DCH Early Stage Researchers during their secondment at ArcTron3D</p>
+							
+                  	</figure>
+					
+					</div>
+					
+					<div class="col-sm-8">
+
+					<p>The first activities were performed in the castle in 2014 and since then, aerial and terrestrial photographies, laser scanner data or thermal images have been acquired in the castle. A big effort was produced with the participation of 7 Marie Curie fellows in the secondment at ArcTron3D. Within this perios of training, theoretical and practical activities about high resolution 3D surveys applied in different case studies, Donaustauf castle betwee then. Other interesting data set were produced by flyng around the castle using the ArcTron3D X-CITOR. These images are a document theirself, in addition to allow the study of the landscape of the castle in different seasons. If you are interested in undestanding any product or any data don't hesitate to click the tables or contact with <a  href="mailto:#">dbellido@arctron.de</a><br>. </p>
+					
+
+
+					
+					<!--script for the table-->
+		<script type="text/javascript">
+					              $(document).ready(function() {
+					      	         $("#HiddenRowsNotice").html("<tr><td colspan='3'> <a href='#'><b>Click here to show the whole table</b> </a></td></tr>");
+					      	         $("#ShowHide").html("<tr><td colspan='3'><a href='#'><em>Show/Hide Elements</em></a></td></tr>");
+					      	        $("#HiddenRows").hide();
+	
+					      	        $('#ShowHide,#HiddenRowsNotice').click( function() {
+					      	            $('#HiddenRows').toggle();
+					      		        $('#HiddenRowsNotice').toggle();
+					      	        });
+					              });
+				          </script>				          
+				         <script>
+				         $(document).ready(function(){
+				             $('[data-toggle="popover"]').popover();   
+				         });
+				         </script>
+  
+  
+  <!--<p><h2>Metadata</h2></p>-->
+  
+  
+  
+  <!-- table -->
+<table class="table table-hover" style="position: relative; clear: both;" >
+<tbody id="ShowHide" style="color: black;"></tbody>
+		 <tr>
+		   <td><b>Register</b></td>
+		   <td><b>Descriptor</b></td>
+		   <td><b>Value</b></td> 
+		   </tr>
+		</tr>
+		<tr>
+		  <td>Project Register</td>
+		  <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="A title given for the project to help identify it in the future.">Project Title</a></td>
+		  <td>Castello del Buonconsiglio Acquisition</td>
+		</tr>
+		<tr>
+				<td>Project Register</td>
+		  	<td><a href="#" <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The institution or person for which/whom the project is undertaken">Digitization to be produced for</a></td>
+		  	<td>Castello del Buonconsiglio di Trento</td>
+		</tr>
+
+   <tbody id="HiddenRowsNotice"></tbody>
+   <tbody id="HiddenRows">
+   <tr>
+     	<td>Project Register</td>
+     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The institution or person undertaking the responsibility for the execution of the project.">Institution responsible</a></td>
+     	<td>ArcTron3D</td> 
+   </tr>
+   <tr>
+     	<td>Project Register</td>
+     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+     	<td>Diego Bellido Castañeda</td> 
+   </tr>
+   <tr>
+     	<td>Project Register</td>
+     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+     	<td>Chance Coughenour</td> 
+   </tr>
+   <tr>
+     	<td>Project Register</td>
+     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+     	<td>Magdalena Ramos Calles</td> 
+   </tr>
+   <tr>
+     	<td>Project Register</td>
+     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+     	<td>Elisavet Konstantina Stathopoulou</td> 
+   </tr>
+   <tr>
+     	<td>Project Register</td>
+     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+     	<td>Gina Stavropoulou</td> 
+   </tr>
+   <tr>
+     	<td>Project Register</td>
+     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+     	<td>Matevž Domajnko</td> 
+   </tr>
+   <tr>
+     	<td>Project Register</td>
+     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+     	<td>Anaïs Guillem</td> 
+   </tr>
+   <tr>
+     	<td>Project Register</td>
+     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+     	<td>Marleen de Kramer</td> 
+   </tr>
+   <tr>
+     	<td>Project Register</td>
+     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+     	<td>Rosella Suma</td> 
+   </tr>
+   <tr>
+   <td>Project Register</td>
+   <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="A list of the object or objects that are the focus of the project">Object in consideration</a></td>
+     <td>Donaustauf castle</td> 
+   </tr>
+   <tr>
+   <td>Object Register</td>
+        <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Place where object is currently located (Country, City, Building, Drawer… as you known)">Location / Storage Place</a></td>
+     <td>Donaustauf, Bayern (Germany)</td> 
+   <tr>
+</tbody>
+</table>
+					
+				</div>
+				</div>
+
+
+				<div class="col-sm-6">
+<div class="row">
+
+
+</div>
+
+
+</div>
 
 					<div  class="row section clients topspace">
           <h2  class="section-title"><span>Location</span></h2>

@@ -20,6 +20,12 @@
 		<!-- Override CSS file - add your own CSS rules -->
 		<link rel="stylesheet" href="assets/css/styles.css">
 
+    <!--Potree css -->
+    
+    <!--<link rel="stylesheet" type="text/css" href="../torre/libs/potree/potree.css">
+    <link rel="stylesheet" type="text/css" href="../torre/libs/jquery-ui-1.11.4/jquery-ui.css">
+    <link rel="stylesheet" href="../torre/libs/openlayers3/ol.css" type="text/css">-->
+
 		<!-- Conditional comment containing JS files for IE6 - 8 -->
 		<!--[if lt IE 9]>
 			<script src="assets/js/html5.js"></script>
@@ -28,7 +34,16 @@
 	</head>
 	<body>
 		
-
+<script src="../libs/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+    <script src="../libs/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+    <script src="../libs/three.js/build/three.js"></script>
+    <script src="../libs/other/stats.min.js"></script>
+    <script src="../libs/other/BinaryHeap.js"></script>
+    <script src="../libs/tween/tween.min.js"></script>
+    <script src="../libs/d3/d3.js"></script>
+    <script src="../libs/proj4/proj4.js"></script>
+    <script src="../libs/openlayers3/ol.js"></script>
+    <script src="../libs/potree/potree_v3.js"></script>
 
 		    <header  id="header">
       <!--<div  id="head"   ><class="parallax" parallax-speed="2"
@@ -260,7 +275,128 @@
       </div>
 			</div>
 
+      <div class="row section clients topspace">
+        <div  class="row section clients topspace">
+          <h2  class="section-title"><span>Campaign 2016</span></h2>
 
+      </div>
+
+      <div class="col-sm-12">
+<div class="row">
+
+      <!--script for the table-->
+    <script type="text/javascript">
+                        $(document).ready(function() {
+                           $("#HiddenRowsNotice").html("<tr><td colspan='3'> <a href='#'><b>Click here to show the whole table</b> </a></td></tr>");
+                           $("#ShowHide").html("<tr><td colspan='3'><a href='#'><em>Show/Hide Elements</em></a></td></tr>");
+                          $("#HiddenRows").hide();
+  
+                          $('#ShowHide,#HiddenRowsNotice').click( function() {
+                              $('#HiddenRows').toggle();
+                            $('#HiddenRowsNotice').toggle();
+                          });
+                        });
+                  </script>                 
+                 <script>
+                 $(document).ready(function(){
+                     $('[data-toggle="popover"]').popover();   
+                 });
+                 </script>
+  
+  
+  <p><h2>Metadata</h2></p>
+
+      <table class="table table-hover" style="position: relative; clear: both;" >
+<tbody id="ShowHide" style="color: black;"></tbody>
+     <tr>
+       <td><b>Register</b></td>
+       <td><b>Descriptor</b></td>
+       <td><b>Value</b></td> 
+       </tr>
+    </tr>
+    <tr>
+      <td>Acquisition Activity Register</td>
+      <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Define the link between the acquisition activity and the overall acquisition plan">Part Of Acquisition</a></td>
+      <td><a href="../index.html">Donaustauf castle</a></td>
+    </tr>
+    <tr>
+        <td>Acquisition Activity Register</td>
+        <td><a href="#" <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The descriptor indicates the method used in this particular acquisition activity">Acquisition Method</a></td>
+        <td>Aerial photogrammetry</td>
+    </tr>
+
+   <tbody id="HiddenRowsNotice"></tbody>
+   <tbody id="HiddenRows">
+   <tr>
+      <td>Acquisition Activity Register</td>
+      <td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the individuals who carried out the particular acquisition activity are listed">Actor Operators</a></td>
+      <td>Diego Bellido Castañeda</td> 
+   </tr>
+   <tr>
+      <td>Acquisition Activity Register</td>
+      <td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the individuals who carried out the particular acquisition activity are listed">Actor Operators</a></td>
+      <td>Martin Schaich</td> 
+   </tr>
+   <tr>
+   <td>Acquisition Activity Register</td>
+   <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the starting date of the specific acquisition project is entered">Starting Time</a></td>
+     <td>04/04/2016 08:42</td> 
+   </tr>
+   <tr>
+   <td>Acquisition Activity Register</td>
+        <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the ending date of the specific acquisition project is entered">Ending Time</a></td>
+     <td>04/04/2016 09:30</td> 
+   <tr>
+    <td>Equipment Setup Parameters Register</td>
+     <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the name of the camera body actually used">Camera Body</a></td>
+     <td>Nikon D800</td> 
+   </tr>
+   <tr>
+     <td>Equipment Setup Parameters Register</td>
+      <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Name of the lens">Lens</a></td>
+     <td>28mm</td> 
+   </tr>
+   <tr>
+     <td>Equipment Setup Parameters Register</td>
+      <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Platform from which the pictures were taken and its stability">Platform</a></td>
+      <td>XCitor</td>
+   </tr>
+    <td>Equipment Setup Parameters Register</td>
+    <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The amount of light to which the sensor is exposed (f-stops), regulates the brightness of the image">Aperture</a></td>
+     <td>F/4.5</td> 
+   </tr>
+   </tr>
+      <td>Equipment Setup Parameters Register</td>
+     <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Automatic/Fully Manual/Aperture priority/Shutter speed priority">Shutter Mode</a></td>
+     <td>1/800s</td> 
+   </tr>
+   <tr>
+   <td>Equipment Setup Parameters Register</td>
+    <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Light sensibility value selected if manual or automatic">
+     <td><a href="http://itndch.map.archi.fr/pacs/docs/acquisition/equipment-setup-parameters-register#ISO">ISO</a></td>
+     <td>320</td> 
+   </tr>
+   <tr>
+     <td>Equipment Setup Parameters Register</td>
+     <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Automatic or manual focus">Focus</a></td>
+     <td>Auto</td> 
+   </tr>
+   
+   <tr>
+    <td>Equipment Setup Parameters Register</td>
+    <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Distance from the principal point of the camera to the image plane. If it is blocked at minimum or maximum, otherwise leave as unknown">Focal Lenght</a></td>
+     <td>28mm</td> 
+   </tr>
+   <!--<tr>
+     <td>Equipment Setup Parameters Register</td>
+     <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the white balance employed: Automatic, pre-set or manual and the reference to the method used for defining the white balance.">White Balance</a></td>
+     <td>White Balance card</td> 
+   </tr>-->
+   </tbody>
+</table>
+
+      </div>
+      </div>
 
 
 			<div  class="row section topspace">
@@ -502,8 +638,8 @@
 
 		<!-- /.container-fluid -->
 
-		<!-- JQuery scripts -->
-	    <script src="assets/js/jquery-1.11.2.min.js"></script>
+		<!-- JQuery scripts 
+	    <script src="assets/js/jquery-1.11.2.min.js"></script>-->
 
 		<!-- Bootstrap Core scripts -->
 		<script src="assets/js/bootstrap.min.js"></script>
