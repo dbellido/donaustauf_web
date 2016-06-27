@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Donaustuaf castle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" lang="en" content="ITN-DCH case study III">
+    <meta name="author" content="Diego Bellido Castañeda">
+    <meta name="robots" content="index, follow">
+
+    <!-- icons -->
+    <link  rel="shortcut icon"  href="../images/01_logo/favicon.ico">
+
+    <!-- Bootstrap Core CSS file -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Override CSS file - add your own CSS rules -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <script src="../assets/js/jquery-1.12.2.min.js"></script>
+
+
+  </head>
+
+  <body>
+
+    
+    
+    <!-- GOOGLE MAPS !!!!!PASAR A CSS!!!!!!! -->
+    <style>
+        #map2 {
+            width: 1200px;
+            height: 400px;
+            }
+      </style>
+   
+    <!-- Navigation MENU-->
+      <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container-fluid">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            
+        </div>
+        <!-- /.navbar-header -->
+
+         <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Donaustauf project</a> </li>
+            <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">The castle <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Donaustauf castle</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="http://dbellido.github.io/Donaustauf_castle/Donaustauf/index.html">Donaustauf Village</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Castles in Bayern</a></li>
+                      <li role="separator" class="divider"></li>
+                    </ul>
+            </li>
+            
+            <li class="dropdown">             
+                <a href="#" class="navbar-brand" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Methodology <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="data_acquisition.html">Acquisition</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="data_processing.html">Processing</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="data_visualization.html">Visualization</a></li>
+                      <li role="separator" class="divider"></li>                              
+                    </ul>
+            </li>
+                  
+            <li><a href="data_acquisition.html">4D</a></li>
+                        
+            <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">3D viewer <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="http://dbellido.github.io/Donaustauf_castle/Donaustauf/index.html">Point Cloud</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Mesh_2015</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="http://dbellido.github.io/Donaustauf_viewer/don/">Mesh_2016</a></li>
+                      <li role="separator" class="divider"></li>                                  
+                    </ul>
+            </li>       
+            
+              <li><a href="data_acquisition.html">Blog</a></li>
+
+              <li class="dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lenguage <span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                      <li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/02_leng_flags/english.svg" width=32 height=32  />&nbsp;&nbsp;EN</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/02_leng_flags/Flag_of_Germany.svg" width=32 height=32  />&nbsp;&nbsp;DE</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/02_leng_flags/Flag_of_Spain.svg" width=32 height=32  />&nbsp;&nbsp;DE</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/02_leng_flags/Flag_of_Galicia.svg" width=32 height=32  />&nbsp;&nbsp;GZ</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/02_leng_flags/Flag_of_Portugal.svg" width=32 height=32  />&nbsp;&nbsp;POR</a></li>
+                      <li role="separator" class="divider"></li>                                      
+                    </ul>
+            </li>
+                  
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Search</button>
+              </form> -->   
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+
+    
+  
+		<!-- Page Content -->
+		<div class="container-fluid">
+
+      <!--IMAGEN DINÁMICA-->
+			<div ALIGN="center"><IMG class="img-responsive" SRC="../images/03_header/Data_acquisition.png" ><br></br></div>
+			
+        <!--FIRST SECTION, THE PROJECT-->
+
+
+				<div  class="row section clients topspace"><br></br>
+          <h2  class="section-title"><span>Surveying</span></h2>
+        </div>
+			
+
+			<div class="row section clients topspace">
+				
+          <h2  class="section-title"><span>Aerial photogrammetry</span></h2>
+        
+			</div>
+
+			<div class="row section clients topspace">
+				
+          <h2  class="section-title"><span>Terrestrial photogrammetry</span></h2>
+        
+			</div>
+
+			<div class="row section clients topspace">
+				
+          <h2  class="section-title"><span>Terrestrial Laser Scanner</span></h2>
+        
+			</div>
+
+			<div class="row section clients topspace">
+				
+          <h2  class="section-title"><span>HDR (High Dynamic Range)</span></h2>
+        
+			</div>
+
+			<div class="row section clients topspace">
+				
+          <h2  class="section-title"><span>Thermal Images</span></h2>
+       
+			</div>
+
+      <div class="row section clients topspace">
+       
+          <h2  class="section-title"><span>Campaign 2016</span></h2>
+        
+      </div>
+
+ <div class="col-sm-12">
+      <div class="row">     
+     
+
+<script type="text/javascript">
+                        $(document).ready(function() {
+                           $("#HiddenRowsNotice2").html("<tr><td colspan='3'> <a href='aa'><b>Click here to show the whole table</b> </a></td></tr>");
+                           $("#ShowHide2").html("<tr><td colspan='3'><a href='aa'><em>Show/Hide Elements</em></a></td></tr>");
+                          $("#HiddenRows2").hide();
+  
+                          $('#ShowHide2,#HiddenRowsNotice2').click( function() {
+                              $('#HiddenRows2').toggle();
+                            $('#HiddenRowsNotice2').toggle();
+                          });
+                        });
+                  </script>                 
+                 <script>
+                 $(document).ready(function(){
+                     $('[data-toggle="popover"]').popover();   
+                 });
+                 </script>
+
+        <p><h3>Close range photogrammetry</h3></p>
+
+        <table class="table table-hover" style="position: relative; clear: both;" >
+<tbody id="ShowHide2" style="color: black;"></tbody>
+     <tr>
+       <td><b>Register</b></td>
+       <td><b>Descriptor</b></td>
+       <td><b>Value</b></td> 
+       </tr>
+    </tr>
+    <tr>
+      <td>Acquisition Activity Register</td>
+      <td><a href="aa" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Define the link between the acquisition activity and the overall acquisition plan">Part Of Acquisition</a></td>
+      <td><a href="../index.html">Donaustauf castle and its landscape</a></td>
+    </tr>
+    <tr>
+        <td>Acquisition Activity Register</td>
+        <td><a href="aa" <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The descriptor indicates the method used in this particular acquisition activity">Acquisition Method</a></td>
+        <td>Aerial photogrammetry</td>
+    </tr>
+
+   <tbody id="HiddenRowsNotice2"></tbody>
+   <tbody id="HiddenRows2">
+   <tr>
+      <td>Acquisition Activity Register</td>
+      <td><a href="aa" <a href="aa"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the individuals who carried out the particular acquisition activity are listed">Actor Operators</a></td>
+      <td>Diego Bellido Castañeda</td> 
+   </tr>
+   <tr>
+      <td>Acquisition Activity Register</td>
+      <td><a href="aa" <a href="aa"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the individuals who carried out the particular acquisition activity are listed">Actor Operators</a></td>
+      <td>Martin Schaich</td> 
+   </tr>
+   <tr>
+   <td>Acquisition Activity Register</td>
+   <td><a href="aa" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the starting date of the specific acquisition project is entered">Starting Time</a></td>
+     <td>04/04/2016 08:42</td> 
+   </tr>
+   <tr>
+   <td>Acquisition Activity Register</td>
+        <td><a href="aa" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the ending date of the specific acquisition project is entered">Ending Time</a></td>
+     <td>04/04/2016 09:30</td> 
+   <tr>
+    <td>Equipment Setup Parameters Register</td>
+     <td><a href="aa" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the name of the camera body actually used">Camera Body</a></td>
+     <td>Nikon D800</td> 
+   </tr>
+   <tr>
+     <td>Equipment Setup Parameters Register</td>
+      <td><a href="aa" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Name of the lens">Lens</a></td>
+     <td>28mm</td> 
+   </tr>
+   <tr>
+     <td>Equipment Setup Parameters Register</td>
+      <td><a href="aa" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Platform from which the pictures were taken and its stability">Platform</a></td>
+      <td>XCitor</td>
+   </tr>
+    <td>Equipment Setup Parameters Register</td>
+    <td><a href="aa" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The amount of light to which the sensor is exposed (f-stops), regulates the brightness of the image">Aperture</a></td>
+     <td>F/4.5</td> 
+   </tr>
+   </tr>
+      <td>Equipment Setup Parameters Register</td>
+     <td><a href="aa" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Automatic/Fully Manual/Aperture priority/Shutter speed priority">Shutter Mode</a></td>
+     <td>1/800s</td> 
+   </tr>
+   <tr>
+   <td>Equipment Setup Parameters Register</td>
+    <td><a href="aa" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Light sensibility value selected if manual or automatic">
+     ISO</a></td>
+     <td>320</td> 
+   </tr>
+   <tr>
+     <td>Equipment Setup Parameters Register</td>
+     <td><a href="aa" data-toggle="popover" data-trigger"hover" data-placement="top" data-content="Automatic or manual focus">Focus</a></td>
+     <td>Auto</td> 
+   </tr>
+   
+   <tr>
+    <td>Equipment Setup Parameters Register</td>
+    <td><a href="aa" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Distance from the principal point of the camera to the image plane. If it is blocked at minimum or maximum, otherwise leave as unknown">Focal Lenght</a></td>
+     <td>28mm</td> 
+   </tr>
+
+ </table>
+</tbody>
+
+</div>
+</div>
+
+      
+
+      <div class="col-sm-12">
+      <div class="row">
+
+        <script type="text/javascript">
+                        $(document).ready(function() {
+                           $("#HiddenRowsNotice").html("<tr><td colspan='3'> <a href='#'><b>Click here to show the whole table</b> </a></td></tr>");
+                           $("#ShowHide").html("<tr><td colspan='3'><a href='#'><em>Show/Hide Elements</em></a></td></tr>");
+                          $("#HiddenRows").hide();
+  
+                          $('#ShowHide,#HiddenRowsNotice').click( function() {
+                              $('#HiddenRows').toggle();
+                            $('#HiddenRowsNotice').toggle();
+                          });
+                        });
+                  </script>                 
+                 <script>
+                 $(document).ready(function(){
+                     $('[data-toggle="popover"]').popover();   
+                 });
+                 </script>
+
+        <p><h3>Aerial photogrammetry</h3></p>
+
+        <table class="table table-hover" style="position: relative; clear: both;" >
+<tbody id="ShowHide" style="color: black;"></tbody>
+     <tr>
+       <td><b>Register</b></td><tr>
+      <td>Acquisition Activity Register</td>
+      <td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the individuals who carried out the particular acquisition activity are listed">Actor Operators</a></td>
+      <td>Martin Schaich</td> 
+   </tr>
+   <tr>
+   <td>Acquisition Activity Register</td>
+   <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the starting date of the specific acquisition project is entered">Starting Time</a></td>
+     <td>04/04/2016 08:42</td> 
+   </tr>
+   <tr>
+   <td>Acquisition Activity Register</td>
+        <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the ending date of the specific acquisition project is entered">Ending Time</a></td>
+     <td>04/04/2016 09:30</td> 
+   <tr>
+    <td>Equipment Setup Parameters Register</td>
+     <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the name of the camera body actually used">Camera Body</a></td>
+     <td>Nikon D800</td> 
+   </tr>
+   <tr>
+     <td>Equipment Setup Parameters Register</td>
+      <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Name of the lens">Lens</a></td>
+     <td>28mm</td> 
+   </tr>
+   <tr>
+     <td>Equipment Setup Parameters Register</td>
+      <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Platform from which the pictures were taken and its stability">Platform</a></td>
+      <td>XCitor</td>
+   </tr>
+    <td>Equipment Setup Parameters Register</td>
+    <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The amount of light to which the sensor is exposed (f-stops), regulates the brightness of the image">Aperture</a></td>
+     <td>F/4.5</td> 
+   </tr>
+   </tr>
+      <td>Equipment Setup Parameters Register</td>
+     <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Automatic/Fully Manual/Aperture priority/Shutter speed priority">Shutter Mode</a></td>
+     <td>1/800s</td> 
+   </tr>
+   <tr>
+   <td>Equipment Setup Parameters Register</td>
+    <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Light sensibility value selected if manual or automatic">
+     ISO</a></td>
+     <td>320</td> 
+   </tr>
+   <tr>
+     <td>Equipment Setup Parameters Register</td>
+     <td><a href="#" data-toggle="popover" data-trigger"hover" data-placement="top" data-content="Automatic or manual focus">Focus</a></td>
+     <td>Auto</td> 
+   </tr>
+   
+   <tr>
+    <td>Equipment Setup Parameters Register</td>
+    <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Distance from the principal point of the camera to the image plane. If it is blocked at minimum or maximum, otherwise leave as unknown">Focal Lenght</a></td>
+     <td>28mm</td> 
+   </tr>
+       <td><b>Descriptor</b></td>
+       <td><b>Value</b></td> 
+       </tr>
+    </tr>
+    <tr>
+      <td>Acquisition Activity Register</td>
+      <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Define the link between the acquisition activity and the overall acquisition plan">Part Of Acquisition</a></td>
+      <td><a href="../index.html">Donaustauf castle and its landscape</a></td>
+    </tr>
+    <tr>
+        <td>Acquisition Activity Register</td>
+        <td><a href="#" <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The descriptor indicates the method used in this particular acquisition activity">Acquisition Method</a></td>
+        <td>Aerial photogrammetry</td>
+    </tr>
+
+   <tbody id="HiddenRowsNotice"></tbody>
+   <tbody id="HiddenRows">
+   <tr>
+      <td>Acquisition Activity Register</td>
+      <td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the individuals who carried out the particular acquisition activity are listed">Actor Operators</a></td>
+      <td>Diego Bellido Castañeda</td> 
+   </tr>
+   
+  </table>
+</tbody>
+
+</div>
+</div>
+
+
+
+
+
+
+
+    
+
+
+			<div  class="row section topspace">
+          <div  class="col-md-12"><br></br>
+            <p  class="lead text-center text-muted"><a  href="http://www.itn-dch.org/">ITN-DCH project</a> aims to analyze, design, research, develop and validate the innovative muti-disciplinary and intersectorial research training framework that covers the whole lifecycle of digital CH research for a cost-effective preservation, documentation, protection and presentation. Donaustauf castle is one of the case studies where the different fellow are applying their research. With the support of <a  href="http://www.arctron.de/de/">ArcTron3D</a>, the Marie Curie fellows are being trained in laser scanner and light structured methods in Cultural Heritage for high resolutions 3D surveys.
+             </p>
+          </div>
+        </div>
+        <!-- / section -->
+        <div  class="row section featured topspace"><br></br>
+          <h2  class="section-title"><span>Activities</span></h2>
+          <div  class="row">
+            <div  class="col-sm-6 col-md-3">
+              <h3  class="text-center">Photogrammetry</h3>
+              <p> Photogrammetry is the science of creating 3D information from photographs. Nowadays, just a commercial camera is required to acquire the images. From terrestrial or aerial plattformas photogrammetry is one of the most suitable techniques in the digiization of Cultural Heritage. 
+
+                </p>
+              <p  class="text-center"><a  href="Photogrammetry.html"  class="btn btn-action">Read
+                  more</a></p>
+            </div>
+            <div  class="col-sm-6 col-md-3">
+              <h3  class="text-center">Laser scanner</h3>
+              <p>The purpose of a 3D laser scanner is to create a point cloud of the surface of a objetc. Nowadays there a wide amount of scanners in the market and they can acquire information in small and large scenes. The three principles of laser scanners include Time of flight (TOF), Phase Shift and Triangulation-based systems.</p>
+              <p  class="text-center"><a  href="laser_scanner.html"  class="btn btn-action">Read
+                  more</a></p>
+            </div>
+            <div  class="col-sm-6 col-md-3">
+              <h3  class="text-center">Structured light scanner</h3>
+              A structured light scanner is a 3D intruments to achieve the 3D shape of a object. It uses projection light patterns and a camera system (usually two cameras). Projection band of lights onto an object, produces line distorted from the different perspectives, and it is used to extract the 3D information about the object.
+
+              
+              <p  class="text-center"><a  href=""  class="btn btn-action">Read
+                  more</a></p>
+            </div>
+            <div  class="col-sm-6 col-md-3">
+              <h3  class="text-center">Conferences &amp; Events</h3>
+              <p>In this section you can find all the events ESR3 has attended during the fellowship. The ITN-DCH provides the fellowship an intensive training in trades, onferences, seminar or other dissemination actions. A brief description of each activity as well as the following events are included.</p>
+              <p  class="text-center"><a  href=""  class="btn btn-action">Read
+                  more</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div  class="row section recentworks topspace">
+          <h2  class="section-title"><span>Recent Works</span></h2>
+          <div  class="thumbnails recentworks row">
+            <div  class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> <a  class="thumbnail"
+
+                 href="http://www.itn-dch.eu/index.php/case-studies/donaustauf/"> <span  class="img"> <img  src="images/Imagen2.jpg"
+
+                     alt=""> <span  class="cover"><span  class="more">See
+                      details →</span></span> </span> <span  class="title">Donaustauf</span> </a> <!--<span  class="details"><a
+
+                   href="">Donaustauf castle</a> | <a  href="">Our contribution</a> | <a  href="">Results</a></span>-->
+              <h4></h4>
+              <p></p>
+            </div>
+            <div  class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> <a  class="thumbnail"
+
+                 href="http://www.itn-dch.eu/index.php/case-studies/ilmendorf/"> <span  class="img"> <img  src="images/ilmendorf.jpg"
+
+                     alt=""> <span  class="cover"><span  class="more">See
+                      details →</span></span> </span> <span  class="title">Ilmendorf</span> </a> <!--<span  class="details"><a
+
+                   href="">Donaustauf castle</a> | <a  href="">Our contribution</a> | <a  href="">Results</a></span>-->
+              <h4></h4>
+              <p></p>
+            </div>
+            <div  class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> <a  class="thumbnail"
+
+                 href="http://case-study1.itn-dch.net/"> <span  class="img"> <img  src="images/assinou.jpg"
+
+                     alt=""> <span  class="cover"><span  class="more">See
+                      details →</span></span> </span> <span  class="title">Assinou</span> </a> <!--<span  class="details"><a
+
+                   href="">Donaustauf castle</a> | <a  href="">Our contribution</a> | <a  href="">Results</a></span>-->
+              <h4></h4>
+              <p></p>
+            </div>
+            <div  class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> <a  class="thumbnail"
+
+                 href="http://www.carnuntum.at/en"> <span  class="img"> <img  src="images/carnuntum.jpg"
+
+                     alt=""> <span  class="cover"><span  class="more" >See
+                      details →</span></span> </span> <span  class="title">Carnuntum</span> </a> <!--<span  class="details"><a
+
+                   href="">Donaustauf castle</a> | <a  href="">Our contribution</a> | <a  href="">Results</a></span>-->
+              <h4></h4>
+              <p></p>
+            </div>
+            <div  class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> <a  class="thumbnail"
+
+                 href="sidebar-right.html"> <span  class="img"> <img  src="images/torre.png"
+
+                     alt=""> <span  class="cover"><span  class="more">See
+                      details →</span></span> </span> <span  class="title">Bueonconsiglio Castle</span> </a> <span  class="details"><a
+
+                   href="http://3dom.fbk.eu/repository/buonconsiglio_castle/web_pages/index.html"><!--<span  class="details"><a
+
+                   href="">Donaustauf castle</a> | <a  href="">Our contribution</a> | <a  href="">Results</a></span>-->
+              <h4></h4>
+              <p></p>
+            </div>
+            <div  class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> <a  class="thumbnail"
+
+                 href="sidebar-right.html"> <span  class="img"> <img  src="images/DSC_0160.JPG"
+
+                     alt=""> <span  class="cover"><span  class="more">See
+                      details →</span></span> </span> <span  class="title">Meetings and training events</span> </a> <span  class="details"><a
+
+                   href="http://www.itn-dch.eu/"><!--<span  class="details"><a
+
+                   href="">Donaustauf castle</a> | <a  href="">Our contribution</a> | <a  href="">Results</a></span>-->
+              <h4></h4>
+              <p></p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- /section -->
+        <div  class="row section topspace"><br></br>
+          <div  class="panel panel-cta">
+            <div  class="panel-body">
+              <div  class="col-lg-8">
+                <p>To know more about <b>the ITN-DCH project</b> click the right button. </p>
+              </div>
+              <div  class="col-lg-4 text-right"> <a  href="http://www.itn-dch.eu/"
+
+                   class="btn btn-primary btn-lg">ITN-DCH</a> </div>
+            </div>
+          </div>
+        </div>
+        <!-- /section -->
+        
+
+        <div  class="row section clients topspace">
+          <h2  class="section-title"><span>Institutions</span></h2>
+          <div ALIGN="center"><IMG SRC="images/Institutions.png" WIDTH="75%" HEIGHT="75%" BORDER="0">
+
+<br></br><br></br>
+</div>
+        </div>
+						
+
+      
+
+
+<div class="row">
+	</div>				
+
+        <!-- /section --> 
+
+        <!-- /container --> </main>
+   
+
+     <footer  id="footer">
+      
+      <div  class="container">
+        <div  class="row">
+          <div  class="col-md-3 widget">
+            <h3  class="widget-title">Contact</h3>
+            <div  class="widget-body">
+              <p>+0179 31 98871<br>
+                <a  href="mailto:#">dbellido@arctron.de</a><br>
+                <a  href="mailto:#">becadiego@gmail.com</a><br></p></div>
+                
+                <!--<br>
+                Posthorngäßchen 6 Regensburg (Deutschland) PZ: 93047</p>-->
+            </div>
+
+
+        
+
+          
+          <div  class="col-md-3 widget">
+            <h3  class="widget-title">Follow us</h3>
+            <div  class="widget-body">
+              <p  class="follow-me-icons"> <a  href=""><i  class="fa fa-twitter fa-2"></i></a>
+                <a href="https://www.facebook.com/itndch/?ref=aymt_homepage_panel" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=32 height=32  /></a>
+                <a href="https://www.linkedin.com/in/diego-bellido-1ab24b29?trk=hp-identity-name" target="_blank"><img alt="Siguenos en Linkedin" src="https://lh5.googleusercontent.com/-8C0OdSp_7ZA/T3nN0G_313I/AAAAAAAAAsU/6_Hbu6Of3qU/s32/linkedin32.png" width=32 height=32  /></a>
+
+                <!--<a  href=""><i  class="fa fa-dribbble fa-2"></i></a> <a  href=""><i
+
+                     class="fa fa-github fa-2"></i></a> <a  href=""><i  class="fa fa-facebook fa-2"></i></a> 
+                     
+
+<a  href=""><i  class="fa fa-linkedin fa-2"></i></a>
+<a href="https://github.com/dbellido" target="_blank"><img alt="Siguenos en GitHub" src="C:\Donaustauf_web\donaustauf_web\web_pages\assets\img\GitHub.jpg" width=32 height=32  /></a>-->
+
+
+              </p>
+            </div>
+          </div>
+          <div  class="col-md-3 widget">
+            <h3  class="widget-title">Why a website?</h3>
+            <div  class="widget-body">
+              <p>This website aims to be a small space where the different researchers can show and share the work done in the ITN-DCH project</p>
+              <p>The goal is to introduce the different projects and activities regarding the castle. At the same time this will be a communication and a visualization tool, where everybody interested can be able to access the obtained results.</p>
+            </div>
+          </div>
+          <div  class="col-md-3 widget">
+            <h3  class="widget-title">Upcoming events</h3>
+            <div  class="widget-body">
+              <p>
+                <a  href="http://www.isprs.org/">ISPRS</a><br>
+                <a  href="http://arqueologica8.webs.upv.es/">Arqueológica</a><br>
+                <!--<a  href="http://www.civildron.com/">Civildrón</a><br>-->
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <!-- /row of widgets --> </div>
+    </footer>
+    <footer  id="underfooter">
+      <div  class="container">
+        <div  class="row">
+          <div  class="col-md-6 widget">
+            <div  class="widget-body">
+             <!-- <p>Posthorngäßchen 6 Regensburg (Deutschland) PZ: 93047 </p>-->
+            </div>
+          </div>
+          <div  class="col-md-6 widget">
+            <div  class="widget-body">
+              <!--<p  class="text-right"> Copyright © 2015, Diego Bellido Castañeda<br>
+                Design: <a  href="http://www.gettemplate.com"  rel="designer">This web is based on a design done 
+                  by GetTemplate</a> </p>-->
+            </div>
+          </div>
+        </div>
+        <!-- /row of widgets --> 
+    </div>
+
+    </footer>
+
+
+
+
+		<!-- /.container-fluid -->
+
+		<!-- JQuery scripts 
+	    <script src="assets/js/jquery-1.11.2.min.js"></script>-->
+
+		<!-- Bootstrap Core scripts -->
+		<script src="../assets/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

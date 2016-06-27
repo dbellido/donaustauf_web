@@ -10,7 +10,7 @@
 		<meta name="robots" content="index, follow">
 
 		<!-- icons -->
-		<link  rel="shortcut icon"  href="images/favicon.ico">
+		<link  rel="shortcut icon"  href="images/01_logo/favicon.ico">
 
 		<!-- Bootstrap Core CSS file -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -18,17 +18,15 @@
 		<!-- Override CSS file - add your own CSS rules -->
 		<link rel="stylesheet" href="assets/css/styles.css">
 
+		<script src="assets/js/jquery-1.12.2.min.js"></script>
+
+
+	</head>
+
 	<body>
-		<script src="../libs/jquery-2.1.4/jquery-2.1.4.min.js"></script>
-		<script src="../libs/jquery-ui-1.11.4/jquery-ui.min.js"></script>
-		<script src="../libs/three.js/build/three.js"></script>
-		<script src="../libs/other/stats.min.js"></script>
-		<script src="../libs/other/BinaryHeap.js"></script>
-		<script src="../libs/tween/tween.min.js"></script>
-		<script src="../libs/d3/d3.js"></script>
-		<script src="../libs/proj4/proj4.js"></script>
-		<script src="../libs/openlayers3/ol.js"></script>
-		<script src="../libs/potree/potree_v3.js"></script>
+
+		
+		
 		<!-- GOOGLE MAPS !!!!!PASAR A CSS!!!!!!! -->
 		<style>
      		#map2 {
@@ -36,10 +34,7 @@
         		height: 400px;
       			}
     	</style>
-	
-
-		    <!--<header  id="header">-->
-
+	 
 		<!-- Navigation MENU-->
 	    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
 			<div class="container-fluid">
@@ -59,85 +54,68 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						 <li class="dropdown">
-						       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">The castle <span class="caret"></span></a>
-						       <ul class="dropdown-menu">
-						       <li><a href="http://dbellido.github.io/Donaustauf_castle/Donaustauf/index.html">Donaustauf Village</a></li>
-						       <li role="separator" class="divider"></li>
-						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Castles in Bayern</a></li>
-						       	<li role="separator" class="divider"></li>
-						       
-						       	
-						       	<!--<li><a href="3D_viewer4.html">Options</a></li>-->
-						        
-						        </ul>
-						      </li>
-						
 						<li class="dropdown">
-								
+						      	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">The castle <span class="caret"></span></a>
+						       	<ul class="dropdown-menu">
+						       		<li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Donaustauf castle</a></li>
+						       		<li role="separator" class="divider"></li>
+						       		<li><a href="http://dbellido.github.io/Donaustauf_castle/Donaustauf/index.html">Donaustauf Village</a></li>
+						       		<li role="separator" class="divider"></li>
+						       		<li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Castles in Bayern</a></li>
+						       		<li role="separator" class="divider"></li>
+ 						        </ul>
+						</li>
+						
+						<li class="dropdown">							
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Methodology <span class="caret"></span></a>
-						       <ul class="dropdown-menu">
-						       <li><a href="data_acquisition.html">Acquisition</a></li>
-						       <li role="separator" class="divider"></li>
-						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Processing</a></li>
-						       	<li role="separator" class="divider"></li>
-						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don/">Visualization</a></li>
-						       	<li role="separator" class="divider"></li>
-						       	
-						        
-						       	<!--<li><a href="3D_viewer4.html">Options</a></li>-->
+						       	<ul class="dropdown-menu">
+						       		<li><a href="methodology/data_acquisition.html">Acquisition</a></li>
+						       		<li role="separator" class="divider"></li>
+						       		<li><a href="methodology/data_processing.html">Processing</a></li>
+						       		<li role="separator" class="divider"></li>
+						       		<li><a href="methodology/data_visualization.html">Visualization</a></li>
+						       		<li role="separator" class="divider"></li>			      					        
 						        </ul>
-
-						      </li>
-						      <li><a href="data_acquisition.html">4D</a></li>
-						<!--<li><a href="data_acquisition.html">Data acquisition</a></li>
-						<li><a href="data_acquisition.html">Data processing</a></li>
-						<li><a href="data_acquisition.html">Data visualization</a></li>-->
-						
+						</li>
+						      
+						<li><a href="data_acquisition.html">4D</a></li>
+												
 						<li class="dropdown">
-						       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">3D viewer <span class="caret"></span></a>
-						       <ul class="dropdown-menu">
-						       <li><a href="http://dbellido.github.io/Donaustauf_castle/Donaustauf/index.html">Point Cloud</a></li>
-						       <li role="separator" class="divider"></li>
-						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Mesh_2015</a></li>
-						       	<li role="separator" class="divider"></li>
-						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don/">Mesh_2016</a></li>
-						       	<li role="separator" class="divider"></li>
-						       	<!--<li><a href="3D_viewer4.html">Options</a></li>-->
-						        
-						        </ul>
-						      </li>
-						
-
-					    
+						       	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">3D viewer <span class="caret"></span></a>
+						       	<ul class="dropdown-menu">
+						       		<li><a href="http://dbellido.github.io/Donaustauf_castle/Donaustauf/index.html">Point Cloud</a></li>
+						       		<li role="separator" class="divider"></li>
+						       		<li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Mesh_2015</a></li>
+						       		<li role="separator" class="divider"></li>
+						       		<li><a href="http://dbellido.github.io/Donaustauf_viewer/don/">Mesh_2016</a></li>
+						       		<li role="separator" class="divider"></li>						       				        
+						       	</ul>
+						</li>				
+				    
 					    <li><a href="data_acquisition.html">Blog</a></li>
+
 					    <li class="dropdown">
 						       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lenguage <span class="caret"></span></a>
 						       <ul class="dropdown-menu">
-						       <li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/english.svg" width=32 height=32  />&nbsp;&nbsp;EN</a></li>
-						       <li role="separator" class="divider"></li>
-						       <li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/Flag_of_Germany.svg" width=32 height=32  />&nbsp;&nbsp;DE</a></li>
-						       <li role="separator" class="divider"></li>
-						       <li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/Flag_of_Spain.svg" width=32 height=32  />&nbsp;&nbsp;DE</a></li>
-						       <li role="separator" class="divider"></li>
-						       <li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/Flag_of_Galicia.svg" width=32 height=32  />&nbsp;&nbsp;GZ</a></li>
-						       <li role="separator" class="divider"></li>
-						       <li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/Flag_of_Portugal.svg" width=32 height=32  />&nbsp;&nbsp;POR</a></li>
-						       <li role="separator" class="divider"></li>
-						       
-						       	
+						       		<li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/english.svg" width=32 height=32  />&nbsp;&nbsp;EN</a></li>
+						       		<li role="separator" class="divider"></li>
+						       		<li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/Flag_of_Germany.svg" width=32 height=32  />&nbsp;&nbsp;DE</a></li>
+						       		<li role="separator" class="divider"></li>
+						       		<li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/Flag_of_Spain.svg" width=32 height=32  />&nbsp;&nbsp;DE</a></li>
+						       		<li role="separator" class="divider"></li>
+						       		<li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/Flag_of_Galicia.svg" width=32 height=32  />&nbsp;&nbsp;GZ</a></li>
+						      		<li role="separator" class="divider"></li>
+						       		<li><a href="http://dbellido.github.io/Donaustauf_viewer/don/"><img alt="Siguenos en Facebook" src="images/Flag_of_Portugal.svg" width=32 height=32  />&nbsp;&nbsp;POR</a></li>
+						       		<li role="separator" class="divider"></li>						       						       	
 						        </ul>
-						      </li>
+						</li>
 						      
-
-
-
-						      <form class="navbar-form navbar-left" role="search">
-        						<div class="form-group">
+				      	<form class="navbar-form navbar-left" role="search">
+        					<div class="form-group">
           							<input type="text" class="form-control" placeholder="Search">
-        						</div>
-        						<button type="submit" class="btn btn-default">Search</button>
-     						 </form> -->   
+        					</div>
+        					<button type="submit" class="btn btn-default">Search</button>
+     					</form> -->   
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -151,9 +129,9 @@
 		<div class="container-fluid">
 			
 			<!--IMAGEN DINÁMICA-->
-			<div ALIGN="center"><IMG class="img-responsive" SRC="assets/img/Tralala.jpg" ><br></br></div>
+			<div ALIGN="center"><IMG class="img-responsive" SRC="images/03_header/Tralala.jpg" ><br></br></div>
 
-			<!--FIRST SECTION THE PROJECT-->
+			<!--FIRST SECTION, THE PROJECT-->
           
 				<div  class="row section clients topspace">
         			<h2  class="section-title"><span>The project</span></h2>
@@ -170,7 +148,7 @@
 					
 					<div class="col-sm-8">
 						
-						<p>ITN-DCH targets all aspects of CH ranging from tangible (books, newspapers, images, drawings, manuscripts, uniforms, maps, artefacts, archaeological sites, monuments) to intangible content (e.g., music, performing arts, folklore, theatrical performances) and their inter-relationships. The project aims  to boost the added value of CH assets by re-using them in real application environments (protection of CH, education, tourism industry, advertising, fashion, films, music, publishing, video games and TV) through research on (i) new personalized, interactive, mixed and augmented reality enabled e-services, (ii) new recommendations in data acquisition, (iii) new forms of representations (3D/4D) of both tangible /intangible assets and (iv) interoperable metadata forms that allow easy data exchange and archiving.</p>
+						<p>ITN-DCH targets all aspects of CH ranging from tangible (books, newspapers, images, drawings, manuscripts, uniforms, maps, artefacts, archaeological sites, monuments) to intangible content (e.g., music, performing arts, folklore, theatrical performances) and their inter-relationships. The project aims  to boost the added value of CH assets by re-using them in real application environments (protection of CH, education, tourism industry, advertising, fashion, films, music, publishing, video games and TV) through research on (i) new personalized, interactive, mixed and augmented reality enabled e-services, (ii) new recommendations in data acquisition, (iii) new forms of representations (3D/4D) of both tangible /intangible assets and (iv) interoperable metadata forms that allow easy data exchange and archiving. 
 						<p>In order to make visible the training, four different CH assets were selected as official studies. 
 						<dl>
 							<dt><it>ITN-DCH CASE STUDY I: <a  href="http://www.itn-dch.eu/index.php/case-studies/asinou/">Panagia Asinou Church (Nicosia, Cyprus)</a> </it></dt>
@@ -181,20 +159,23 @@
 					</p> 
 					</div>
 					<div class="col-sm-4">
-					
-						<figure class="margin-b-2">
-							<img class="img-responsive" src="images/DSC_0083.JPG" alt="">
+						
+						<figure class="margin-b-2"> 
+							<a name="Figure1"></a>							
+							<img class="img-responsive" src="images/DSC_0083.JPG" alt="" Title="Figure 1: Surveying network in the castle"></a>			
 							<p  class="text-center">Figure 1: Surveying network in the castle</p>
-                  		</figure>
+                  		</figure>                  	
 					
 					</div>
 
+
 				</div>
 
-				<div class="row">
-									
+				<div class="row">								
 					<div class="col-sm-12">
 						<p>Within this context, the current website aims to introduce the different projects and activities regarding the castle. At the same time this space will be used as a communication and a visualization tool, where everybody interested can be able to access the obtained results as well as propose any suggesting to improve the knowedge about the monument.</p><br></br>
+					</div>
+				</div>
 				
 
 				<!--Segunda sección. The history-->
@@ -204,9 +185,7 @@
 
 				<div class="row">		
 				
-					<div class="col-sm-12">
-
-			<!-- /.row -->
+					<div class="col-sm-12">			
 		
 					<p> East of Regensburg (southern Germany), the township of Donaustauf is situated. The small city is dominated by the ruins of the castle Donaustauf. The castle sits on a hilltop, approximately 100m above the Danube. It is the oldest castle mentioned in documents within the area of Regensburg. Between 914 and 930, several records can be found that mention a castle which is called Stauff (castellum quod dicitur Stuffo). It is assumed that the castle was erected by Bishop Tuto of Regensburg (893–930), as a defence against the Hungarian invasion. However, archaeological excavations revealed that at least the North-Eastern part of the hilltop was fortified about 500 B.C. already.</p>
 
@@ -220,7 +199,7 @@
 					
 					<figure class="margin-b-2">
 							<a name="Figure2"></a>
-							<img class="img-responsive" src="assets/img/Imagen.png" alt="">
+							<img class="img-responsive" src="assets/img/Imagen.png" alt="" Title="Figure 2: Gate F and Chapel">
 							<p  class="text-center">Figure 2: Gate F and Chapel</p>
 							
                   	</figure>
@@ -237,25 +216,18 @@
 					</div>
 					
 				</div>
+
+				<a  href="http://www.itn-dch.org/">ITN-DCH project</a>
+
+				The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
 					
-			<!--FIRST SECTION ACQUISITION PLAN-->		
+			<!--THIRD SECTION, ACQUISITION PLAN-->		
 					
 			<div  class="row section clients topspace">
          		 <h2  class="section-title"><span>Acquisition plan</span></h2>
       		</div>
-
-
-			<!-- /.row -->
-
-			
-										
-				<!--<div class="col-sm-12">
-
-					<p>History of the site</p>
-					<p> Based on the field experience by ArcTron3D, a code of practise for digitisation is presented.
-					The airborne technology will be used to create a model of the hilltop and the landscape. The landscape model will include the hilltop of the castle, the Danube, the town and part of the backcountry. The data-acquisition will be done using the ultra light paraglide trike and a Nikon D800E camera. To create a valid and useable result one will define a flight path before to ensure good coverage and overlapping of the pictures. There is already an existing 3D model. This dataset, which is available within ArcTron3D, can be used as a reference dataset by the fellows. Depending on the resolution and the size of the area the cameras and lenses to be used as well as the flight altitude and duration should be taken into consideration among other important factors.</P>-->
-
-					
+				
 				<div class="row">
 								
 					<div class="col-sm-8">
@@ -267,14 +239,15 @@
 					<p>Made of Romanesque fabric, Gate F is one of the most interesting parts of the castle. Therefore, a detailed and precise documentation of it should be done. Different methods of terrestrial laser scanning, terrestrial photogrammetry and even airborne photogrammetry can be applied.</p>
 					<p>On the preserved walls of the chapel there are traces of painting, dating back to the 12th century.  Since the walls of the chapel have recently been whitewashed it is not longer possible to see these tracings. However, there are drawings in books available to reconstruct the scenes on the wall. Given the available equipment in the consortium it will be interesting to see if one is able to discover the paintings underneath the whitewash. The paintings itself, as far as they have been documented yet, depicts for persons exchanging a book-shape like thing. Above there is a Latin inscription as well, referring to the Virgin Walpurga (known as Saint Walpurga 710-777/779). It might be interesting to try to figure out the whole story of the painting and the story that is depicted. Linking the paintings of the chapel wall with other content or even bringing the figures back to life will be a challenge for the task that concern the intangible CH part of the project.</p>	
 					<p>The chapel itself is of great historical value, being one of the few Romanesque chapels within the region since it still has some of the original plaster such as capitals, columns, arches, etc. Structured light scanning (SLS) methods in comparison to photogrammetry and infrared/hyperspectral imaging can be applied to document this part.</p>
-					<p>4D models of the gate would also be a possible task for the project fellows. 2D-Content such as the Merian sketch , can be brought into the project as well. Also there are some rough sketches by the American painter Joseph Mallord William Turner (1775-1851)  and other artists . So it should not be a problem to try to rebuild the gate over time based on research that has been done, the available sketches and the researched realised by the fellows. This will bring in the 4th dimension: “time”.</p>
+					<p>4D models of the gate would also be a possible task for the project fellows. 2D-Content such as the <a  href="4D/4D.html">Merian sketch</a>, can be brought into the project as well. Also there are some rough <a  href="4D/4D.html">sketches by the American painter Joseph Mallord William Turner (1775-1851) </a> and other artists . So it should not be a problem to try to rebuild the gate over time based on research that has been done, the available sketches and the researched realised by the fellows. This will bring in the 4th dimension: “time”.</p>
 					
 					</div>
 
 					<div class="col-sm-4">
 					
 					<figure class="margin-b-2">
-							<img class="img-responsive" src="assets/img/Acquisition_plan.png" alt="">
+						<a name="Figure3"></a>
+							<img class="img-responsive" src="assets/img/Acquisition_plan.png" alt="" Title="Figure 3: Plan of the ruins of the main castle with additional marking the location of the gates A to F">
 							<p  class="text-center">Figure 3: Plan of the ruins of the main castle with additional marking the location of the gates A to F</P>
 						</figure>
 					
@@ -282,7 +255,7 @@
 					
 				</div>
 
-<!--Segunda sección. The history-->
+<!--Fourth Section. Our team-->
 				<div  class="row section clients topspace">
           			<h2  class="section-title"><span>Our team</span></h2>
       			</div>		
@@ -290,10 +263,8 @@
 				<div class="row">		
 				
 					<div class="col-sm-12">
-
-			<!-- /.row -->
 		
-					<p> Donaustauf castle is a long time project within the ITN-DCH project. The monument will be used for the different training activities of the different members providing a huge amount of data. In response to that this website has been create. It aims to present our work and at the same time show in an organized structure the different data and processed performed. Within a pipeline for the digitization of CH, metadata and paradata are registered in each step in order to produce reusable information.</p>
+					<p> Donaustauf castle is a long time project within the ITN-DCH project. The monument will be used for the different training activities of the different members providing a huge amount of data. In response to that this website has been created. It aims to present our work and at the same time shows, in an organized structure, the different data and processed performed. Within a pipeline for the digitization of CH, metadata and paradata are registered in each step in order to produce reusable information.</p>
 
 					</div>
 
@@ -305,7 +276,7 @@
 					
 					<figure class="margin-b-2">
 							<a name="Figure2"></a>
-							<img class="img-responsive" src="images/Our_team.jpg" alt="">
+							<img class="img-responsive" src="images/Our_team.jpg" alt="" Title="Figure 4: ITN-DCH Early Stage Researchers during their secondment at ArcTron3D">
 							<p  class="text-center">Figure 4: ITN-DCH Early Stage Researchers during their secondment at ArcTron3D</p>
 							
                   	</figure>
@@ -314,319 +285,282 @@
 					
 					<div class="col-sm-8">
 
-					<p>The first activities were performed in the castle in 2014 and since then, aerial and terrestrial photographies, laser scanner data or thermal images have been acquired in the castle. A big effort was produced with the participation of 7 Marie Curie fellows in the secondment at ArcTron3D. Within this perios of training, theoretical and practical activities about high resolution 3D surveys applied in different case studies, Donaustauf castle betwee then. Other interesting data set were produced by flyng around the castle using the ArcTron3D X-CITOR. These images are a document theirself, in addition to allow the study of the landscape of the castle in different seasons. If you are interested in undestanding any product or any data don't hesitate to click the tables or contact with <a  href="mailto:#">dbellido@arctron.de</a><br>. </p>
-					
+						<div>
 
+						<p>The first activities were performed in the castle in 2014 and since then, aerial and terrestrial photographs, laser scanner data or thermal images have been acquired in the castle. A big effort was produced with the participation of 7 Marie Curie fellows in the secondment at ArcTron3D. Within this period of training, theoretical and practical activities about high resolution 3D surveys applied in different case studies, Donaustauf castle between them. The other interesting data set was produced by flying around the castle using the castle using the ArcTron3D X-CITOR. These images are a document theirself, in addition to allow the study of the landscape of the castle in different seasons. If you are interested more information about any product or any data don't hesitate to click the tables or contact with <a  href="mailto:#">dbellido@arctron.de</a><br>. </p>
+
+						</div>
+
+						<div>
 
 					
 					<!--script for the table-->
-		<script type="text/javascript">
-					              $(document).ready(function() {
-					      	         $("#HiddenRowsNotice").html("<tr><td colspan='3'> <a href='#'><b>Click here to show the whole table</b> </a></td></tr>");
-					      	         $("#ShowHide").html("<tr><td colspan='3'><a href='#'><em>Show/Hide Elements</em></a></td></tr>");
-					      	        $("#HiddenRows").hide();
-	
-					      	        $('#ShowHide,#HiddenRowsNotice').click( function() {
-					      	            $('#HiddenRows').toggle();
-					      		        $('#HiddenRowsNotice').toggle();
-					      	        });
-					              });
-				          </script>				          
-				         <script>
-				         $(document).ready(function(){
-				             $('[data-toggle="popover"]').popover();   
-				         });
-				         </script>
+					<script type="text/javascript">
+                        $(document).ready(function() {
+                           //$("#HiddenRowsNotice").html("<tr><td colspan='3'> <a href='#'><b>Click here to show the whole table</b> </a></td></tr>");
+                           $("#ShowHide").html("<tr><td colspan='3'><a href='#'><em>Show/Hide Elements</em></a></td></tr>");
+                          $("#HiddenRows").hide();
   
-  
-  <!--<p><h2>Metadata</h2></p>-->
-  
-  
-  
-  <!-- table -->
-<table class="table table-hover" style="position: relative; clear: both;" >
-<tbody id="ShowHide" style="color: black;"></tbody>
-		 <tr>
-		   <td><b>Register</b></td>
-		   <td><b>Descriptor</b></td>
-		   <td><b>Value</b></td> 
-		   </tr>
-		</tr>
-		<tr>
-		  <td>Project Register</td>
-		  <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="A title given for the project to help identify it in the future.">Project Title</a></td>
-		  <td>Castello del Buonconsiglio Acquisition</td>
-		</tr>
-		<tr>
-				<td>Project Register</td>
-		  	<td><a href="#" <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The institution or person for which/whom the project is undertaken">Digitization to be produced for</a></td>
-		  	<td>Castello del Buonconsiglio di Trento</td>
-		</tr>
+                          $('#ShowHide').click( function() {
+                              $('#HiddenRows').toggle();
+                            $('#HiddenRowsNotice').toggle();
+                          });
+                        });
+                  </script>                 
+                 <script>
+                 $(document).ready(function(){
+                     $('[data-toggle="popover"]').popover();   
+                 });
+                 </script>           
+ 					   
+   					 <!-- table -->
 
-   <tbody id="HiddenRowsNotice"></tbody>
-   <tbody id="HiddenRows">
-   <tr>
-     	<td>Project Register</td>
-     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The institution or person undertaking the responsibility for the execution of the project.">Institution responsible</a></td>
-     	<td>ArcTron3D</td> 
-   </tr>
-   <tr>
-     	<td>Project Register</td>
-     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
-     	<td>Diego Bellido Castañeda</td> 
-   </tr>
-   <tr>
-     	<td>Project Register</td>
-     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
-     	<td>Chance Coughenour</td> 
-   </tr>
-   <tr>
-     	<td>Project Register</td>
-     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
-     	<td>Magdalena Ramos Calles</td> 
-   </tr>
-   <tr>
-     	<td>Project Register</td>
-     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
-     	<td>Elisavet Konstantina Stathopoulou</td> 
-   </tr>
-   <tr>
-     	<td>Project Register</td>
-     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
-     	<td>Gina Stavropoulou</td> 
-   </tr>
-   <tr>
-     	<td>Project Register</td>
-     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
-     	<td>Matevž Domajnko</td> 
-   </tr>
-   <tr>
-     	<td>Project Register</td>
-     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
-     	<td>Anaïs Guillem</td> 
-   </tr>
-   <tr>
-     	<td>Project Register</td>
-     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
-     	<td>Marleen de Kramer</td> 
-   </tr>
-   <tr>
-     	<td>Project Register</td>
-     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
-     	<td>Rosella Suma</td> 
-   </tr>
-   <tr>
-   <td>Project Register</td>
-   <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="A list of the object or objects that are the focus of the project">Object in consideration</a></td>
-     <td>Donaustauf castle</td> 
-   </tr>
-   <tr>
-   <td>Object Register</td>
-        <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Place where object is currently located (Country, City, Building, Drawer… as you known)">Location / Storage Place</a></td>
-     <td>Donaustauf, Bayern (Germany)</td> 
-   <tr>
-</tbody>
-</table>
-					
-				</div>
-				</div>
-
-
-				<div class="col-sm-6">
-<div class="row">
-
-
-</div>
-
-
-</div>
-
-					<div  class="row section clients topspace">
-          <h2  class="section-title"><span>Location</span></h2>
-      </div>
-
-      			
-			      
-
-      	            <div ALIGN="center" class="img-responsive" id="map2"></div>
-    <script>
-      function initMap() {
-        var mapDiv = document.getElementById('map2');
-        var mapOptions = new google.maps.Map(mapDiv, {
-          center: {lat: 49.031, lng: 12.20712},
-          zoom: 18,
-          mapTypeId: google.maps.MapTypeId.SATELLITE,
-          
-      });
-
+   					<table class="table table-hover" style="position: relative; clear: both;" >
+					<tbody id="ShowHide" style="color: black;"></tbody>
+		 				<tr>
+		   					<td><b>Register</b></td>
+		   					<td><b>Descriptor</b></td>
+		   					<td><b>Value</b></td> 
+		   				</tr>
 		
-       		
+						<tr>
+     						<td>Project Register</td>
+     						<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The institution or person undertaking the responsibility for the execution of the project.">Institution responsible</a></td>
+     						<td>ArcTron3D</td> 
+   						</tr>
+						<tr>						
+   						 	<td>Project Register</td>
+					     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+					     	<td>Diego Bellido Castañeda</td> 					   
+						</tr>
+						<tbody id="HiddenRowsNotice"></tbody>
+						<tbody id="HiddenRows">
 
+						<tr>
+					     	<td>Project Register</td>
+					     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+					     	<td>Chance Coughenour</td> 
+  						</tr>
+					   <tr>
+					     	<td>Project Register</td>
+					     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+					     	<td>Magdalena Ramos Calles</td> 
+					   </tr>
+					   <tr>
+					     	<td>Project Register</td>
+					     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+					     	<td>Elisavet Konstantina Stathopoulou</td> 
+					   </tr>
+					   <tr>
+					     	<td>Project Register</td>
+					     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+					     	<td>Gina Stavropoulou</td> 
+					   </tr>
+					   <tr>
+					     	<td>Project Register</td>
+					     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+					     	<td>Matevž Domajnko</td> 
+					   </tr>
+					   <tr>
+					     	<td>Project Register</td>
+					     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+					     	<td>Anaïs Guillem</td> 
+					   </tr>
+					   <tr>
+					     	<td>Project Register</td>
+					     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+					     	<td>Marleen de Kramer</td> 
+					   </tr>
+					   <tr>
+					     	<td>Project Register</td>
+					     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+					     	<td>Rosella Suma</td> 
+					   </tr>
+					   <tr>
+					     	<td>Project Register</td>
+					     	<td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="List of individuals assigned to the project and the general role assigned to them">Project Members</a></td>
+					     	<td>Nicola Carboni</td> 
+					   </tr>
+					   <tr>
+						   <td>Project Register</td>
+						   <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="A list of the object or objects that are the focus of the project">Object in consideration</a></td>
+						   <td>Donaustauf castle</td> 
+					   </tr>
+					   <tr>
+					  		<td>Object Register</td>
+					        <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Place where object is currently located (Country, City, Building, Drawer… as you known)">Location / Storage Place</a></td>
+					     	<td>Donaustauf, Bayern (Germany)</td> 
+   						</tr>
+						
+					</table>
 
-        
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
 					
 					
 					</div>
-					</div>
+				</div>
 
+	
+				
+
+<!--WHITE SPACE-->
+				<div class="col-sm-6">
+				<div class="row">
+				</div>
+				</div>
+
+			<!--LOCATION-->	
+
+				<div  class="row section clients topspace">
+          			<h2  class="section-title"><span>Location</span></h2>
+      			</div>      
+
+      	        <div ALIGN="center" class="img-responsive" id="map2"></div>
+    				<script>
+					      function initMap() {
+					        var mapDiv = document.getElementById('map2');
+					        var mapOptions = new google.maps.Map(mapDiv, {
+					          center: {lat: 49.031, lng: 12.20712},
+					          zoom: 18,
+					          mapTypeId: google.maps.MapTypeId.SATELLITE,
+					          
+							      	});    	      
+     							}
+    				</script>
+    			<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+       			 async defer></script>
+					
+						
 					<br></br>
 					
-
-
+			<!--ITN-DCH PROJECT-->	
 
 					
-					<div  class="row section topspace">
-          <div  class="panel panel-cta">
-            <div  class="panel-body">
-              <div  class="col-lg-8">
-                <p>To know more about <b>the ITN-DCH project</b> click the right button. </p>
-              </div>
-              <div  class="col-lg-4 text-right"> <a  href="http://www.itn-dch.eu/"
-
-                   class="btn btn-primary btn-lg">ITN-DCH</a> </div>
-            </div>
-          </div>
-        </div>
+				<div  class="row section topspace">
+          			<div  class="panel panel-cta">
+            			<div  class="panel-body">
+              				<div  class="col-lg-8">
+                				<p>To know more about <b>the ITN-DCH project</b> click the right button. </p>
+              				</div>
+              				<div  class="col-lg-4 text-right"> <a  href="http://www.itn-dch.eu/" class="btn btn-primary btn-lg">ITN-DCH</a> </div>
+            			</div>
+          			</div>
+        		</div>
 
 
-        <!-- /section -->
-        
-<!--<div  id="head"   ><class="parallax" parallax-speed="2"
-        <h1  id="logo"  class="text-center"><img  class="img-circle"  src="images/imagen.png"
-
-             alt="">  <span  class="title">Donaustauf castle</span> <span
-
-      </div>-->
-
-      
+        	<!--INSTITUTIONS-->
      
-<div  class="row section clients topspace">
-          <h2  class="section-title"><span>Institutions</span></h2>
-          <div ALIGN="center"><IMG SRC="images/Institutions.png" WIDTH="75%" HEIGHT="75%" BORDER="0">
-
-<br></br><br></br>
-</div>
-        </div>
+				<div  class="row section clients topspace">
+          			<h2  class="section-title"><span>Institutions</span></h2>
+          			<div ALIGN="center"><IMG SRC="images/Institutions.png" WIDTH="75%" HEIGHT="75%" BORDER="0">
+						<br></br><br></br>
+					</div>
+        		</div>
 						
+			<!--PIE DE PÁGINA-->    
 
-      
+				<div class="row">
+				</div>				  
 
+    			<footer  id="footer">
+    	      		<div  class="container">
+        				<div  class="row">
+         					
+        					<!--CONTACTO--> 
+          					<div  class="col-md-3 widget">
+            					<h3  class="widget-title">Contact</h3>
+            					<div  class="widget-body">
+              						<p>+0179 31 98871<br>
+                					<a  href="mailto:#">dbellido@arctron.de</a><br>
+                					<a  href="mailto:#">becadiego@gmail.com</a><br></p>
+                				</div>
+                            </div>
 
-<div class="row">
-	</div>				
+                            <!--FOLLOW US--> 
+            		
+         
+          				<div  class="col-md-3 widget">
+            				<h3  class="widget-title">Follow us</h3>
+            				<div  class="widget-body">
 
-        <!-- /section --> 
+            					<div>
+              					<p  class="follow-me-icons"> <a  href=""><i  class="fa fa-twitter fa-2"></i></a>
+              					<a href="https://www.facebook.com/itndch/?ref=aymt_homepage_panel" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=32 height=32  /></a>
+              					<a href="https://www.linkedin.com/in/diego-bellido-1ab24b29?trk=hp-identity-name" target="_blank"><img alt="Siguenos en Linkedin" src="https://lh5.googleusercontent.com/-8C0OdSp_7ZA/T3nN0G_313I/AAAAAAAAAsU/6_Hbu6Of3qU/s32/linkedin32.png" width=32 height=32  /></a>
+              					</p></div>    
 
-        <!-- /container --> </main>
-   
+              					<!--************CODE GEOMAP************-->         
 
-    <footer  id="footer">
-    	
-      <div  class="container">
-        <div  class="row">
-          <div  class="col-md-3 widget">
-            <h3  class="widget-title">Contact</h3>
-            <div  class="widget-body">
-              <p>+0179 31 98871<br>
-                <a  href="mailto:#">dbellido@arctron.de</a><br>
-                <a  href="mailto:#">becadiego@gmail.com</a><br></p></div>
-                
-                <!--<br>
-                Posthorngäßchen 6 Regensburg (Deutschland) PZ: 93047</p>-->
-                <div> 
+              					<div>
+              	 	
+									<script type="text/javascript" src="http://geoloc20.geostats.ovh/private/geomap.js?compte=146257476174"></script>
+									<noscript>
+									<a href="http://www.geovisites.com/en/directory/sciences_sciences-of-the-ground.php?compte=146257476174"  target="_blank"><img src="http://geoloc20.geostats.ovh/private/geomap.php?compte=146257476174" border="0" alt="sciences of the ground"></a>
 
-               
+									<br>Please do not change this code for a perfect fonctionality of your counter
+									<a href="http://www.geovisites.com/en/directory/sciences_sciences-of-the-ground.php">sciences of the ground</a>
+									</noscript>
 
-                </div>
-            </div>
+									<br></br>
 
-
-        
-
-          
-          <div  class="col-md-3 widget">
-            <h3  class="widget-title">Follow us</h3>
-            <div  class="widget-body">
-              <p  class="follow-me-icons"> <a  href=""><i  class="fa fa-twitter fa-2"></i></a>
-              	<a href="https://www.facebook.com/itndch/?ref=aymt_homepage_panel" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=32 height=32  /></a>
-              	<a href="https://www.linkedin.com/in/diego-bellido-1ab24b29?trk=hp-identity-name" target="_blank"><img alt="Siguenos en Linkedin" src="https://lh5.googleusercontent.com/-8C0OdSp_7ZA/T3nN0G_313I/AAAAAAAAAsU/6_Hbu6Of3qU/s32/linkedin32.png" width=32 height=32  /></a>
-
-                <!--<a  href=""><i  class="fa fa-dribbble fa-2"></i></a> <a  href=""><i
-
-                     class="fa fa-github fa-2"></i></a> <a  href=""><i  class="fa fa-facebook fa-2"></i></a> 
-                     
-
-<a  href=""><i  class="fa fa-linkedin fa-2"></i></a>
-<a href="https://github.com/dbellido" target="_blank"><img alt="Siguenos en GitHub" src="C:\Donaustauf_web\donaustauf_web\web_pages\assets\img\GitHub.jpg" width=32 height=32  /></a>-->
-
-
-              </p>
-              <div>
-              	 	<!--************CODE GEOMAP************-->
-<script type="text/javascript" src="http://geoloc20.geostats.ovh/private/geomap.js?compte=146257476174"></script>
-<noscript>
-<a href="http://www.geovisites.com/en/directory/sciences_sciences-of-the-ground.php?compte=146257476174"  target="_blank"><img src="http://geoloc20.geostats.ovh/private/geomap.php?compte=146257476174" border="0" alt="sciences of the ground"></a>
-
-<br>Please do not change this code for a perfect fonctionality of your counter
-<a href="http://www.geovisites.com/en/directory/sciences_sciences-of-the-ground.php">sciences of the ground</a>
-</noscript>
-<!--<br><a href="http://www.geovisite.com/en/">web hit counter</a>-->
-<!--************END CODE GEOMAP************-->
  
-              </div>
-            </div>
-          </div>
-          <div  class="col-md-3 widget">
-            <h3  class="widget-title">Why a website?</h3>
-            <div  class="widget-body">
-              <p>This website aims to be a small space where the different researchers can show and share the work done in the ITN-DCH project</p>
-              <p>The goal is to introduce the different projects and activities regarding the castle. At the same time this will be a communication and a visualization tool, where everybody interested can be able to access the obtained results.</p>
-            </div>
-          </div>
-          <div  class="col-md-3 widget">
-            <h3  class="widget-title">Upcoming events</h3>
-            <div  class="widget-body">
-              <p>
-                <a  href="http://www.isprs.org/">ISPRS</a><br>
-                <a  href="http://arqueologica8.webs.upv.es/">Arqueológica</a><br>
+              					</div>
+            				</div>
+          				</div>
+          
+          				<!--************Why a website?************--> 
+          				
+          				<div  class="col-md-3 widget">
+            				<h3  class="widget-title">Why a website?</h3>
+            				<div  class="widget-body">
+					            <p>This website aims to be a small space where the different researchers can show and share the work done in the ITN-DCH project</p>
+					            <p>The goal is to introduce the different projects and activities regarding the castle. At the same time this will be a communication and a visualization tool, where everybody interested can be able to access the obtained results.</p>
+           					</div>
+          				</div>
+
+          				<!--************Upcoming events************--> 
+
+          				<div  class="col-md-3 widget">
+            				<h3  class="widget-title">Upcoming events</h3>
+            				<div  class="widget-body">
+              					<p>
+				                <a  href="http://www.isprs.org/">ISPRS</a><br>
+				                <a  href="http://arqueologica8.webs.upv.es/">Arqueológica</a><br>
                 <!--<a  href="http://www.civildron.com/">Civildrón</a><br>-->
-              </p>
+              					</p>
 
-            </div>
-          </div>
-        </div>
-        <!-- /row of widgets --> </div>
-    </footer>
-    <footer  id="underfooter">
-      <div  class="container">
-        <div  class="row">
-          <div  class="col-md-6 widget">
-            <div  class="widget-body">
-             <!-- <p>Posthorngäßchen 6 Regensburg (Deutschland) PZ: 93047 </p>-->
-            </div>
-          </div>
-          <div  class="col-md-6 widget">
-            <div  class="widget-body">
-              <!--<p  class="text-right"> Copyright © 2015, Diego Bellido Castañeda<br>
-                Design: <a  href="http://www.gettemplate.com"  rel="designer">This web is based on a design done 
-                  by GetTemplate</a> </p>-->
-            </div>
-          </div>
-        </div>
+            				</div>
+          				</div>
+       				</div>
         <!-- /row of widgets --> 
-    </div>
+    			</div>
+    		</footer>
+    
+    		<footer  id="underfooter">
+      			<div  class="container">
+        			<div  class="row">
+          				<div  class="col-md-6 widget">
+            				<div  class="widget-body">
+            					<p>Last update: 24/06/2016</p>
+                     		</div>
+          				</div>
+          				<div  class="col-md-6 widget">
+            				<div  class="widget-body">
+              					<p  class="text-right"> Copyright © 2015, Diego Bellido Castañeda<br> Design: This web is based on a design done
+                				by GetTemplate</a> </p>
+            				</div>
+          				</div>
+        			</div>
+       
+       	<!-- /row of widgets --> 
+    			</div>
 
-    </footer>
+    		</footer>
 
 
 		<!-- /.container-fluid -->
 
-		<!-- JQuery scripts -->
-	    <script src="assets/js/jquery-1.11.2.min.js"></script>
+		<!-- JQuery scripts--> 
+	    <script src="assets/js/jquery-1.12.2.min.js"></script>
 
 		<!-- Bootstrap Core scripts -->
 		<script src="assets/js/bootstrap.min.js"></script>

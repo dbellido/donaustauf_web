@@ -1,0 +1,17 @@
+<script type="text/javascript">
+					              $(document).ready(function() {
+					      	         $("#HiddenRowsNotice").html("<tr><td colspan='3'> <a href='#'><b>Click here to show the whole table</b> </a></td></tr>");
+					      	         $("#ShowHide").html("<tr><td colspan='3'><a href='#'><em>Show/Hide Elements</em></a></td></tr>");
+					      	        $("#HiddenRows").hide();
+	
+					      	        $('#ShowHide,#HiddenRowsNotice').click( function() {
+					      	            $('#HiddenRows').toggle();
+					      		        $('#HiddenRowsNotice').toggle();
+					      	        });
+					              });
+				          </script>				          
+				         <script>
+				         $(document).ready(function(){
+				             $('[data-toggle="popover"]').popover();   
+				         });
+				         </script>
