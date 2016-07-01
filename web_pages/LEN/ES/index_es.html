@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Donaustuaf castle</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" lang="en" content="ITN-DCH case study III">
+		<meta name="author" content="Diego Bellido Castañeda">
+		<meta name="robots" content="index, follow">
+
+		<!-- icons -->
+		<link  rel="shortcut icon"  href="../images/favicon.ico">
+
+		<!-- Bootstrap Core CSS file -->
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+		<!-- Override CSS file - add your own CSS rules -->
+		<link rel="stylesheet" href="../assets/css/styles.css">
+
+	<body>
+		<!-- GOOGLE MAPS !!!!!PASAR A CSS!!!!!!! -->
+		<style>
+     		#map2 {
+        		width: 1200px;
+        		height: 400px;
+      			}
+    	</style>
+	</head>
+
+		    <!--<header  id="header">-->
+
+		<!-- Navigation MENU-->
+	    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+			<div class="container-fluid">
+
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+						<a class="navbar-brand" href="index_es.html">Proyecto Donaustauf</a>
+				</div>
+				<!-- /.navbar-header -->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						 <li class="dropdown">
+						       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">El castillo <span class="caret"></span></a>
+						       <ul class="dropdown-menu">
+						       <li><a href="http://dbellido.github.io/Donaustauf_castle/Donaustauf/index.html">Villa de Donaustauf</a></li>
+						       <li role="separator" class="divider"></li>
+						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Castillos en Baviera</a></li>
+						       <!--	<li role="separator" class="divider"></li>
+						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don/">Mesh_2016</a></li>
+						       	<!--<li><a href="3D_viewer4.html">Options</a></li>-->
+						        
+						        </ul>
+						      </li>
+						
+						<li class="dropdown">
+								
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Metodología <span class="caret"></span></a>
+						       <ul class="dropdown-menu">
+						       <li><a href="http://dbellido.github.io/Donaustauf_castle/Donaustauf/index.html">Adquisición</a></li>
+						       <li role="separator" class="divider"></li>
+						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Procesamiento</a></li>
+						       	<li role="separator" class="divider"></li>
+						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don/">Visualización</a></li>
+						       	<li role="separator" class="divider"></li>
+						        
+						       	<!--<li><a href="3D_viewer4.html">Options</a></li>-->
+						        </ul>
+						      </li>
+						      <li><a href="data_acquisition.html">4D</a></li>
+						<!--<li><a href="data_acquisition.html">Data acquisition</a></li>
+						<li><a href="data_acquisition.html">Data processing</a></li>
+						<li><a href="data_acquisition.html">Data visualization</a></li>-->
+						
+						<li class="dropdown">
+						       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visor 3D <span class="caret"></span></a>
+						       <ul class="dropdown-menu">
+						       <li><a href="http://dbellido.github.io/Donaustauf_castle/Donaustauf/index.html">Nube de puntos</a></li>
+						       <li role="separator" class="divider"></li>
+						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Malla de 2015</a></li>
+						       	<li role="separator" class="divider"></li>
+						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don/">Malla de 2016</a></li>
+						       	<!--<li><a href="3D_viewer4.html">Options</a></li>-->
+						        
+						        </ul>
+						      </li>
+						
+
+					    
+					    <li><a href="data_acquisition.html">Blog</a></li>
+					    <li class="dropdown">
+						       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lenguage <span class="caret"></span></a>
+						       <ul class="dropdown-menu">
+						       <li><a href="../index.html">EN</a></li>
+						       <li role="separator" class="divider"></li>
+						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">ES</a></li>
+						       	<li role="separator" class="divider"></li>
+						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don/">DE</a></li>
+						       	<li role="separator" class="divider"></li>
+						       	<li><a href="http://dbellido.github.io/Donaustauf_viewer/don/">GZ</a></li>
+						       	<!--<li><a href="3D_viewer4.html">Options</a></li>-->
+						        </ul>
+						      </li>
+						      <!--<a href="https://www.facebook.com/itndch/?ref=aymt_homepage_panel" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=32 height=32  /></a>-->
+						    
+						      <form class="navbar-form navbar-left" role="search">
+        						<div class="form-group">
+          							<input type="text" class="form-control" placeholder="Search">
+        						</div>
+        						<button type="submit" class="btn btn-default">Buscar</button>
+     						 </form> -->   
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+		<!-- /.navbar -->
+
+		<!-- Page Content -->
+
+		<div class="container-fluid">
+			
+			<!--IMAGEN DINÁMICA-->
+			<div ALIGN="center"><IMG class="img-responsive" SRC="../assets/img/Tralala.jpg" ><br></br></div>
+
+			<!--FIRST SECTION THE PROJECT-->
+          
+				<div  class="row section clients topspace">
+        			<h2  class="section-title"><span>Proyecto Donaustauf</span></h2>
+		    	</div>
+
+      			<!--FIRST P WHAT IS ITN-DCH-->	
+      			<div class="row">		
+				<div class="col-sm-12">
+					<p> Proyecto Donaustauf se enmarca dentro del proyecto conocido como “Redes Iniciales de Formación para la Digitalización de Patrimonio Cultural: Poryectando el pasdo en el futuro", normalmente bajo el acrónimo en inglés de <a  href="http://www.itn-dch.org/">ITN-DCH project</a>. El proyecto a la red europea de formación conocido como "Marie-Curie" bajo la temática de la documentación, conservación y protección de patrimonio cultural, y que a su vez pertenece al marco europeo de investigación "FP7 PEOPLE". El proyecto comenzó el primero de Octubre de 2013 y está formado por un consorcio de 14 instituciones principales y 10 instutuciones asociados cubriendo un gran abánico de organizaciones, desde universidades, a centros de investigación, empresas, librerías, museos o archivos. El proyecto busca la formación de 20 investigadores, 16 jóvenes (en étapa predoctoral) y 4 sénior (en etapa postdoctoral) con el objetivo de crear una red sólida de investigadores en la conservaicón de patrimonio y al mismo tiempo, dotarlos de las competencias necesarias para consolidar sus capacidades en el mercado laboral una vez acabado el proyecto.
+
+						 </p>
+					<p><a  href="http://www.itn-dch.org/">ITN-DCH project</a> aims to analyze, design, research, develop and validate an innovative multi-disciplinary and inter-sectorial research training framework that covers the entire lifecycle of digital CH research for a cost–effective preservation, documentation, protection and presentation of cultural heritage. CH is an integral element of Europe and vital for the creation of a common European identity and one of the greatest assets for steering Europe’s social, economic development and job creation. However, the current research training activities in CH are fragmented and mostly design to be of a single-discipline, failing to cover the whole lifecycle of Digital Cultural Heritage (DCH) research, which is by nature a multi-disciplinary and inter-sectorial research agenda.</p></div>
+				</div>
+				
+				<div class="row">
+					
+					<div class="col-sm-8">
+						
+						<p>ITN-DCH targets all aspects of CH ranging from tangible (books, newspapers, images, drawings, manuscripts, uniforms, maps, artefacts, archaeological sites, monuments) to intangible content (e.g., music, performing arts, folklore, theatrical performances) and their inter-relationships. The project aims  to boost the added value of CH assets by re-using them in real application environments (protection of CH, education, tourism industry, advertising, fashion, films, music, publishing, video games and TV) through research on (i) new personalized, interactive, mixed and augmented reality enabled e-services, (ii) new recommendations in data acquisition, (iii) new forms of representations (3D/4D) of both tangible /intangible assets and (iv) interoperable metadata forms that allow easy data exchange and archiving.</p>
+						<p>In order to make visible the training, four different CH assets were selected as official studies. 
+						<dl>
+							<dt><it>ITN-DCH CASE STUDY I: <a  href="http://www.itn-dch.eu/index.php/case-studies/asinou/">Panagia Asinou Church (Nicosia, Cyprus)</a> </it></dt>
+							<dt>ITN-DCH CASE STUDY II: <a  href="http://www.itn-dch.eu/index.php/case-studies/carnuntum/">Carnuntum (Carnuntum, Austria)</a></dt>
+							<dt>ITN-DCH CASE STUDY III: <a  href="http://www.itn-dch.eu/index.php/case-studies/donaustauf/">Donaustauf Castle (Donaustauf, Germany)</a></dt>
+							<dt>ITN-DCH CASE STUDY IV: <a  href="http://www.itn-dch.eu/index.php/case-studies/ilmendorf/">Ilmendorf (Archäologische Staatssammlung München, Germany)</a></dt>
+						</dl>
+					</p> 
+					</div>
+					<div class="col-sm-4">
+					
+						<figure class="margin-b-2">
+							<img class="img-responsive" src="../images/DSC_0083.JPG" alt="">
+							<p  class="text-center">Figure 1: Surveying network in the castle</p>
+                  		</figure>
+					
+					</div>
+
+				</div>
+
+				<div class="row">
+									
+					<div class="col-sm-12">
+						<p>Within this context, the current website aims to introduce the different projects and activities regarding the castle. At the same time this space will be used as a communication and a visualization tool, where everybody interested can be able to access the obtained results as well as propose any suggesting to improve the knowedge about the monument.</p><br></br>
+				
+
+				<!--Segunda sección. The history-->
+				<div  class="row section clients topspace">
+          			<h2  class="section-title"><span>Historia</span></h2>
+      			</div>		
+
+				<div class="row">		
+				
+					<div class="col-sm-12">
+
+			<!-- /.row -->
+		
+					<p> East of Regensburg (southern Germany), the township of Donaustauf is situated. The small city is dominated by the ruins of the castle Donaustauf. The castle sits on a hilltop, approximately 100m above the Danube. It is the oldest castle mentioned in documents within the area of Regensburg. Between 914 and 930, several records can be found that mention a castle which is called Stauff (castellum quod dicitur Stuffo). It is assumed that the castle was erected by Bishop Tuto of Regensburg (893–930), as a defence against the Hungarian invasion. However, archaeological excavations revealed that at least the North-Eastern part of the hilltop was fortified about 500 B.C. already.</p>
+
+					</div>
+
+				</div>
+					
+				<div class="row">
+					
+					<div class="col-sm-5">
+					
+					<figure class="margin-b-2">
+							<a name="Figure2"></a>
+							<img class="img-responsive" src="../assets/img/Imagen.png" alt="">
+							<p  class="text-center">Figure 2: Gate F and Chapel</p>
+							
+                  	</figure>
+					
+					</div>
+					
+					<div class="col-sm-7">
+
+					<p>Since the 10th century, the castle has had an eventful history: Just between 1132 and 1161 it was seized four times. Finally, the Donaustauf castle was sieged and conquered by Swedish troops in 1634. They destroyed the castle over several days of artillery fire, and explosions. After that, repairs were done but since 1648 it has been abandoned and used as a quarry. A cemetery is located within the outer castle walls, which is still in use today.</p>
+					<p>Over the centuries, sector fortifications have been built to protect the castle. In other words, the hill on which the castle stands was fortified from top to bottom and this fortification was adapted to the different needs of the time. The oldest part dates back to the 11th century, the last strengthening was carried out in 1620.</p>
+					<p>To protect the central part of the castle, six gates were built (A-F). Only four of them are visible today. The most impressive gate is the most inner gate to the bailey castle (gate F). <a href="index.html#Figure2">(Figure 2)</a>. The entrance is covered by two groin vaults that are separated by a wide arch. In the first floor of the building even today the castle chapel is still visible.</p>	
+					</p>
+					
+					</div>
+					
+				</div>
+					
+			<!--FIRST SECTION ACQUISITION PLAN-->		
+					
+			<div  class="row section clients topspace">
+         		 <h2  class="section-title"><span>Planificación de la toma de datos</span></h2>
+      		</div>
+
+
+			<!-- /.row -->
+
+			
+										
+				<!--<div class="col-sm-12">
+
+					<p>History of the site</p>
+					<p> Based on the field experience by ArcTron3D, a code of practise for digitisation is presented.
+					The airborne technology will be used to create a model of the hilltop and the landscape. The landscape model will include the hilltop of the castle, the Danube, the town and part of the backcountry. The data-acquisition will be done using the ultra light paraglide trike and a Nikon D800E camera. To create a valid and useable result one will define a flight path before to ensure good coverage and overlapping of the pictures. There is already an existing 3D model. This dataset, which is available within ArcTron3D, can be used as a reference dataset by the fellows. Depending on the resolution and the size of the area the cameras and lenses to be used as well as the flight altitude and duration should be taken into consideration among other important factors.</P>-->
+
+					
+				<div class="row">
+								
+					<div class="col-sm-8">
+
+					<p> Based on the field experience by ArcTron3D, a code of practise for digitisation is presented.
+					The airborne technology will be used to create a model of the hilltop and the landscape. The landscape model will include the hilltop of the castle, the Danube, the town and part of the backcountry. The data-acquisition will be done using the ultra light paraglide trike and a Nikon D800E camera. To create a valid and useable result one will define a flight path before to ensure good coverage and overlapping of the pictures. There is already an existing 3D model. This dataset, which is available within ArcTron3D, can be used as a reference dataset by the fellows. Depending on the resolution and the size of the area the cameras and lenses to be used as well as the flight altitude and duration should be taken into consideration among other important factors.</P>
+				
+					<p>A ground plan using GPS sensors, laser scanner and total stations could also be useful to verify and update existing plans as well as to georeference the object for further detailed studies of the chapel and the gate.</p>
+					<p>Made of Romanesque fabric, Gate F is one of the most interesting parts of the castle. Therefore, a detailed and precise documentation of it should be done. Different methods of terrestrial laser scanning, terrestrial photogrammetry and even airborne photogrammetry can be applied.</p>
+					<p>On the preserved walls of the chapel there are traces of painting, dating back to the 12th century.  Since the walls of the chapel have recently been whitewashed it is not longer possible to see these tracings. However, there are drawings in books available to reconstruct the scenes on the wall. Given the available equipment in the consortium it will be interesting to see if one is able to discover the paintings underneath the whitewash. The paintings itself, as far as they have been documented yet, depicts for persons exchanging a book-shape like thing. Above there is a Latin inscription as well, referring to the Virgin Walpurga (known as Saint Walpurga 710-777/779). It might be interesting to try to figure out the whole story of the painting and the story that is depicted. Linking the paintings of the chapel wall with other content or even bringing the figures back to life will be a challenge for the task that concern the intangible CH part of the project.</p>	
+					<p>The chapel itself is of great historical value, being one of the few Romanesque chapels within the region since it still has some of the original plaster such as capitals, columns, arches, etc. Structured light scanning (SLS) methods in comparison to photogrammetry and infrared/hyperspectral imaging can be applied to document this part.</p>
+					<p>4D models of the gate would also be a possible task for the project fellows. 2D-Content such as the Merian sketch , can be brought into the project as well. Also there are some rough sketches by the American painter Joseph Mallord William Turner (1775-1851)  and other artists . So it should not be a problem to try to rebuild the gate over time based on research that has been done, the available sketches and the researched realised by the fellows. This will bring in the 4th dimension: “time”.</p>
+					
+					</div>
+
+					<div class="col-sm-4">
+					
+					<figure class="margin-b-2">
+							<img class="img-responsive" src="../assets/img/Acquisition_plan.png" alt="">
+							<p  class="text-center">Figure 3: Plan of the ruins of the main castle with additional marking the location of the gates A to F</P>
+						</figure>
+					
+					</div>
+					
+				</div>
+
+					<div  class="row section clients topspace">
+          <h2  class="section-title"><span>Localización</span></h2>
+      </div>
+
+      			
+			      
+
+      	            <div ALIGN="center" class="img-responsive" id="map2"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map2');
+        var mapOptions = new google.maps.Map(mapDiv, {
+          center: {lat: 49.031, lng: 12.20712},
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.SATELLITE,
+          
+      });
+
+		
+       		
+
+
+        
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+					
+					
+					</div>
+					</div>
+
+					<br></br>
+					
+
+
+
+					
+					<div  class="row section topspace">
+          <div  class="panel panel-cta">
+            <div  class="panel-body">
+              <div  class="col-lg-8">
+                <p>To know more about <b>the ITN-DCH project</b> click the right button. </p>
+              </div>
+              <div  class="col-lg-4 text-right"> <a  href="http://www.itn-dch.eu/"
+
+                   class="btn btn-primary btn-lg">ITN-DCH</a> </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- /section -->
+        
+<!--<div  id="head"   ><class="parallax" parallax-speed="2"
+        <h1  id="logo"  class="text-center"><img  class="img-circle"  src="images/imagen.png"
+
+             alt="">  <span  class="title">Donaustauf castle</span> <span
+
+      </div>-->
+
+      
+     
+<div  class="row section clients topspace">
+          <h2  class="section-title"><span>Instituciones</span></h2>
+          <div ALIGN="center"><IMG SRC="../images/Institutions.png" WIDTH="75%" HEIGHT="75%" BORDER="0">
+
+<br></br><br></br>
+</div>
+        </div>
+						
+
+      
+
+
+<div class="row">
+	</div>				
+
+        <!-- /section --> 
+
+        <!-- /container --> </main>
+   
+
+    <footer  id="footer">
+    	
+      <div  class="container">
+        <div  class="row">
+          <div  class="col-md-3 widget">
+            <h3  class="widget-title">Contact</h3>
+            <div  class="widget-body">
+              <p>+0179 31 98871<br>
+                <a  href="mailto:#">dbellido@arctron.de</a><br>
+                <a  href="mailto:#">becadiego@gmail.com</a><br></p></div>
+                
+                <!--<br>
+                Posthorngäßchen 6 Regensburg (Deutschland) PZ: 93047</p>-->
+            </div>
+
+
+        
+
+          
+          <div  class="col-md-3 widget">
+            <h3  class="widget-title">Follow us</h3>
+            <div  class="widget-body">
+              <p  class="follow-me-icons"> <a  href=""><i  class="fa fa-twitter fa-2"></i></a>
+              	<a href="https://www.facebook.com/itndch/?ref=aymt_homepage_panel" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=32 height=32  /></a>
+              	<a href="https://www.linkedin.com/in/diego-bellido-1ab24b29?trk=hp-identity-name" target="_blank"><img alt="Siguenos en Linkedin" src="https://lh5.googleusercontent.com/-8C0OdSp_7ZA/T3nN0G_313I/AAAAAAAAAsU/6_Hbu6Of3qU/s32/linkedin32.png" width=32 height=32  /></a>
+
+                <!--<a  href=""><i  class="fa fa-dribbble fa-2"></i></a> <a  href=""><i
+
+                     class="fa fa-github fa-2"></i></a> <a  href=""><i  class="fa fa-facebook fa-2"></i></a> 
+                     
+
+<a  href=""><i  class="fa fa-linkedin fa-2"></i></a>
+<a href="https://github.com/dbellido" target="_blank"><img alt="Siguenos en GitHub" src="C:\Donaustauf_web\donaustauf_web\web_pages\assets\img\GitHub.jpg" width=32 height=32  /></a>-->
+
+
+              </p>
+            </div>
+          </div>
+          <div  class="col-md-3 widget">
+            <h3  class="widget-title">Why a website?</h3>
+            <div  class="widget-body">
+              <p>This website aims to be a small space where the different researchers can show and share the work done in the ITN-DCH project</p>
+              <p>The goal is to introduce the different projects and activities regarding the castle. At the same time this will be a communication and a visualization tool, where everybody interested can be able to access the obtained results.</p>
+            </div>
+          </div>
+          <div  class="col-md-3 widget">
+            <h3  class="widget-title">Upcoming events</h3>
+            <div  class="widget-body">
+              <p>
+                <a  href="http://www.isprs.org/">ISPRS</a><br>
+                <a  href="http://arqueologica8.webs.upv.es/">Arqueológica</a><br>
+                <!--<a  href="http://www.civildron.com/">Civildrón</a><br>-->
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <!-- /row of widgets --> </div>
+    </footer>
+    <footer  id="underfooter">
+      <div  class="container">
+        <div  class="row">
+          <div  class="col-md-6 widget">
+            <div  class="widget-body">
+             <!-- <p>Posthorngäßchen 6 Regensburg (Deutschland) PZ: 93047 </p>-->
+            </div>
+          </div>
+          <div  class="col-md-6 widget">
+            <div  class="widget-body">
+              <!--<p  class="text-right"> Copyright © 2015, Diego Bellido Castañeda<br>
+                Design: <a  href="http://www.gettemplate.com"  rel="designer">This web is based on a design done 
+                  by GetTemplate</a> </p>-->
+            </div>
+          </div>
+        </div>
+        <!-- /row of widgets --> 
+    </div>
+
+    </footer>
+
+
+		<!-- /.container-fluid -->
+
+		<!-- JQuery scripts -->
+	    <script src="../assets/js/jquery-1.11.2.min.js"></script>
+
+		<!-- Bootstrap Core scripts -->
+		<script src="../assets/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
+
