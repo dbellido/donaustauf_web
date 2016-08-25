@@ -18,11 +18,15 @@
     <!-- Override CSS file - add your own CSS rules -->
     <link rel="stylesheet" href="../assets/css/styles.css">
 
+    <script src="../assets/js/jquery-1.12.2.min.js"></script>
+    <script src="https://use.fontawesome.com/1f3961ec04.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
   </head>
 
   <body>
 
-    <!--javascripts PoTree-->
+   <!-- javascripts PoTree
     <script src="../libs/jquery-2.1.4/jquery-2.1.4.min.js"></script>
     <script src="../libs/jquery-ui-1.11.4/jquery-ui.min.js"></script>
     <script src="../libs/three.js/build/three.js"></script>
@@ -32,7 +36,7 @@
     <script src="../libs/d3/d3.js"></script>
     <script src="../libs/proj4/proj4.js"></script>
     <script src="../libs/openlayers3/ol.js"></script>
-    <script src="../libs/potree/potree_v3.js"></script>
+    <script src="../libs/potree/potree_v3.js"></script>-->
 
       <!-- Navigation MENU-->
       <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
@@ -46,39 +50,39 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            
+        <a class="navbar-brand"  href="../index.html">Donaustauf project</a>    
         </div>
         <!-- /.navbar-header -->
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="../index.html">Donaustauf project</a> </li>
+            <!--<li><a href="../index.html">Donaustauf project</a> </li>-->
             <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">The castle <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Donaustauf castle</a></li>
+                      <li><a href="donaustauf_castle.html">Donaustauf castle</a></li>
                       <li role="separator" class="divider"></li>
-                      <li><a href="http://dbellido.github.io/Donaustauf_castle/Donaustauf/index.html">Donaustauf Village</a></li>
+                      <li><a href="donaustauf_village.html">Donaustauf Village</a></li>
                       <li role="separator" class="divider"></li>
-                      <li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Castles in Bayern</a></li>
-                      <li role="separator" class="divider"></li>
+                      <!--<li><a href="the_castle/castles_in_bayern.html">Castles in Bayern</a></li>
+                      <li role="separator" class="divider"></li>-->
                     </ul>
             </li>
             
             <li class="dropdown">             
-                <a href="#" class="navbar-brand" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Methodology <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Methodology <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="data_acquisition.html">Acquisition</a></li>
+                      <li><a href="..methodology/data_acquisition.html">Acquisition</a></li>
                       <li role="separator" class="divider"></li>
-                      <li><a href="data_processing.html">Processing</a></li>
+                      <li><a href="..methodology/data_processing.html">Processing</a></li>
                       <li role="separator" class="divider"></li>
-                      <li><a href="data_visualization.html">Visualization</a></li>
+                      <li><a href="..methodology/data_visualization.html">Visualization</a></li>
                       <li role="separator" class="divider"></li>                              
                     </ul>
             </li>
                   
-            <li><a href="data_acquisition.html">4D</a></li>
+            <li><a href="..4D/4D.html">4D</a></li>
                         
             <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">3D viewer <span class="caret"></span></a>
@@ -92,7 +96,7 @@
                     </ul>
             </li>       
             
-              <li><a href="data_acquisition.html">Blog</a></li>
+              <li><a href="..blog/blog.html">Blog</a></li>
 
               <li class="dropdown">
                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lenguage <span class="caret"></span></a>
@@ -128,171 +132,365 @@
     <div class="container-fluid">
 
       <!--IMAGEN DINÁMICA-->
-      <div ALIGN="center"><IMG class="img-responsive" SRC="../images/03_header/donaustauf_village.png" ></div>
+      <div ALIGN="center"><IMG class="img-responsive" SRC="../images/03_header/donaustauf_village.png" title="Point cloud generated by aerial photogrammetry in Maxstrasse, the main street in Donaustauf."><br></br></div>
+
+      <div class="row">   
+        <div class="col-sm-10">
+          <p> <a href="http://www.donaustauf.de/startseite.asp?NAVIID={ACA3F9C8-6975-4C56-96EE-0E670002A4F7}"> Donaustauf</a> is a small market town located in the southeast of Germany. Specifically, Donaustauf belongs to the region of <a href="https://en.wikipedia.org/wiki/Upper_Palatinate">Upper Palatinate</a> (Oberpfalz in German), in the state of <a href="https://de.wikipedia.org/wiki/Bavaria"> Bavaria</a> (Bayern). It is part of the Regensburg district ("Landkreis" in German) which main city is around 5 km to the west.</p>
+
+          <p>The territory is bathed in the south by the waters of the Danube River and at the same time is located at the foothills of the Bavarian forest. Two monuments preside over the city and dominate the landscape perched in two hills. The Donaustauf castle, which is the subject of this web, is visible in the middle of the village while the <a href="#Walhalla">Walhalla</a> is in the east of the urban centre. The <a href="#Walhalla">Walhalla</a> a Teutonic temple, built up as a reproduction of the Parthenon. This impressive monument as well as the privileged views offered from it attract the attention of thousands of tourists, especially during the summertime period.</p>
+
+            </div>
+
+            <div class="col-sm-2">
+            
+            <figure class="margin-b-2"> 
+              <a name="Figure1"></a>              
+              <img class="img-responsive" src="Wappen.png" alt="" Title="Coat of arms of Donaustauf. Split of blue and silver; bottomed with a golden “Dreiberg” from which a vine grows with four grapes and two sheets. The Blazon was donated by the Bavarian Duke Albrecht IV in 1494. The colors blue and silver are derived from the coat of arms of the Wittelsbach family. The wine represents the wine of Donaustauf."></a>     
+              <p  class="text-center">Figure 1: Coat of arms</p>
+                      </figure>                   
+          
+          </div>
+
+        </div>
+
+        <div  class="row section clients topspace">
+              <h2  class="section-title"><span>History</span></h2>
+        </div>
+
+        <div class="row">  
+
+           <div class="col-sm-12">
+
+          <p>The history of the village would hardly be conceivable without understanding the significant role that Donaustauf castle played in the growth of the region until its destruction in the 17<sup>th</sup> century. The other important point that should be taken into account is the Danube River, which baths Donaustauf. The river, Donau in German, names the town.<!--, which means literally “on the Donau”.--> Geographically, it separates two different regions, the south region, which was inhabited and developed at the time of the conquest of the Bavarians, while the northern area was only made habitable by deforestation. Furthermore, it was the north border of the Roman Empire and it has had important commercial routes since ancient time. An import Roman military camp (<a href"https://de.wikipedia.org/wiki/Castra_Regina">Castra Regina</a>) was settled up in Regensburg and the salt trade was an important activity in the area through the centuries.</p>
+
+        </div>
+
+            <div class="col-sm-5">
+            
+            <figure class="margin-b-2"> 
+              <a name="Figure1"></a>              
+              <img class="img-responsive" src="Donaustauf_Merian_1644.jpg" alt="" Title="General view of Donaustauf painted by Merian at the beginning of the 17th century"></a>     
+              <p  class="text-center">Figure 2: General view of Donaustauf painted by Merian at the beginning of the 17<sup>th</sup> century</p>
+                      </figure>                   
+          
+            </div> 
+          
+          <div class="col-sm-7">
+
+          <!--<p>The history of the village would hardly be conceivable withouht the history of castle. The earliest findings that denote a permanent population dated from thyear 500 before Christ on the hill where the ruins of the castle are still until today. It was proved during the excavations performed in 1981/82, when the foundations of a fortress (pressumibly inhabited by Celts) were brought to light.</p>-->
+
+          <p>Concerning the area of Donaustauf, the oldest findings of a population can be found in Sulzbach, it can be considered as a different area through the history due to its incorporation to Donaustauf administrative center has occurred in recent times. Furthermore, the oldest administrative centre was probably located in Sulzbach.</p>
+
+          <p>Focused on the surrounding area of the current urban center, the earliest findings that denote a permanent population dated from the year 500 before Christ on and they have been located in the hill where the ruins of the castle are still until today. Therefore, it was proved during the excavations performed in 1981/82, when the foundations of a fortress (presumably inhabited by the Celts) were brought to light.</p>
+
+          <p>The construction of the castle took place probably between 914 and 930. This initial castle aimed to protect the nearby town of Regensburg from the Hungarian invasions and was commissioned by Bishop Tuto. <a href="https://en.wikipedia.org/wiki/Bishops_of_Regensburg">Tuto</a> was the ninth bishop of Regensburg as well as head of St. Emmeram's Abbey. The territory of Donaustauf was given as a donation of the King Conrad I to <a href="https://en.wikipedia.org/wiki/St._Emmeram%27s_Abbey">St. Emmeram Abbey </a>. After the separation of the Abbey and the bishopric, the territory went in 1031 to the diocese.</p>
+
+          </div>
+
+           <div class="col-sm-12">
+
+          
+
+          <p>Until the 13<sup>th</sup> century Donaustauf could be kept in the possession of the Regensburger bishops, although straggles between diocese, King and Dukes were frequents. The first known rule about Donaustauf is dated in 1285. <a href="https://en.wikipedia.org/wiki/Rudolf_I_of_Germany">Rudolf von Habsburg </a> confirmed county rights for Donaustauf. In the 14<sup>th</sup> and 15<sup>th</sup> century the change of owner's continued, Emperor Charles IV, Deke Otto V and Duke Stephen were some of the owner's among others. In 1486, Donaustauf and together with Regensburg, went into the hands of the Duke of Bavaria, Albrecht IV. The market rights were bestowed to Donautauf ten years later. In 1592 a lightning struck in the castle tower and the entire system has been greatly affected.</p>
+
+        </div>
+
+            <div class="col-sm-5">
+            
+            <figure class="margin-b-2"> 
+              <a name="Figure1"></a>              
+              <img class="img-responsive" src="1845.png" alt="" usemap="#1845">
+<map name="1845">
+
+<area alt="" shape="poly" coords="350,50,400,40,460,40,470,140,350,110" Title="Walhalla" href="#Walhalla">
+<area alt="" shape="circle" coords="355,150,20" Title="Chinese tower" href="#Chinese_tower">
+<area alt="" shape="circle" coords="160,92,40" Title="Parochial church of St. Michael" href="#st_michael">
+<area alt="Si clías aquí irás a la página de inicio del tutorial de php" shape="rect" coords="00,00,80,60" Title="Donaustauf castle" href="donaustauf_castle.html">
+<area alt="" shape="poly" coords="220,130,215,105,340,100,340,135,260,150,220,140" Title="Thurn and Taxis palace" href="#Thurn_and_Taxis">
+</map>
+                 
+              <p class="text-center">Figure 3: Painting of Donaustauf in 1845 including Walhalla, the castle, the Thurn and Taxis palace and the Chinese tower</p>
+                      </figure>                   
+          
+            </div>
+
+
+
+
+            <div class="col-sm-7">
+
+          <p>The Swedish invasion is one of the phases of the "30 Years' War". This phase ravaged central-Europe from 1630 to 1635. Swedish-protestant army invaded Bavaria, crushed Bavarian troops and occupied the region forcing to pay taxes. In opposition, different revolts erupted in opposition to the taxation. In 1633, the Swedish troops invaded Regensburg. In this context, the Bavarian troops stationed in the castle intercepted a convoy of 60 truckloads salt supplies for the occupied area. In retaliation, Swedish troops led by <a href="https://en.wikipedia.org/wiki/Bernard_of_Saxe-Weimar">Bernard of Saxe-Weimar</a>, captured the castle and destroyed it mostly. Although the plant of the castle was poorly repaired, the castle has been in ruins since then. </p>
+
+          <p>In 1710 Donaustauf returned to the Bishopric of Regensburg. In 1803 was incorporated into the new created Archbishopric of Regensburg, also known such as Principality of Regensburg. In 1810 came to Bavaria, according to the Treaty of Paris. The complete Donaustauf is acquired by the Princes of <a href="https://en.wikipedia.org/wiki/Thurn_und_Taxis">Thurn and Taxis</a> in 1812, who owns the title of Duke of Wörth an der Donau since 1899th. An important palace was built for the <a href="https://en.wikipedia.org/wiki/Thurn_und_Taxis">Thurn and Taxis</a> family in 1843, but it fell in 1880 to a huge fire together with the 60% of the buildings in the village. <a href="https://en.wikipedia.org/wiki/Ludwig_I_of_Bavaria">Louis I of Bavaria </a>(Ludwig I) who was an admirer of ancient Greece, patronized arts and different neoclassical building. Among them, the <a href="#Walhalla">Walhalla</a> was built up in 1842 is still today an important tourist attraction.</p>
+
+
+            </div>
+
+        <div class="row">  
+
+           <div class="col-sm-12">
+
+            <p>Currently Donaustauf has about 4000 inhabitants, including the municipalities of Altenthann, Bach a.d. Donau and Sulzbach, which was incoporated in 1978. Different important buildings as well as Walhalla are; a sanatorium built up in 1908 still in use known as "Klinik Donaustauf", <a href="#st_salvator">St salvator</a> church dated in 1388, the late baroque temple consecrated in 1730 to <a href="#st_michael">St Michael</a> and a <a href="#Chinese_tower">Chinese Tower</a> which was built in 1842 in order to coincide with the <a href="#Walhalla">Walhalla</a> opening.<a name="st_michael"></a></p><br></br>
+            
+        </div>
+
+      </div>
+
+
 			
-<div class="row section clients topspace">
+      <!--<div  class="row section clients topspace">
+              <h2 class="section-title"><span>Location and geography</span></h2>
+        <a name="st_michael"></a></div>-->
+
+      <div  class="row section clients topspace">
+              <h2 class="section-title"><span>Monuments</span></h2>
+
+              
+        </div>
+
+         
+
+         <div class="row section clients topspace"><h3 class="col-sm-12"><span>Parochial church of St. Michael</span></h3></div>
+         <div class="row">  
+
+<div class="col-sm-12">
+
+        <p>The St Michael parish church is located on the southern slope of the castle hill, specifically in Albertus-Magnus-Weg 5, and as all the town its history is linked to the history of the castle. Since 1245 Donaustauf was an independent parish. Therefore a medieval parish church was located in the space where the actual St Michael church is today. In the 14<sup>th</sup> century Donaustauf was chosen as one of the four deanships and thus one of the most important parishes of the bishopric. The initial construction was destroyed after the sieges of the castle in 1388 and rebuilt again 1397.</p>
 
 
-				<div  class="row section clients topspace"><br></br>
 
+</div>
 
-          <h2  class="section-title"><span>Surveying</span></h2>
-      </div>
-			</div>
+<div class="col-sm-7">
 
-			<div class="row section clients topspace">
-				<div  class="row section clients topspace">
-          <h2  class="section-title"><span>Aerial photogrammetry</span></h2>
-      </div>
-			</div>
+<p>The records of the 16<sup>th</sup> century brought to light clearer recordings of the parish and even to the political history of Donaustauf. One important figure in the deanships was <a href="https://en.wikipedia.org/wiki/Bishops_of_Regensburg">Otto Heinrich Bachmair</a>, who was additionally auxiliary bishop of Regensburg from 1622 to 1634.</p>
 
-			<div class="row section clients topspace">
-				<div  class="row section clients topspace">
-          <h2  class="section-title"><span>Terrestrial photogrammetry</span></h2>
-      </div>
-			</div>
+<p>Together with the castle, the church was ravaged by war and disaster and the rectory burned down. During the Thirty Years War the parish was burned. According to the different recordings, the church had different predecessors. Before the current building, the church was dedicated to St. Florian and it was ruined by a fire in 1724.</p>
 
-			<div class="row section clients topspace">
-				<div  class="row section clients topspace">
-          <h2  class="section-title"><span>Terrestrial Laser Scanner</span></h2>
-      </div>
-			</div>
+<p>Commissioned by the Pastor Georg Friedrich Weinzierl, the current late baroque complex was built up. It was consecrated in 1703 to the patron St. Michael. The octagonal tower visible today corresponds in his foundation of an older arrangement. The cemetery walls located next to the current structure are probably from the 18<sup>th</sup> century. In 1860 the church had already five altars and four bells. A pulpit and three new altars were commissioned by Pastor Wallner (1913-1931). These were designed by Schmalz architect from Munich and implemented by Loibl sculptor from Stadtamhof (Regensburg).</p>
 
-			<div class="row section clients topspace">
-				<div  class="row section clients topspace">
-          <h2  class="section-title"><span>HDR</span></h2>
-      </div>
-			</div>
+<p>Additionally, the church has four bells available which from a 4 voice Salve Regina. The three smaller date back to 1945 and they were made by Charles Hamm in Regensburg, while the great bell was poured in Regensburg by Georg Hofweber.<a href="http://www.glockenklaenge.de/glocken/Donaustauf.mp3"><span class="glyphicon glyphicon-bell"></span></p></a>
 
-			<div class="row section clients topspace">
-				<div  class="row section clients topspace">
-          <h2  class="section-title"><span>Thermal Images</span></h2>
-      </div>
-			</div>
+<p><audio src="/test/audio.ogg">
+Tu navegador no implementa el elemento audio.
+</audio></p>
 
-      <div class="row section clients topspace">
-        
-          <h2  class="section-title"><span>Campaign 2016</span></h2>
+<p>[<a href="http://www.pfarrei-donaustauf.de/index.php/kirchen-kapellen/st-michael-pfarrkirche">c0</a>],[<a href="https://de.wikipedia.org/wiki/St._Michael_(Donaustauf)">c1</a>],[<a href="http://www.glockenklaenge.de/orte/r/donaustauf.html">c2</a>]</p>
 
       </div>
+      <a name="st_salvator"></a>
 
-      <div class="col-sm-12">
-      <div class="row">
+      <div class="col-sm-5">
+            
+            <figure class="margin-b-2"> 
+              <a name="Figure1"></a>              
+              <img class="img-responsive" src="St_michael_kirche.jpg" alt="" Title="Aerial view of St Michael and its location in relation to the castle and the village"></a>     
+              <p  class="text-center">Figure 4: Aerial view of St Michael and its location in relation to the castle and the village</p>
+                      </figure>                   
+          
+            </div> 
+            
+    </div>
 
-        <script type="text/javascript">
-                        $(document).ready(function() {
-                           $("#HiddenRowsNotice").html("<tr><td colspan='3'> <a href='#'><b>Click here to show the whole table</b> </a></td></tr>");
-                           $("#ShowHide").html("<tr><td colspan='3'><a href='#'><em>Show/Hide Elements</em></a></td></tr>");
-                          $("#HiddenRows").hide();
-  
-                          $('#ShowHide,#HiddenRowsNotice').click( function() {
-                              $('#HiddenRows').toggle();
-                            $('#HiddenRowsNotice').toggle();
-                          });
-                        });
-                  </script>                 
-                 <script>
-                 $(document).ready(function(){
-                     $('[data-toggle="popover"]').popover();   
-                 });
-                 </script>
+    <div class="row section clients topspace"><h3 class="col-sm-12"><span>Pilgrimage Church of St. Salvator</span></h3></div>
+         <div class="row"> 
 
-        <p><h3>Aerial photogrammetry</h3></p>
+          <div class="col-sm-12">
 
-        <table class="table table-hover" style="position: relative; clear: both;" >
-<tbody id="ShowHide" style="color: black;"></tbody>
-     <tr>
-       <td><b>Register</b></td>
-       <td><b>Descriptor</b></td>
-       <td><b>Value</b></td> 
-       </tr>
-    </tr>
-    <tr>
-      <td>Acquisition Activity Register</td>
-      <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Define the link between the acquisition activity and the overall acquisition plan">Part Of Acquisition</a></td>
-      <td><a href="../index.html">Donaustauf castle and its landscape</a></td>
-    </tr>
-    <tr>
-        <td>Acquisition Activity Register</td>
-        <td><a href="#" <a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The descriptor indicates the method used in this particular acquisition activity">Acquisition Method</a></td>
-        <td>Aerial photogrammetry</td>
-    </tr>
+         <p>The church is located in <a href="https://de.wikipedia.org/wiki/Sulzbach_an_der_Donau">Sulzbach an der Donau</a> (currently integrated in Donaustauf). It holds an important value due it conserves interesting, valuable objects from different eras as well as because of its pilgrimage history. The pilgrimage is based in a robbery took place in 1388 during one of the sieges of the Donaustauf castle. Three soldiers robbed the communion of the church of Sulzbach and they hide them in the forest. Once the communion wafers were found, many pilgrims started to pray in the location where the communion wafers were hidden and it made the building of a church necessary.</p></div>
 
-   <tbody id="HiddenRowsNotice"></tbody>
-   <tbody id="HiddenRows">
-   <tr>
-      <td>Acquisition Activity Register</td>
-      <td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the individuals who carried out the particular acquisition activity are listed">Actor Operators</a></td>
-      <td>Diego Bellido Castañeda</td> 
-   </tr>
-   <tr>
-      <td>Acquisition Activity Register</td>
-      <td><a href="#" <a href="#"  data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the individuals who carried out the particular acquisition activity are listed">Actor Operators</a></td>
-      <td>Martin Schaich</td> 
-   </tr>
-   <tr>
-   <td>Acquisition Activity Register</td>
-   <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the starting date of the specific acquisition project is entered">Starting Time</a></td>
-     <td>04/04/2016 08:42</td> 
-   </tr>
-   <tr>
-   <td>Acquisition Activity Register</td>
-        <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the ending date of the specific acquisition project is entered">Ending Time</a></td>
-     <td>04/04/2016 09:30</td> 
-   <tr>
-    <td>Equipment Setup Parameters Register</td>
-     <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Here the name of the camera body actually used">Camera Body</a></td>
-     <td>Nikon D800</td> 
-   </tr>
-   <tr>
-     <td>Equipment Setup Parameters Register</td>
-      <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Name of the lens">Lens</a></td>
-     <td>28mm</td> 
-   </tr>
-   <tr>
-     <td>Equipment Setup Parameters Register</td>
-      <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Platform from which the pictures were taken and its stability">Platform</a></td>
-      <td>XCitor</td>
-   </tr>
-    <td>Equipment Setup Parameters Register</td>
-    <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="The amount of light to which the sensor is exposed (f-stops), regulates the brightness of the image">Aperture</a></td>
-     <td>F/4.5</td> 
-   </tr>
-   </tr>
-      <td>Equipment Setup Parameters Register</td>
-     <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Automatic/Fully Manual/Aperture priority/Shutter speed priority">Shutter Mode</a></td>
-     <td>1/800s</td> 
-   </tr>
-   <tr>
-   <td>Equipment Setup Parameters Register</td>
-    <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Light sensibility value selected if manual or automatic">
-     ISO</a></td>
-     <td>320</td> 
-   </tr>
-   <tr>
-     <td>Equipment Setup Parameters Register</td>
-     <td><a href="#" data-toggle="popover" data-trigger"hover" data-placement="top" data-content="Automatic or manual focus">Focus</a></td>
-     <td>Auto</td> 
-   </tr>
-   
-   <tr>
-    <td>Equipment Setup Parameters Register</td>
-    <td><a href="#" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Distance from the principal point of the camera to the image plane. If it is blocked at minimum or maximum, otherwise leave as unknown">Focal Lenght</a></td>
-     <td>28mm</td> 
-   </tr>
-  </table>
-</tbody>
+<div class="col-sm-7">
 
+<p>St. Salvator church is formed by a hall building with a choir, eastern vestry and west tower with tent roof and portico. The initial structure was built around 1430 in the Gothic style. In 1607 the choir and long house were added. The stair arrangement is post medieval. In the 18<sup>th</sup> century it was renovated in order to adopt a baroque style. With the construction of the Walhalla, the Bavarian king <a href="https://en.wikipedia.org/wiki/Ludwig_I_of_Bavaria">Ludwigs I</a> order the transformation of the church in the same neoclassical architectural style. Within an inside renovation performed around 1980, mural paints of an Italian aThe pilgrimage occurred mainly in the 14<sup>th</sup> and 15<sup>th</sup> century. According to different references the phenomenon experienced a big growth, and even the church was not enough to accommodate all the visitors. Therefore a tent was placed in front of the church in order to hold part of the service.rtist were discovered. They are probably dated around 15<sup>th</sup> century.</p>
+
+<p>The pilgrimage occurred mainly in the 14<sup>th</sup> and 15<sup>th</sup> century. According to different references the phenomenon experienced a big growth, and even the church was not enough to accommodate all the visitors. Therefore a tent was placed in front of the church in order to hold part of the service.</p>
+
+<p>The complete event is described extensively by Aventin (1534) and the Munich court librarian <a href="https://en.wikipedia.org/wiki/Andreas_Felix_von_Oefele">Felix Andreas Öfele</a> (1780). Furthermore, eight valuable wood board paintings (1,4×2,00m) from an unknown artist described very clearly the events with additional captions. They are nowadays located in St. Salvator and they are especially interesting for the study of the clothes.</p>
+
+
+ 
+
+</div>
+
+<div class="col-sm-5">
+
+  <figure class="margin-b-2"> 
+              <a name="Figure5"></a>              
+              <img class="img-responsive" src="St_salvator.jpg" alt="" Title="Oil painting of the Church of St. Salvator and Walhalla. Painted by Leo von Klenze in 1839."></a>     
+              <p  class="text-center">Figure 5: St. Salvator and Walhalla (Oil painting)</p>
+                      </figure>  
+
+ </p>
+  </div>
+
+<div class="col-sm-12">
+
+<p>The church suffered (as in the rest of the region) ravage during the Thirty Years War. In 1633 the church minister reported that the church was broken open repeatedly by the Swedish troops. In 1635 reparations were made in windows and doors. The damages caused by the Swedish troops were also reported in 1642 when they stole 253 florins from it. Nevertheless, the pilgrimage didn´t stop as it is expressed in the different contributions made to other churches. From the 17<sup>th</sup> century is the statue of Saint Salvator, which after the last renovation, stands in the middle of the church, just in the place where the communion wafers were hidden. The bells of Saint Salvator also come from this time. They were poured 1643 in Straubing and they are still today hand operated.</p> 
+
+<p>Structural changes were experienced by the building in the 18<sup>th</sup> century in order to be adapted to the baroque style. At that time 13 ceiling paintings were created by <a href="https://de.wikipedia.org/wiki/Otto_Gebhard">Otto Gebhard</a> (pupil of the brothers <a href="https://en.wikipedia.org/wiki/Asam_brothers">Asam</a>) following the theme of the Eucharist. Additionally, a baroque or rococo elegant altar has been added. It was sculpted by Anton Neu from Prüfening. The altarpiece shows Christ with his disciples in Emmaus while the legend by a pelican. The rococo organ as well as the pulpit dated also from the first part of the 18<sup>th</sup> century. </p>
+
+<p>The flow of pilgrims was decreased. At the beginning of the 19<sup>th</sup> century the Walhalla was built. Under the idea of a harmonious view in the Danube formed by the Donaustauf castle the St. Salvator church and the Walhalla, the exterior appearance was strongly transformed. The goal was to lead back the church to its original Bizantine aspect by removing the different baroque elements. Tower, roof and windows were transformed to accomplish this goal. The restoration was according the new neo-Romanesque style, common in Germany in the beginning of the 19<sup>th</sup> century which was inspired in the 11th-12th Romanesque architecture. <a href="https://en.wikipedia.org/wiki/Leo_von_Klenze">Leo von Klenze</a>, same architect than in the Walhalla, was the responsible of the renovation.<a name="Walhalla"></a></p>
+
+<p>In the restoration done in 1970-1980, original paintings were discovered under a 5 cm thick cleaning layer which could be got in bigger range in the west part of the church. These are outstanding works of an Italian artist, painted in 1400, a rare example of its kind of art in Bavaria. The paintings show scenes from the New Testament. The well-preserved fresco right of the main entrance of the church shows the flagellation of Christ.</p>
+
+<p>[<a href="http://www.pfarrei-donaustauf.de/index.php/kirchen-kapellen/st-salvator-wallfahrtskirche">c4</a>],[<a href="https://de.wikipedia.org/wiki/St._Salvator_(Donaustauf)">c5<a/>],[<a href="http://www.mittelbayerische.de/kultur-nachrichten/jeder-stein-wurde-auf-die-ewigkeit-ausgerichtet-21853-art364287.html">c6</a>]</p>
 </div>
 </div>
 
 
+<div class="row section clients topspace"><h3 class="col-sm-12"><span>Walhalla</span></h3></div>
+         <div class="row"> 
+
+          <div class="col-sm-12">
+
+          <p>The Walhalla is a neoclassical temple, building in the same style as Parthenon and built up in the 19<sup>th</sup> century. It aims to be ne used as a hall of fame that honors distinguished and relevant names in German history</p>
+
+          <p>To understand the context when it was built, the view should come back to the beginning of the 19<sup>th</sup> century. In that time, specifically in 1806, <a href="https://en.wikipedia.org/wiki/Napoleon">Napoleon</a> had annexed German lands along the Rhine River and the North Sea to the <a href="https://en.wikipedia.org/wiki/First_French_Empire">First French Empire</a>. Furthermore, central German forces formed the <a href="https://en.wikipedia.org/wiki/Confederation_of_the_Rhine">Rhine’s confederation</a> in the side of Napoleon. At the same time <a href="https://en.wikipedia.org/wiki/Francis_II,_Holy_Roman_Emperor">Francis II</a>, dissolves the Holy Roman Empire after the defeat against Napoleon forces in the <a href="https://en.wikipedia.org/wiki/Battle_of_Austerlitz">battle of Austerlitz</a> and he instead crowned himself as Emperor of Austria. Francis II continued his leading role as an opponent of Napoleonic France in the Napoleonic Wars, and suffered several more defeats after Austerlitz.</p>
+
+
+</div>
+
+<div class="col-sm-7">
+
+
+
+<p>During 1806-1807 German forces were split in opposition or in favour of Napoleon during the <a href="https://en.wikipedia.org/wiki/War_of_the_Fourth_Coalition">War of the Fourth Coalition</a>, which terminated with the triumph of Napoleon. During this time, Bavaria behaved as a satellite state of Napoleon and in gratefulness he elevated from Electorate to Kingdom and consequently <a href="https://en.wikipedia.org/wiki/Maximilian_I_Joseph_of_Bavaria">Maximilian</a> I was crowned as the first Bavarian king. In 1813, after the <a href="https://en.wikipedia.org/wiki/Battle_of_Leipzig">battle of Leipzig</a>, the Bavarian Kingdom left the Confederation of the Rhine and joined the <a href="https://en.wikipedia.org/wiki/War_of_the_Sixth_Coalition">Sixth Coalition</a> in the war against Napoleon keeping its sovereignty as kingdom. Finally, in 1815 the <a href="https://en.wikipedia.org/wiki/German_Confederation">German Confederation</a> was formed by the association of 39 states in central Europe. The heir to the throne, <a href="https://en.wikipedia.org/wiki/Ludwig_I_of_Bavaria">Crown Prince Ludwig</a> was an enthusiastic about the common German history. As proof of this, his passionate declaration of war against Napoleon written together with <a href="https://en.wikipedia.org/wiki/Karl_Philipp_von_Wrede">Marshal von Wrede</a> in 1814.</p>
+
+<p>In 1807, Prince Ludwig started with the idea of bringing together the common German heritage and history. In order to pursue this idea, he commissioned different sculptors to create busts of relevant names in German history. The first of them, was a bust of <a href="https://en.wikipedia.org/wiki/Nicolaus_Copernicus">Copernicus</a> created by <a href="https://en.wikipedia.org/wiki/Johann_Gottfried_Schadow">Johann Gottfried Schadow</a>. Having into account the names proposed by the Swiss historian <a href="https://en.wikipedia.org/wiki/Johannes_von_M%C3%BCller">Johannes von Müller</a>, 60 busts were completed when the Prince was crowned as King Ludwig I of Bavaria in 1825. In lodge to establish and preserve the busts, the King decides to establish a memorial commissioned and he commissioned this task to <a href="https://en.wikipedia.org/wiki/Leo_von_Klenze">Leo von Klenze</a>, one of the most important neoclassical architects in the 19<sup>th</sup> century.</p>
+</div>
+
+ <div class="col-sm-5">
+            
+            <figure class="margin-b-2"> 
+              <a name="Figure_6_Walhalla_aer"></a>              
+              <img class="img-responsive" src="Walhalla_aer.jpg" alt="" Title="Figure 6: Aerial view of the Walhalla"></a>     
+              <p  class="text-center">Figure 6: Aerial view of the Walhalla</p>
+                      </figure>                   
+          
+            </div> 
+
+ <div class="col-sm-12">           
+
+<p>The first stone of the monument was placed in 1830 in a position high above the Danube in the east of Donaustauf and 10 km away of the city of Regensburg. The monument was finished in 1842 and named as Walhalla that means paradise in Norse mythology. Inspired by the Parthenon, Leo von Klenze designed a building in the form of a temple surrounded by a portico. The combination of the colonnaded temple, the massive substructure required to support the complex and an original interior preserves the monument to be a copy of the Greek monument. Both pediment friezes show relevant events in German history, while the southern features the creation of the German Confederation in 1815, the northern is ornamented with scenes from the Battle of the <a href="https://en.wikipedia.org/wiki/Sophie_Scholl">Teutoburg Forest</a>in 9 after ChristD.</p>
+
+</div>
+
+<div class="col-sm-7">
+
+<p>At the inauguration of the monument, 96 busts and 64 plaques for those which a portrait was not available. The German Tongue was the selection criterion for the chosen of the bust, however a wider range is included. That’s why before 1871, with the formation of a German state, German refers to Germanic, including Gothic, Langobardic, Anglo-Saxon, Austrian, Dutch and Swiss. Therefore personalities from countries far away from the current Germany has a bust there. Whereas the Valhalla of Norse mythology served as home to those gloriously slain in battle, Ludwig intended his Walhalla not only for warriors, but also for scientists, writers, and clerics, and specifically included both men and women. National Socialist organizations, such as “Kraft durch Freude” promotes Walhalla as a cultural visit. In 1937, Hitler unveiled a bust of the Austrian compositor <a href="https://en.wikipedia.org/wiki/Anton_Bruckner">Bruckner</a> and the number of visitors went to 131 520. Walhalla was also an important point in the Second World War, when the allies forces. In 1945 the 14th reaches the north bank of the Danube and began an assault the positions in Donaustauf and Walhalla commanded by the known general George Smith Patton, Jr. Currently the government of the Free State of Bavaria (Freistaat Bayern) is who decided the new additions, with the condition that the personality had died unless 20 years before. Only 31 busts have been added since its opening. Since 1962 new busts have been added to the original 96 at intervals of five to seven years. The selection is made by the Bavarian Council of Ministers, advised by the Bavarian Academy of Sciences. The last busts have been dedicated to <a href="https://en.wikipedia.org/wiki/Sophie_Scholl">Sophie Scholl</a> (2003), a Munich student who was executed in 1943 for her non-violent resistance to the system, <a href="https://en.wikipedia.org/wiki/Edith_Stein">Edith Stein</a> (2009), nun and philosophe died in a concentration camp, and <a href="https://en.wikipedia.org/wiki/Heinrich_Heine">Heinrich Heine</a> who was a German romantic poet whose works were set to music by Strauss, Wagner and Brahms.</p>
+
+</p>
+</div>
+
+  <div class="col-sm-5">
+            
+            <figure class="margin-b-2"> 
+              <a name="Figure_7_Walhalla_terr"></a>              
+              <img class="img-responsive" src="Walhalla_terr.jpg" alt="" Title="Figure 7: Walhalla"></a>     
+              <p  class="text-center">Figure 7: Walhalla</p>
+                      </figure>                   
+          
+            </div> 
+
+<a name="Chinese_tower"></a>
+
+ <div class="col-sm-12">
+
+</p>The breathtaking monument still catches the attention of the visitors because of its architecture as well as the amazing sights of the landscape. The visitor can get the Walhalla easily from Donaustauf <a href="https://www.google.de/maps/dir/Maxstra%C3%9Fe+28,+93093+Donaustauf/Walhalla,+Walhallastra%C3%9Fe,+Donaustauf/@49.0299802,12.2073196,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x479fc28e1b4ebbb5:0xdf32d29933b6c66!2m2!1d12.2080046!2d49.0287782!1m5!1m1!1s0x479fc2981e4ed439:0x30f7b453e0138bb4!2m2!1d12.2241442!2d49.0314524!3e2"><span><i class="zmdi zmdi-walk" Title="Walking (15')"></i></span></a>, or from Regensburg by <a href="https://www.google.de/maps/dir/Regensburg+Hbf/Walhalla,+Walhallastra%C3%9Fe,+Donaustauf/@49.0117065,12.0926692,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x479fc10a3255f6b7:0xba927665de215483!2m2!1d12.0996694!2d49.0122321!1m5!1m1!1s0x479fc2981e4ed439:0x30f7b453e0138bb4!2m2!1d12.2241442!2d49.0314524"><span><i class="fa fa-car" aria-hidden="true" Title="Car (15')" ></i></span></a>, <a href="https://www.google.de/maps/dir/Regensburg+Hbf/Walhalla,+Walhallastra%C3%9Fe,+Donaustauf/@49.0182355,12.1268792,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x479fc10a3255f6b7:0xba927665de215483!2m2!1d12.0996694!2d49.0122321!1m5!1m1!1s0x479fc2981e4ed439:0x30f7b453e0138bb4!2m2!1d12.2241442!2d49.0314524!3e1"><span><i class="fa fa-bicycle" aria-hidden="true" Title="Bike (40')"></i></span></a>, <a href="https://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiExMXenNrOAhViEJoKHVOyA3sQFggaMAA&url=http%3A%2F%2Fwww.rvv.de%2Fnsw-2015-linie-5&usg=AFQjCNGdpWEVNTd1smwy3CakvvL33l36tQ&sig2=nc_gK-rYMbat-rrg5xSd5A"><span><i class="fa fa-bus" aria-hidden="true" Title="Bus (20')"></i></span></a> (Line 5) or <a href="http://schifffahrtklinger.de/de/portfolio/walhalla-schifffahrt/" ><span><i class="fa fa-ship" aria-hidden="true" Title="Ship (2h)"></i></span></a>, within a 2 hours trip.</p>
+
+<p>[<a href="http://www.schloesser.bayern.de/deutsch/schloss/objekte/walhalla.htm">c7</a>],[<a href="https://en.wikipedia.org/wiki/Walhalla">c8</a>],[<a href="http://www.landkreis-regensburg.de/Freizeit-Tourismus/Sehenswert/WalhallabeiDonaustauf.aspx">c9</a>]</p>
+
+        </div>
+      </div>
+
+      <div class="row section clients topspace"><h3 class="col-sm-12"><span>Chinese Tower</span></h3></div>
+         <div class="row"> 
+
+           <div class="col-sm-12">
+
+
+      <p>The original wooden structure of the Chinese tower dates back to 1842, when <a href="https://en.wikipedia.org/wiki/Maximilian_Karl,_6th_Prince_of_Thurn_and_Taxis">Prince Maximilian Karl von Thurn und Taxis</a> built up the tower in the summer residence of his family located in Donaustauf. Its construction was made to coincide with the inauguration of the Walhalla. However, it replaced a similar tower, which had been established by his father Maximilian Karl's father <a href="https://de.wikipedia.org/wiki/Karl_Alexander_von_Thurn_und_Taxis">Karl Alexander von Thurn und Taxis</a>. This old construction was located in the garden in the tie of china fashion as a reproduction of a structure of an imperial Chinese house.</p>
+
+           </div>
+
+          <div class="col-sm-7">
+
+
+<p>The building of the tower follows the Chinese style in the second half of the 18th century, where replicas of the Chinese art and garden architecture are reproduced in small constructions in German, English and French parks. Another example of a wooden Chinese tower can be found in the <a href="http://www.munichbeergardens.com/Chinesischer_Turm">English Garden in Munich</a>, even so, it is a replica due to the original was destroyed during the Second World War. It gives a unique value to the Donaustauf tower due to it is the only preserved wooden 19<sup>th</sup> century “Chinese” structure in Germany. </p>
+
+<p>The Chinese Tower is a Pagoda. These constructions are part of Buddhist temples in Chine. Despite of their meticulous aesthetics, they have a practical function being used to live, rest or cultural activities such as meditation, calligraphy as well as music and theatre events. The pagodas are ornamented with detail symbols with the goal to bring to the visitor good luck, health, wealth and longevity. This symbology is preserved in Donaustauf. Further information about it can be found in: <a href="http://www.chinesischerturm-donaustauf.de/symbole/frame.htm"><span><i class="fa fa-hand-pointer-o" aria-hidden="true"></i></p></span></a>
+
+<p><a name="Thurn_and_Taxis"></a>A great fire which ravaged the town of Donaustauf and destroyed the summer palace in 1880. However, the fire didn’t affect the tower. In 1899 the family acquired the Prüfening palace in Regensburg and it was established as their new summer residence. Then the tower was dismantled and rebuilt again in 1902 in the gardens of the new summer residence. The tower was used for the family as a music and a tea pavilion until the Second World War.</p>
+
+</div>
+
+
+
+<div class="col-sm-5">
+
+<figure class="margin-b-2"> 
+              <a name="Figure_8_Chinese_tower"></a>              
+              <img class="img-responsive" src="chinesischer_turm.jpg" alt="" Title="Figure 8: Chinese tower"></a>     
+              <p  class="text-center">Figure 8: Chinese tower</p>
+                      </figure>       
+
+  </div>
+
+<div class="col-sm-12">
+
+  <p>In 1998 an association for the Chinese Tower was created. In 1999 the tower was dismantled, restored and moved to its location in Donaustauf according the Chinese tradition. Currently the Chinese tower is used for different events such as music, social celebrations or events of the association.</p>
+
+<p>[<a href="http://www.chinesischerturm-donaustauf.de/index.html">c10</a>],[<a href="http://www.landkreis-regensburg.de/Freizeit-Tourismus/Sehenswert/ChinesischerTurm.aspx">c11</a>]</p>
+
+</div>
+      </div>
 
 
 
 
 
-    
+ <div class="row section clients topspace"><h3 class="col-sm-12"><span>Thurn und Taxis</span></h3></div>
+         <div class="row"> 
+
+          
+
+          <div class="col-sm-12">
+<p>thurn und taxis family. There was a time when all the forest was wild, untamed and mysterious, home and breeding ground of magical creatures. The 'Princely Thiergarten to Regensburg "is still a very lively forest, where numerous plants and animals home and breeding ground.</p>
+</div>
+
+
+          <div class="col-sm-7">
+
+
+
+<p> It was created in 1813 as a hunting forest of the Princes of Thurn and Taxis. Testify Forst homes and hunting lodges and the park-like landscape with forests and meadows. Even today, you can go here on hunting and hired on a daily stately hunting. But the "animal garden" was always a Forstwald and served the timber production. Today it covers an area of ​​2,800 hectares with lush flora and numerous flora and fauna.
+
+The forest dwellers as part the lynx, the largest wild cat species in Europe. The water runs in continuous circulation, rivers, streams, ponds and lakes provide the forest soil with nutrients - an ideal habitat for beavers and otters. The Beavers are among the largest and heaviest rodent in Europe and shape the landscape of the "animal garden" diligently. The otters are rarely spotted. The black stork searches in the streams for frogs. Also newts, yellow-bellied toads and toads love this wetland. The toads females can to thirteen centimeters tall and eat everything that moves and is smaller than it. The game species, such as wild boar or deer, feeds mostly on chestnuts, acorns and beechnuts.
+
+Forest and grassland provide a broad spectrum and plants attract numerous species of animals. The feeding and a fence keep the animals together. The "Thiergarten" is completely fenced. The wild boar and the wood form the capital of the forest. Wild boars are omnivorous. You dig even after mice nests and eat carrion. The females agree on contact lute and pull together their young, show them the best feeding grounds, shelter and warm them. Some years ago, lynx from the Bavarian Forest or the Šumava immigrated. Since then, the females need to take better care of their piglets.</p>
+
+
+</div>
+
+<div class="col-sm-5">
+
+<figure class="margin-b-2"> 
+              <a name="Figure_9_thurn_und_taxis"></a>              
+              <img class="img-responsive" src="thurn_und_taxis.jpg" alt="" Title="Figure 9: Thurn und Taxis palace"></a>     
+              <p  class="text-center">Figure 9: Thurn und Taxis palace</p>
+                      </figure>       
+
+  </div>
+</div>
+
+       <!-- <div  class="row section clients topspace">
+              <h2  class="section-title"><span>Aerial images</span></h2>
+        </div>-->
+
+
+			
+      
 
 
 			<div  class="row section topspace">
@@ -341,7 +539,7 @@
           <div  class="thumbnails recentworks row">
             <div  class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> <a  class="thumbnail"
 
-                 href="http://www.itn-dch.eu/index.php/case-studies/donaustauf/"> <span  class="img"> <img  src="images/Imagen2.jpg"
+                 href="http://www.itn-dch.eu/index.php/case-studies/donaustauf/"> <span  class="img"> <img  src="../images/Imagen2.jpg"
 
                      alt=""> <span  class="cover"><span  class="more">See
                       details →</span></span> </span> <span  class="title">Donaustauf</span> </a> <!--<span  class="details"><a
@@ -352,7 +550,7 @@
             </div>
             <div  class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> <a  class="thumbnail"
 
-                 href="http://www.itn-dch.eu/index.php/case-studies/ilmendorf/"> <span  class="img"> <img  src="images/ilmendorf.jpg"
+                 href="http://www.itn-dch.eu/index.php/case-studies/ilmendorf/"> <span  class="img"> <img  src="../images/ilmendorf.jpg"
 
                      alt=""> <span  class="cover"><span  class="more">See
                       details →</span></span> </span> <span  class="title">Ilmendorf</span> </a> <!--<span  class="details"><a
@@ -363,7 +561,7 @@
             </div>
             <div  class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> <a  class="thumbnail"
 
-                 href="http://case-study1.itn-dch.net/"> <span  class="img"> <img  src="images/assinou.jpg"
+                 href="http://case-study1.itn-dch.net/"> <span  class="img"> <img  src="../images/assinou.jpg"
 
                      alt=""> <span  class="cover"><span  class="more">See
                       details →</span></span> </span> <span  class="title">Assinou</span> </a> <!--<span  class="details"><a
@@ -374,7 +572,7 @@
             </div>
             <div  class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> <a  class="thumbnail"
 
-                 href="http://www.carnuntum.at/en"> <span  class="img"> <img  src="images/carnuntum.jpg"
+                 href="http://www.carnuntum.at/en"> <span  class="img"> <img  src="../images/carnuntum.jpg"
 
                      alt=""> <span  class="cover"><span  class="more" >See
                       details →</span></span> </span> <span  class="title">Carnuntum</span> </a> <!--<span  class="details"><a
@@ -385,7 +583,7 @@
             </div>
             <div  class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> <a  class="thumbnail"
 
-                 href="sidebar-right.html"> <span  class="img"> <img  src="images/torre.png"
+                 href="http://3dom.fbk.eu/repository/buonconsiglio_castle/web_pages/index.html"> <span  class="img"> <img  src="../images/torre.png"
 
                      alt=""> <span  class="cover"><span  class="more">See
                       details →</span></span> </span> <span  class="title">Bueonconsiglio Castle</span> </a> <span  class="details"><a
@@ -398,7 +596,7 @@
             </div>
             <div  class="col-xs-12 col-sm-6 col-md-4 col-lg-4"> <a  class="thumbnail"
 
-                 href="sidebar-right.html"> <span  class="img"> <img  src="images/DSC_0160.JPG"
+                 href="http://www.itn-dch.eu/"> <span  class="img"> <img  src="../images/DSC_0160.JPG"
 
                      alt=""> <span  class="cover"><span  class="more">See
                       details →</span></span> </span> <span  class="title">Meetings and training events</span> </a> <span  class="details"><a
@@ -431,7 +629,7 @@
 
         <div  class="row section clients topspace">
           <h2  class="section-title"><span>Institutions</span></h2>
-          <div ALIGN="center"><IMG SRC="images/Institutions.png" WIDTH="75%" HEIGHT="75%" BORDER="0">
+          <div ALIGN="center"><IMG SRC="../images/Institutions.png" WIDTH="75%" HEIGHT="75%" BORDER="0">
 
 <br></br><br></br>
 </div>
@@ -471,9 +669,12 @@
           <div  class="col-md-3 widget">
             <h3  class="widget-title">Follow us</h3>
             <div  class="widget-body">
-              <p  class="follow-me-icons"> <a  href=""><i  class="fa fa-twitter fa-2"></i></a>
-                <a href="https://www.facebook.com/itndch/?ref=aymt_homepage_panel" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=32 height=32  /></a>
-                <a href="https://www.linkedin.com/in/diego-bellido-1ab24b29?trk=hp-identity-name" target="_blank"><img alt="Siguenos en Linkedin" src="https://lh5.googleusercontent.com/-8C0OdSp_7ZA/T3nN0G_313I/AAAAAAAAAsU/6_Hbu6Of3qU/s32/linkedin32.png" width=32 height=32  /></a>
+
+                      <div>
+                        <p>
+                        <a href="https://www.facebook.com/itndch/?ref=aymt_homepage_panel" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=32 height=32  /></a>
+                        <a href="https://www.linkedin.com/in/diego-bellido-1ab24b29?trk=hp-identity-name" target="_blank"><img alt="Siguenos en Linkedin" src="https://lh5.googleusercontent.com/-8C0OdSp_7ZA/T3nN0G_313I/AAAAAAAAAsU/6_Hbu6Of3qU/s32/linkedin32.png" width=32 height=32  /></a>
+                        </p></div>    
 
                 <!--<a  href=""><i  class="fa fa-dribbble fa-2"></i></a> <a  href=""><i
 
@@ -484,7 +685,7 @@
 <a href="https://github.com/dbellido" target="_blank"><img alt="Siguenos en GitHub" src="C:\Donaustauf_web\donaustauf_web\web_pages\assets\img\GitHub.jpg" width=32 height=32  /></a>-->
 
 
-              </p>
+              
             </div>
           </div>
           <div  class="col-md-3 widget">
