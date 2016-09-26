@@ -338,7 +338,7 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
           <script src="../ALS_don_wall/libs/potree/laslaz.js"></script>
    
 
-          <div class="potree_container" style="align:center; position: absolute; width: 100%; height: 100%; bottom: 50px;left: 10px; top: 10px; border: 10px solid #333;">
+          <div class="potree_container" style="align:center; width: 100%; height: 100%; bottom: 50px;left: 10px; top: 10px; border: 10px solid #333;">
            <div id="potree_render_area">
 
 
@@ -405,6 +405,26 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
               plane_opacity=0.3;
               //Specify POIs' opacity
               poi_opacity=0.8;
+
+              plane_Jan = new THREE.Mesh(new THREE.PlaneGeometry(2.2, 3.2),new THREE.MeshBasicMaterial({color: plane_colour, transparent: true, opacity: plane_opacity}));
+              plane_Jan.position.x = 3.6;
+              plane_Jan.position.y = 4.6;
+              plane_Jan.position.z = -1.6 ;
+                plane_Jan.rotation.x = (Math.PI / 60);
+                plane_Jan.rotation.y = (-Math.PI / 2);
+                plane_Jan.visible=false;
+                plane_Jan.userData.name="Jan"
+                var materialImg_Jan = THREE.ImageUtils.loadTexture('images/gennaio.png');
+              var img_Jan= new THREE.MeshBasicMaterial({ map: materialImg_Jan, transparent:true });
+                poi_Jan = new THREE.Mesh(new THREE.PlaneGeometry(1.3, 2),img_Jan);
+              poi_Jan .overdraw = true;
+              poi_Jan.position.x = 3.3;
+              poi_Jan.position.y = 3.8;
+              poi_Jan.position.z = -1.5 ;
+              poi_Jan.visible=false
+              poi_Jan.userData.name="Jan"
+              poi_Jan.material.opacity=poi_opacity;
+              // ----February----
 
     geom = new THREE.BoxGeometry( 100000000, 100000000, 100000000 )
     mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0})
