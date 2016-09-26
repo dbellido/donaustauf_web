@@ -411,14 +411,21 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
     cube = new THREE.Mesh(geom, mat );
     cube.position.x = 52;
     cube.position.y = 32;
-    cube.position.z = 80
+    cube.position.z = 80;
+
+     geom = new THREE.BoxGeometry( 100000000, 100000000, 100000000 )
+    mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0})
+    cube = new THREE.Mesh(geom, mat );
+    cube.position.x = 999999;
+    cube.position.y = 999999;
+    cube.position.z = 999999;
 
     geom = new THREE.BoxGeometry( 100000 , 100000, 100000)
     mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0.5})
     cube2 = new THREE.Mesh(geom, mat);
-    cube2.position.x = 0
-    cube2.position.y = 0
-    cube2.position.z = 0
+    cube2.position.x = 0;
+    cube2.position.y = 0;
+    cube2.position.z = 0;
     //cube2.rotation.x = (-Math.PI / 2);
       cube2.rotation.y = (0.31);
 
