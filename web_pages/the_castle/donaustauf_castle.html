@@ -398,8 +398,13 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
     viewer.loadGUI();
 
 
-    hotspots = new THREE.Object3D();
-    planes=new THREE.Object3D();
+    planes = new THREE.Object3D();    // create empty container to put the frescoes' planes
+              hotspots = new THREE.Object3D(); // create empty container to put the POIs
+              // Specify the colour and opacity properties of the planes (to ensure homogeneity)
+              plane_colour= 0xFFE4C4;// white:0xFFFFFF; cream:0xFFE4C4; mint:0x98FB98; gold:0xDAA520; lightpink:0xDDA0DD;
+              plane_opacity=0.3;
+              //Specify POIs' opacity
+              poi_opacity=0.8;
 
     geom = new THREE.BoxGeometry( 100000000, 100000000, 100000000 )
     mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0})
