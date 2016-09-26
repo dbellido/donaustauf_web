@@ -393,7 +393,7 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
     
     viewer.loadGUI();
 
-    
+
     hotspots = new THREE.Object3D();
     planes=new THREE.Object3D();
 
@@ -404,12 +404,12 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
     cube.position.y = 32;
     cube.position.z = 80
 
-    geom = new THREE.BoxGeometry( 5, 18, 12)
+    geom = new THREE.BoxGeometry( 100000 , 100000, 100000)
     mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0.5})
     cube2 = new THREE.Mesh(geom, mat);
-    cube2.position.x = -38
-    cube2.position.y = 10
-    cube2.position.z = -90
+    cube2.position.x = 0
+    cube2.position.y = 0
+    cube2.position.z = 0
     //cube2.rotation.x = (-Math.PI / 2);
       cube2.rotation.y = (0.31);
 
