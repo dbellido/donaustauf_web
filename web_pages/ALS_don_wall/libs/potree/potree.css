@@ -127,10 +127,10 @@
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-a:hover, a:visited, a:link, a:active{
+/*a:hover, a:visited, a:link, a:active{
 	color: #ccccff;
 	text-decoration: none;
-}
+}*/
 
 canvas { 
 	width: 100%; 
