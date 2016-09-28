@@ -162,7 +162,7 @@
         <div class="col-sm-12">
 
 
-<p>Archaeology excavations performed since 1960 in the area near the cemetery have brought to light evidences that confirm the use of the hill as a Mountain Manor and evidences of activity in the <a href="https://en.wikipedia.org/wiki/Hallstatt_culture">Late Hallstatt</a> and Early La Téne periods. New excavations in 1981-1982 discovered new evidences such as a huge wall more than 6 meters wide. The wall was built with large stone blocks in the exterior part while the interior was formed by loosely stones. Furthermore, in front of this construction, massive earth movements in the North Slope of the castle were performed. Therefore, this a possible indicator for the presence of a well-organized community. Additionally, these presupposes are supplemented by extensive archaeological material, including high quality ceramics, or an iron fibula with enamel and coral deposits. These findings have been dated around 500 before Christ.</div>
+<p>Archaeology excavations performed since 1960 in the area near the cemetery have brought to light evidences that confirm the use of the hill as a Mountain Manor and evidences of activity in the <a href="https://en.wikipedia.org/wiki/Hallstatt_culture">Late Hallstatt</a> and <a href="https://en.wikipedia.org/wiki/La_T%C3%A8ne_culture">Early La Téne</a> periods. New excavations in 1981-1982 discovered new evidences such as a huge wall more than 6 meters wide. The wall was built with large stone blocks in the exterior part while the interior was formed by loosely stones. Furthermore, in front of this construction, massive earth movements in the North Slope of the castle were performed. Therefore, this a possible indicator for the presence of a well-organized community. Additionally, these presupposes are supplemented by extensive archaeological material, including high quality ceramics, or an iron fibula with enamel and coral deposits. These findings have been dated around 500 before Christ.</div>
 
 <div class="col-sm-4">
             
@@ -410,7 +410,7 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
     cube = new THREE.Mesh(geom, mat );
     cube.position.x = 52;
     cube.position.y = 32;
-    cube.position.z = 80 
+    cube.position.z = 80; 
     
     //// cube of the loggia
     geom = new THREE.BoxGeometry( 14, 30, 30 )  //initial ( 2, 14, 38 )
@@ -436,6 +436,15 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
     cube2.position.x = -38
     cube2.position.y = 10
     cube2.position.z = -90
+    //cube2.rotation.x = (-Math.PI / 2);
+      cube2.rotation.y = (0.31);
+
+       geom = new THREE.BoxGeometry( 5, 18, 12)
+    mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0.5})
+    cube5 = new THREE.Mesh(geom, mat);
+    cube5.position.x = -0
+    cube5.position.y = 40
+    cube5.position.z = -90
     //cube2.rotation.x = (-Math.PI / 2);
       cube2.rotation.y = (0.31);
 
