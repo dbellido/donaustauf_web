@@ -336,6 +336,8 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
           <script src="../ALS_don_wall/libs/openlayers3/ol.js"></script> 
 
           <script src="../ALS_don_wall/libs/potree/potree.js"></script>
+          <script src="../ALS_don_wall/libs/raycast.js"></script>
+
 
           <script src="../ALS_don_wall/libs/plasio/js/laslaz.js"></script>
           <script src="../ALS_don_wall/libs/plasio/vendor/bluebird.js"></script>
@@ -406,12 +408,12 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
     planes=new THREE.Object3D();
 
    //// cube of St salvator
-    geom = new THREE.BoxGeometry( 40, 30, 36 )
+    geom = new THREE.BoxGeometry( 40, 50, 24 )
     mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.2})
     cube = new THREE.Mesh(geom, mat );
     cube.position.x = 200;
     cube.position.y = 50;
-    cube.position.z = -270; 
+    cube.position.z = -276; 
     cube.rotation.y = (-0.1);
     
     //// cube of castle
@@ -425,11 +427,11 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
 
     //// cube of the Walhalla
 
-    geom = new THREE.BoxGeometry( 85, 60, 147 )  //initial ( 2, 14, 38 )
-    mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.2})
+    geom = new THREE.BoxGeometry( 85, 60, 157 )  //initial ( 2, 14, 38 )
+    mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.1})
     cube4 = new THREE.Mesh(geom, mat );
     cube4.position.x = 750;
-    cube4.position.y = 100;
+    cube4.position.y = 90;
     cube4.position.z = -320; 
     cube4.rotation.y = (-0.05);
 
