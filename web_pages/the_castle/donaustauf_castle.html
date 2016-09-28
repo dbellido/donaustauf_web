@@ -412,10 +412,10 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
     cube.position.x = 200;
     cube.position.y = 60;
     cube.position.z = -270; 
-    cube4.rotation.y = (0.1);
+    cube.rotation.y = (0.1);
     
-    /*//// cube of castle
-    geom = new THREE.BoxGeometry( 80, 60, 150)  //initial ( 2, 14, 38 )
+    //// cube of castle
+    geom = new THREE.BoxGeometry( 80, 60, 150 )  //initial ( 2, 14, 38 )
     mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.3})
     cube3 = new THREE.Mesh(geom, mat );
     cube3.position.x = -500;
@@ -425,7 +425,7 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
 
     //// cube of the Walhalla
 
-     geom = new THREE.BoxGeometry( 85, 60, 135 )  //initial ( 2, 14, 38 )
+    geom = new THREE.BoxGeometry( 85, 60, 135 )  //initial ( 2, 14, 38 )
     mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.5})
     cube4 = new THREE.Mesh(geom, mat );
     cube4.position.x = 740;
@@ -457,8 +457,8 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
 viewer.scenePointCloud.add(hotspots);
     hotspots.add(cube);
     //hotspots.add(cube2);
-    //hotspots.add(cube3);
-    //hotspots.add(cube4);
+    hotspots.add(cube3);
+    hotspots.add(cube4);
     
 //document.addEventListener('mouseover', onMouseOver, false);
     document.addEventListener('mousedown', onDocumentMouseDown, false);
