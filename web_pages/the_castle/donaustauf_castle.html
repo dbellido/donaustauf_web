@@ -146,7 +146,9 @@
 
            <div class="col-sm-12">
 
-            <p><a href="">Donaustauf</a> is a market town in <a href="">Bavaria</a>, 10 km east of <a href="">Regensburg</a>. The history of both locations are closely linked, and significant historical events have succeeded through time, since the legacy of Radasbona Celtic settlement and the Roman camp of <a href="https://de.wikipedia.org/wiki/Castra_Regina">Castra Regina</a> to the important role of Regensburg in the <a href="https://en.wikipedia.org/wiki/Holy_Roman_Empire">Holy Roman Empire</a> or the <a href="">Thirty Year's War</a>. Still today, relevant monuments from different periods allow the visitors to understand the historic importance of the area. Furthermore the medieval Regensburg, declared as a UNESCO World Heritage Site, or the <a href="">Walhalla</a> monument in Donaustauf draws thousands of tourists’ attention. <br></br></p>
+            <p><a href="http://www.donaustauf.de/startseite.asp?NAVIID={ACA3F9C8-6975-4C56-96EE-0E670002A4F7}">Donaustauf</a> is a market town in <a href="">Bavaria</a>, 10 km east of <a href="https://www.regensburg.de/">Regensburg</a>. The history of both locations are closely linked, and significant historical events have succeeded through time, since the legacy of Radasbona Celtic settlement and the Roman camp of <a href="https://de.wikipedia.org/wiki/Castra_Regina">Castra Regina</a> to the important role of Regensburg in the <a href="https://en.wikipedia.org/wiki/Holy_Roman_Empire">Holy Roman Empire</a> or the <a href="">Thirty Year's War</a>. Still today, relevant monuments from different periods allow the visitors to understand the historic importance of the area. Furthermore the medieval Regensburg, declared as a UNESCO World Heritage Site, or the <a href="donaustauf_village.html#Walhalla">Walhalla</a> monument in Donaustauf draws thousands of tourists’ attention. </p>
+
+            <p>In this environment, the ruins of a castle are located on the top of a 100m height hill, in the center of Donaustauf. From the top, the visitor can easily understand the strategic situation of the fortification, with the domination of the Danube and its fertile plains in the south and the commencement of the <a href="https://www.bayerischer-wald.de/">Bavarian forest</a> at the northeast. The castle stands on a 230 m &times; 150 m plateau and is protected with drastic height differences. Due to such topographic conditions as well as their privilege position for the Danube waterway domination, the hill has been predestined for a grand settlement since ancient times.<br></br></p>
 
           </div>
 
@@ -399,110 +401,46 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
     viewer.loadGUI();
 
 
-    planes = new THREE.Object3D();    // create empty container to put the frescoes' planes
-              hotspots = new THREE.Object3D(); // create empty container to put the POIs
-              // Specify the colour and opacity properties of the planes (to ensure homogeneity)
-              plane_colour= 0xFFE4C4;// white:0xFFFFFF; cream:0xFFE4C4; mint:0x98FB98; gold:0xDAA520; lightpink:0xDDA0DD;
-              plane_opacity=0.3;
-              //Specify POIs' opacity
-              poi_opacity=0.8;
+    hotspots = new THREE.Object3D();
+    planes=new THREE.Object3D();
 
-              plane_Jan = new THREE.Mesh(new THREE.PlaneGeometry(2.2, 3.2),new THREE.MeshBasicMaterial({color: plane_colour, transparent: true, opacity: plane_opacity}));
-              plane_Jan.position.x = 3.6;
-              plane_Jan.position.y = 4.6;
-              plane_Jan.position.z = -1.6 ;
-                plane_Jan.rotation.x = (Math.PI / 60);
-                plane_Jan.rotation.y = (-Math.PI / 2);
-                plane_Jan.visible=false;
-                plane_Jan.userData.name="Jan"
-                var materialImg_Jan = THREE.ImageUtils.loadTexture('images/gennaio.png');
-              var img_Jan= new THREE.MeshBasicMaterial({ map: materialImg_Jan, transparent:true });
-                poi_Jan = new THREE.Mesh(new THREE.PlaneGeometry(1.3, 2),img_Jan);
-              poi_Jan .overdraw = true;
-              poi_Jan.position.x = 3.3;
-              poi_Jan.position.y = 3.8;
-              poi_Jan.position.z = -1.5 ;
-              poi_Jan.visible=false
-              poi_Jan.userData.name="Jan"
-              poi_Jan.material.opacity=poi_opacity;
-              // ----February----
-
-    geom = new THREE.BoxGeometry( 100000000, 100000000, 100000000 )
+    //// cube of the torre aquila
+    geom = new THREE.BoxGeometry( 10000000, 10000000, 10000000 )
     mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0})
     cube = new THREE.Mesh(geom, mat );
     cube.position.x = 52;
     cube.position.y = 32;
-    cube.position.z = 80;
-
-     geom = new THREE.BoxGeometry( 100000000, 100000000, 100000000 )
-    mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0})
-    cube = new THREE.Mesh(geom, mat );
-    cube.position.x = 999999;
-    cube.position.y = 999999;
-    cube.position.z = 999999;
-
-    geom = new THREE.BoxGeometry( 100000 , 100000, 100000)
+    cube.position.z = 80 
+    
+    //// cube of the loggia
+    geom = new THREE.BoxGeometry( 14, 30, 30 )  //initial ( 2, 14, 38 )
+    mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0.5})
+    cube3 = new THREE.Mesh(geom, mat );
+    cube3.position.x = 33;
+    cube3.position.y = 26;
+    cube3.position.z = -39; 
+    cube3.rotation.y = (0.4);
+    
+    //???????
+    geom = new THREE.BoxGeometry( 5, 18, 12)
     mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0.5})
     cube2 = new THREE.Mesh(geom, mat);
-    cube2.position.x = 0;
-    cube2.position.y = 0;
-    cube2.position.z = 0;
+    cube2.position.x = -38
+    cube2.position.y = 10
+    cube2.position.z = -90
     //cube2.rotation.x = (-Math.PI / 2);
       cube2.rotation.y = (0.31);
 
-
-    plane1 = new THREE.Mesh(new THREE.PlaneGeometry(2281, 614),img1);
-    plane1.overdraw = true;
-    plane1.rotation.x = (-Math.PI / 2);
-      plane1.rotation.z = (-1.15);
-      plane1.position.x = 25;
-      plane1.position.y = 3;
-      plane1.position.z = -48;
-      plane1.scale.x = 0.116;
-      plane1.scale.y = 0.160;
-      plane1.scale.z= 0.14;
-
-    plane2 = new THREE.Mesh(new THREE.PlaneGeometry(2281, 614),img2);
-    plane2.overdraw = true;
-    plane2.rotation.x = (-Math.PI / 2);
-      plane2.rotation.z = (-1.15);
-      plane2.position.x = 25;
-      plane2.position.y = 15;
-      plane2.position.z = -48;
-      plane2.scale.x = 0.116;
-      plane2.scale.y = 0.160;
-      plane2.scale.z= 0.14;
-
-    plane_hs = new THREE.Mesh(new THREE.PlaneGeometry(961, 870),img_hs);
-    plane_hs.overdraw = true;
-    plane_hs.position.x = 52;
-    plane_hs.position.y = 80;
-    plane_hs.position.z = 80;
-    plane_hs.scale.x = 0.05;
-    plane_hs.scale.y = 0.05;
-    plane_hs.scale.z = 0.05;
-
-
-    viewer.scenePointCloud.add(hotspots);
+viewer.scenePointCloud.add(hotspots);
     hotspots.add(cube);
     //hotspots.add(cube2);
-    //hotspots.add(cube3);
+    hotspots.add(cube3);
 
-
-    viewer.scenePointCloud.add(planes);
-    planes.add(plane1);
-    planes.add(plane2);
-    planes.add(plane_hs);
-
-    plane1.visible=false
-    plane2.visible=false
-    plane_hs.visible=false
-
-    plane_hs.lookAt(viewer.camera.position);
-    //addCheckRaster(plane1,plane2)
-    //document.addEventListener('mouseover', onMouseOver, false);
+//document.addEventListener('mouseover', onMouseOver, false);
     document.addEventListener('mousedown', onDocumentMouseDown, false);
     document.addEventListener('mousemove', onMouseMove, false);
+    //console.log(txt);
+
     
   </script>
 
