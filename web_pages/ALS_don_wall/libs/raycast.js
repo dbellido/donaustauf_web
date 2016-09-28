@@ -30,7 +30,7 @@ function onDocumentMouseDown( event )
 	if ( intersects.length > 0 )
 	{
 		//console.log("Hit right @ " + toString( intersects[0].point ) )
-		window.open("../torre_web.html")
+		window.open("C:/Donaustauf_web/donaustauf_web/web_pages/the_castle/donaustauf_village.html")
 		// change the color of the closest face.
 		//intersects[0].object.callback();
 		intersects[ 0 ].face.color.setRGB( 0.8 * Math.random() + 0.2, 0, 0 );
@@ -51,8 +51,8 @@ function onDocumentMouseDown( event )
 		window.open("‪C:/Donaustauf_web/donaustauf_web/web_pages/the_castle/donaustauf_village.html")
 		// change the color of the closest face.
 		//intersects[0].object.callback();
-		intersects_3[ 0 ].face.color.setRGB( 0.8 * Math.random() + 0.2, 0, 0 );
-		intersects_3[ 0 ].object.geometry.colorsNeedUpdate = true;
+		intersects_4[ 0 ].face.color.setRGB( 0.8 * Math.random() + 0.2, 0, 0 );
+		intersects_4[ 0 ].object.geometry.colorsNeedUpdate = true;
 		winW = ""+(screen.width / 2) -200 ;
 		winH = ""+(screen.height / 2) -200 ;
 
