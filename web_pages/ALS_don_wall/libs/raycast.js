@@ -146,15 +146,16 @@ function onMouseMove( event ) {
 		intersects_3[ 0 ].object.material.color.setRGB(1,0.3,1);
 		intersects_3[ 0 ].object.material.opacity=[0.3];
 		intersects_3[ 0 ].object.geometry.colorsNeedUpdate = true;
-		plane_hs2.visible=true
+		plane_hs3.visible=true
 	}
 	else {
-		cube4.material.color.setRGB( 1,0,1);
-		cube4.geometry.colorsNeedUpdate = true;
-		cube4.material.opacity=[0];
-		plane_hs2.visible=false
+		cube3.material.color.setRGB( 1,0,1);
+		cube3.geometry.colorsNeedUpdate = true;
+		cube3.material.opacity=[0];
+		plane_hs3.visible=false
 	}
 	plane_hs.lookAt(viewer.camera.position);
 	plane_hs2.lookAt(viewer.camera.position);
+	plane_hs3.lookAt(viewer.camera.position);
 
 }
