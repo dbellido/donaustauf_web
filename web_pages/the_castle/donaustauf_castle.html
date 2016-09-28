@@ -407,28 +407,28 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
 
    //// cube of St salvator
     geom = new THREE.BoxGeometry( 40, 30, 20 )
-    mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0.5})
+    mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.7})
     cube = new THREE.Mesh(geom, mat );
     cube.position.x = 200;
     cube.position.y = 60;
     cube.position.z = -270; 
-    cube.rotation.y = (0.1);
+    cube.rotation.y = (-0.1);
     
     //// cube of castle
-    geom = new THREE.BoxGeometry( 80, 60, 150 )  //initial ( 2, 14, 38 )
+    geom = new THREE.BoxGeometry( 120, 60, 190 )  //initial ( 2, 14, 38 )
     mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.3})
     cube3 = new THREE.Mesh(geom, mat );
     cube3.position.x = -500;
     cube3.position.y = 125;
-    cube3.position.z = -255; 
+    cube3.position.z = -265; 
     cube3.rotation.y = (0);
 
     //// cube of the Walhalla
 
-    geom = new THREE.BoxGeometry( 85, 60, 135 )  //initial ( 2, 14, 38 )
-    mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.5})
+    geom = new THREE.BoxGeometry( 85, 60, 140 )  //initial ( 2, 14, 38 )
+    mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.3})
     cube4 = new THREE.Mesh(geom, mat );
-    cube4.position.x = 740;
+    cube4.position.x = 750;
     cube4.position.y = 100;
     cube4.position.z = -320; 
     cube4.rotation.y = (-0.05);
