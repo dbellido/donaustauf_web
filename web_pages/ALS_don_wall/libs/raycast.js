@@ -30,7 +30,7 @@ function onDocumentMouseDown( event )
 	if ( intersects.length > 0 )
 	{
 		//console.log("Hit right @ " + toString( intersects[0].point ) )
-		window.open("C:/Donaustauf_web/donaustauf_web/web_pages/the_castle/St_salvator.jpg")
+		window.open("‪../../donaustauf_village.html#Walhalla")
 		// change the color of the closest face.
 		//intersects[0].object.callback();
 		intersects[ 0 ].face.color.setRGB( 0.8 * Math.random() + 0.2, 0, 0 );
@@ -48,7 +48,7 @@ function onDocumentMouseDown( event )
 	if ( intersects_4.length > 0 )
 	{
 		//console.log("Hit right @ " + toString( intersects[0].point ) );
-		window.open("‪../../the_castle/donaustauf_village.html")
+		window.open("‪../../donaustauf_village.html#Walhalla")
 		// change the color of the closest face.
 		//intersects[0].object.callback();
 		intersects_4[ 0 ].face.color.setRGB( 0.8 * Math.random() + 0.2, 0, 0 );
