@@ -30,7 +30,7 @@ function onDocumentMouseDown( event )
 	if ( intersects.length > 0 )
 	{
 		//console.log("Hit right @ " + toString( intersects[0].point ) )
-		window.open("‪../../donaustauf_village.html#st_michael")
+		window.open("‪../../donaustauf_village.html#st_salvator")
 		// change the color of the closest face.
 		//intersects[0].object.callback();
 		intersects[ 0 ].face.color.setRGB( 0.8 * Math.random() + 0.2, 0, 0 );
