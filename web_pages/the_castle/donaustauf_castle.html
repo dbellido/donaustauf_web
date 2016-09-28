@@ -406,12 +406,12 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
     planes=new THREE.Object3D();
 
    //// cube of St salvator
-    geom = new THREE.BoxGeometry( 60, 40, 40 )
+    geom = new THREE.BoxGeometry( 40, 20, 20 )
     mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0.5})
     cube = new THREE.Mesh(geom, mat );
-    cube.position.x = 100;
+    cube.position.x = 150;
     cube.position.y = 100;
-    cube.position.z = -300; 
+    cube.position.z = -280; 
     
     //// cube of castle
     geom = new THREE.BoxGeometry( 80, 60, 150)  //initial ( 2, 14, 38 )
@@ -419,18 +419,18 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
     cube3 = new THREE.Mesh(geom, mat );
     cube3.position.x = -400;
     cube3.position.y = 140;
-    cube3.position.z = -2750; 
+    cube3.position.z = -275; 
     cube3.rotation.y = (0);
 
     //// cube of the Walhalla
 
-     geom = new THREE.BoxGeometry( 75, 60, 130 )  //initial ( 2, 14, 38 )
+     geom = new THREE.BoxGeometry( 80, 60, 135 )  //initial ( 2, 14, 38 )
     mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0.5})
     cube4 = new THREE.Mesh(geom, mat );
-    cube4.position.x = 750;
+    cube4.position.x = 770;
     cube4.position.y = 100;
-    cube4.position.z = -330; 
-    cube4.rotation.y = (-0.1);
+    cube4.position.z = -320; 
+    cube4.rotation.y = (-0.15);
     
    /* //???????
     geom = new THREE.BoxGeometry( 5, 18, 12)
