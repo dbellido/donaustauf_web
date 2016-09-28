@@ -58,7 +58,7 @@ function onDocumentMouseDown( event )
 
 	}
 
-	var intersects_3 = raycaster.intersectObjects( [cube4] );
+	var intersects_3 = raycaster.intersectObjects( [cube3] );
 
 	// if there is one (or more) intersections
 	if ( intersects_3.length > 0 )
