@@ -202,7 +202,7 @@ Other findings from the Iron Age are preserved in the valley surrounding the cas
 
   <div class="col-sm-12">
 
-<p>In the Middle Ages the Donaustauf Castle became the scene of numerous battles and conflicts. A route through the history of the castle allows to understand the turbulent history of the area in this period as well as to comprise the importance of the castle where just ruins are visible today.</p>
+<p>In the Middle Ages the Donaustauf Castle became the scene of numerous battles and conflicts. A route through the history of the castle allows to understand the turbulent history of the area in this period as well as to comprise the importance the castle had in the place where just ruins are visible today.</p>
 
 <p>During the Carolingian period, the castle hill was a part of the vast royal Forest of Sulzbach. In 911, Conrad I was elected king of the East Francia by the rulers of Saxonia, Swabia and Bavaria. Conrad I, who was already duke of Franconia and the son of the Duke of Thuringia, found very difficult to establish his authority over the growing power of the dukes. Indeed, Conrad I died due to the injuries caused by one of the battles with Arnulf, Duke of Bavaria. Within this background of continuous clashes between the Bavarian duke and the King, Conrad I gave in 914 the Imperial forest to the monastery of St. Emmeram, whose abbot also exercised the episcopate at this time. Under this donation, the King aimed to reinforce the Regensburg as an institution in his favour. </p>
 
@@ -407,17 +407,18 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
 
    //// cube of St salvator
     geom = new THREE.BoxGeometry( 40, 30, 20 )
-    mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0.5})
+    mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.5})
     cube = new THREE.Mesh(geom, mat );
     cube.position.x = 200;
     cube.position.y = 60;
     cube.position.z = -270; 
+    cube4.rotation.y = (0.1);
     
     //// cube of castle
     geom = new THREE.BoxGeometry( 80, 60, 150)  //initial ( 2, 14, 38 )
     mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.3})
     cube3 = new THREE.Mesh(geom, mat );
-    cube3.position.x = -400;
+    cube3.position.x = -500;
     cube3.position.y = 125;
     cube3.position.z = -255; 
     cube3.rotation.y = (0);
@@ -425,12 +426,20 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
     //// cube of the Walhalla
 
      geom = new THREE.BoxGeometry( 85, 60, 135 )  //initial ( 2, 14, 38 )
-    mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0.5})
+    mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.5})
     cube4 = new THREE.Mesh(geom, mat );
-    cube4.position.x = 760;
+    cube4.position.x = 740;
     cube4.position.y = 100;
     cube4.position.z = -320; 
     cube4.rotation.y = (-0.05);
+
+    geom = new THREE.BoxGeometry( 85, 60, 135 )  //initial ( 2, 14, 38 )
+    mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0.5})
+    cube5 = new THREE.Mesh(geom, mat );
+    cube5.position.x = 1000;
+    cube5.position.y = 100;
+    cube5.position.z = -320; 
+    cube5.rotation.y = (-0.3);
     
    /* //???????
     geom = new THREE.BoxGeometry( 5, 18, 12)
@@ -456,7 +465,7 @@ viewer.scenePointCloud.add(hotspots);
     //hotspots.add(cube2);
     hotspots.add(cube3);
     hotspots.add(cube4);
-    //hotspots.add(cube5);
+    hotspots.add(cube5);
 
 //document.addEventListener('mouseover', onMouseOver, false);
     document.addEventListener('mousedown', onDocumentMouseDown, false);
