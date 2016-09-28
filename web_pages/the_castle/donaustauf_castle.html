@@ -406,7 +406,7 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
     planes=new THREE.Object3D();
 
    //// cube of the torre aquila
-    geom = new THREE.BoxGeometry( 10000000, 10000000, 10000000 )
+    geom = new THREE.BoxGeometry( 60, 60, 100 )
     mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0.5})
     cube = new THREE.Mesh(geom, mat );
     cube.position.x = 300;
@@ -422,12 +422,14 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
     cube3.position.z = -200; 
     cube3.rotation.y = (0.4);
 
-     geom = new THREE.BoxGeometry( 60, 60, 100 )  //initial ( 2, 14, 38 )
+    //// cube of the Walhalla
+
+     geom = new THREE.BoxGeometry( 75, 60, 100 )  //initial ( 2, 14, 38 )
     mat = new THREE.MeshBasicMaterial({color: 0xFF00FF, transparent: true, opacity: 0.5})
     cube4 = new THREE.Mesh(geom, mat );
-    cube4.position.x = 700;
+    cube4.position.x = 780;
     cube4.position.y = 100;
-    cube4.position.z = -200; 
+    cube4.position.z = -300; 
     //cube4.rotation.y = (0);
     
    /* //???????
@@ -450,9 +452,9 @@ In 12<sup>th</sup>, Donaustauf castle was one of the scenarios where the heavy c
       cube2.rotation.y = (0.31);*/
 
 viewer.scenePointCloud.add(hotspots);
-  //  hotspots.add(cube);
+    hotspots.add(cube);
     //hotspots.add(cube2);
-    //hotspots.add(cube3);
+    hotspots.add(cube3);
     hotspots.add(cube4);
     //hotspots.add(cube5);
 
