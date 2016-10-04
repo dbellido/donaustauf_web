@@ -56,7 +56,7 @@ function onDocumentMouseDown( event )
 		winW = ""+(screen.width / 2) -200 ;
 		winH = ""+(screen.height / 2) -200 ;
 
-	}
+	}*/
 
 	var intersects_3 = raycaster.intersectObjects( [cube3] );
 
@@ -72,7 +72,7 @@ function onDocumentMouseDown( event )
 		winW = ""+(screen.width / 2) -200 ;
 		winH = ""+(screen.height / 2) -200 ;
 
-	}*/
+	}
 
 	// else{
 	// 	viewer.scenePointCloud.remove(plane);
@@ -115,7 +115,7 @@ function onMouseMove( event ) {
 		plane_hs.visible=false
 	}*/
 
-	//for the loggia cube	// create an array containing all objects in the scene with which the ray intersects
+	/*//for the loggia cube	// create an array containing all objects in the scene with which the ray intersects
 	var intersects_4 = raycaster.intersectObjects( [cube4] );
 
 	// if there is one (or more) intersections
@@ -123,7 +123,7 @@ function onMouseMove( event ) {
 	{
 
 		//console.log("Hit right @ " + toString( intersects[0].point ) );
-		window.open("‪http://dbellido.github.io/Donaustauf_castle/Donaustauf/index.html")
+		window.open("‪../../donaustauf_village.html#Walhalla")
 		// change the color of the closest face.
 		//intersects_4[ 0 ].object.material.color.setRGB(1,0.3,1);
 		intersects_4[ 0 ].object.material.opacity=[0.3];
@@ -158,7 +158,7 @@ function onMouseMove( event ) {
 		cube3.geometry.colorsNeedUpdate = true;
 		cube3.material.opacity=[0];
 		plane_hs3.visible=false
-	}
+	}*/
 	plane_hs.lookAt(viewer.camera.position);
 	plane_hs2.lookAt(viewer.camera.position);
 	plane_hs3.lookAt(viewer.camera.position);
