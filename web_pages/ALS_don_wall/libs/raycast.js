@@ -110,8 +110,8 @@ function onMouseMove( event ) {
 		cube.geometry.colorsNeedUpdate = true;
 		cube.material.opacity=[0];
 		// cube2.material.color.setRGB( 1,0,1);
-		// cube2.geometry.colorsNeedUpdate = true;
-		// cube2.material.opacity=[0];
+		// cube2.geometry.colorsNeedUpdate = true
+;		// cube2.material.opacity=[0];
 		plane_hs.visible=false
 	}
 
@@ -143,13 +143,13 @@ function onMouseMove( event ) {
 	{
 
 		// change the color of the closest face.
-		intersects_3[ 0 ].object.material.color.setRGB(1,0.3,1);
+		//intersects_3[ 0 ].object.material.color.setRGB(1,0.3,1);
 		intersects_3[ 0 ].object.material.opacity=[0.3];
 		intersects_3[ 0 ].object.geometry.colorsNeedUpdate = true;
 		plane_hs3.visible=true
 	}
 	else {
-		cube3.material.color.setRGB( 1,0,1);
+		//cube3.material.color.setRGB( 1,0,1);
 		cube3.geometry.colorsNeedUpdate = true;
 		cube3.material.opacity=[0];
 		plane_hs3.visible=false
