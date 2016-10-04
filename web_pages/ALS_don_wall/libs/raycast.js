@@ -24,17 +24,17 @@ function onDocumentMouseDown( event )
 	raycaster.setFromCamera( mouse, camera );
 
 	// create an array containing all objects in the scene with which the ray intersects
-	var intersects = raycaster.intersectObjects( [cube] );
+	/*var intersects_1 = raycaster.intersectObjects( [cube] );
 
 	// if there is one (or more) intersections
-	if ( intersects.length > 0 )
+	if ( intersects_1.length > 0 )
 	{
 		//console.log("Hit right @ " + toString( intersects[0].point ) )
 		window.open("‪../../donaustauf_village.html#st_salvator")
 		// change the color of the closest face.
 		//intersects[0].object.callback();
-		intersects[ 0 ].face.color.setRGB( 0.8 * Math.random() + 0.2, 0, 0 );
-		intersects[ 0 ].object.geometry.colorsNeedUpdate = true;
+		intersects_1[ 0 ].face.color.setRGB( 0.8 * Math.random() + 0.2, 0, 0 );
+		intersects_1[ 0 ].object.geometry.colorsNeedUpdate = true;
 		// window.alert("Questo Ã¨ un esempio di alert incluso nello script.");
 		winW = ""+(screen.width / 2) -200 ;
 		winH = ""+(screen.height / 2) -200 ;
@@ -56,7 +56,7 @@ function onDocumentMouseDown( event )
 		winW = ""+(screen.width / 2) -200 ;
 		winH = ""+(screen.height / 2) -200 ;
 
-	}*/
+	}
 
 	var intersects_3 = raycaster.intersectObjects( [cube3] );
 
@@ -72,7 +72,7 @@ function onDocumentMouseDown( event )
 		winW = ""+(screen.width / 2) -200 ;
 		winH = ""+(screen.height / 2) -200 ;
 
-	}
+	}*/
 
 	// else{
 	// 	viewer.scenePointCloud.remove(plane);
