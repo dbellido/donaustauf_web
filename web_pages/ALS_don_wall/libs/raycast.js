@@ -76,6 +76,7 @@ function onDocumentMouseDown( event )
 
 	else {
 		//cube3.material.color.setRGB( 1,0,1);
+		cube3.material.color.setRGB( 1,0.3,1);
 		cube3.geometry.colorsNeedUpdate = true;
 		cube3.material.opacity=[0.6];
 		plane_hs3.visible=false
