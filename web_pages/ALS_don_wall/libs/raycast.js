@@ -70,9 +70,7 @@ function onDocumentMouseDown( event )
 		intersects_3[ 0 ].face.color.setRGB( 0.8 * Math.random() + 0.2, 0, 0 );
 		intersects_3[ 0 ].object.geometry.colorsNeedUpdate = true;
 
-		cube3.material.color.setRGB( 1,0.3,1);
-		cube3.geometry.colorsNeedUpdate = true;
-		cube3.material.opacity=[0.6];
+		
 
 		winW = ""+(screen.width / 2) -200 ;
 		winH = ""+(screen.height / 2) -200 ;
