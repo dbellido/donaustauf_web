@@ -74,6 +74,13 @@ function onDocumentMouseDown( event )
 
 	}
 
+	else {
+		//cube3.material.color.setRGB( 1,0,1);
+		cube3.geometry.colorsNeedUpdate = true;
+		cube3.material.opacity=[0.2];
+		plane_hs3.visible=false
+	}
+
 	// else{
 	// 	viewer.scenePointCloud.remove(plane);
 	// }
