@@ -23,7 +23,7 @@ function onDocumentMouseDown( event )
 	// update the picking ray with the camera and mouse position
 	raycaster.setFromCamera( mouse, camera );
 
-	/*// create an array containing all objects in the scene with which the ray intersects
+	// create an array containing all objects in the scene with which the ray intersects
 	var intersects = raycaster.intersectObjects( [cube] );
 
 	// if there is one (or more) intersections
@@ -42,7 +42,7 @@ function onDocumentMouseDown( event )
 		// window.open("", "MsgWindow", "resizable=yes", "top=500", "left=500", "width=100", "height=100");
 	}
 
-	var intersects_4 = raycaster.intersectObjects( [cube4] );
+	/*var intersects_4 = raycaster.intersectObjects( [cube4] );
 
 	// if there is one (or more) intersections
 	if ( intersects_4.length > 0 )
