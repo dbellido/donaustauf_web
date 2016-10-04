@@ -23,7 +23,7 @@ function onDocumentMouseDown( event )
 	// update the picking ray with the camera and mouse position
 	raycaster.setFromCamera( mouse, camera );
 
-	// create an array containing all objects in the scene with which the ray intersects
+	/*// create an array containing all objects in the scene with which the ray intersects
 	var intersects = raycaster.intersectObjects( [cube] );
 
 	// if there is one (or more) intersections
@@ -54,7 +54,7 @@ function onDocumentMouseDown( event )
 		intersects_4[ 0 ].face.color.setRGB( 0.8 * Math.random() + 0.2, 0, 0 );
 		intersects_4[ 0 ].object.geometry.colorsNeedUpdate = true;
 		winW = ""+(screen.width / 2) -200 ;
-		winH = ""+(screen.height / 2) -200 ;
+		winH = ""+(screen.height / 2) -200 ;*/
 
 	}
 
@@ -93,7 +93,7 @@ function onMouseMove( event ) {
 	raycaster.setFromCamera( mouse, camera );
 
 	// create an array containing all objects in the scene with which the ray intersects
-	var intersects = raycaster.intersectObjects( [cube] );
+	/*var intersects = raycaster.intersectObjects( [cube] );
 
 	// if there is one (or more) intersections
 	if ( intersects.length > 0 )
@@ -133,7 +133,7 @@ function onMouseMove( event ) {
 		cube4.geometry.colorsNeedUpdate = true;
 		cube4.material.opacity=[0];
 		plane_hs2.visible=false
-	}
+	}*/
 
 
 	var intersects_3 = raycaster.intersectObjects( [cube3] );
