@@ -22,7 +22,59 @@
 
     
 
+<style>
+#popup {
+  left: 0;
+    position: absolute;
+    top: 0;
+    width: 80%;
+    z-index: 1001;
+}
 
+.content-popup {
+  margin:0px auto;
+  margin-top:40px;
+  position:relative;
+  padding:10px;
+  width:400px;
+  min-height:250px;
+  border-radius:4px;
+  background-color:#FFFFFF;
+  box-shadow: 0 2px 5px #666666;
+}
+
+.content-popup h3 {
+  color:#48484B;
+  border-bottom: 1px solid #48484B;
+    margin-top: 0;
+    padding-bottom: 0px;
+}
+
+
+
+.close {
+  position: absolute;
+    right: 5px;
+}
+</style>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#open').click(function(){
+    $('#popup').fadeIn('slow');
+    $('.popup-overlay').fadeIn('slow');
+    $('.popup-overlay').height($(window).height());
+    return false;
+  });
+  
+  $('#close').click(function(){
+    $('#popup').fadeOut('slow');
+    $('.popup-overlay').fadeOut('slow');
+    return false;
+  });
+});
+</script>
   
 
    
@@ -200,19 +252,21 @@ Other findings from the Iron Age were discovered in the valley surrounding the c
 
 <div class="row">
 
+  
+
   <div class="col-sm-12">
 
 <p>In the Middle Ages the Donaustauf Castle became the scene of numerous battles and conflicts. A route through the history of the castle allows to understand the turbulent history of the area in this period as well as to comprise the importance the castle had in the place where just ruins are visible today.</p>
 
 <p>During the <a href="https://de.wikipedia.org/wiki/Wikipedia:Wiki_Loves_Monuments_2016/Deutschland/Preise">Carolingian period</a>, the castle hill was a part of the vast royal Forest of <a href="https://de.wikipedia.org/wiki/Sulzbach_an_der_Donau">Sulzbach</a>. In 911, <a href="https://en.wikipedia.org/wiki/Conrad_I_of_Germany">Conrad I</a> was elected king of the East France by the rulers of Saxonia, Swabia and Bavaria. Conrad I, who was already duke of Franconia and the son of the Duke of Thuringia, found very difficult to establish his authority over the growing power of the dukes. Indeed, Conrad I died due to the injuries caused by one of the battles with <a href="https://en.wikipedia.org/wiki/Arnulf,_Duke_of_Bavaria">Arnulf</a>, Duke of Bavaria. Within this background of continuous clashes between the Bavarian duke and the King, Conrad I gave in 914 the Imperial forest to the <a href="https://de.wikipedia.org/wiki/Kloster_Sankt_Emmeram">monastery of St. Emmeram</a>, whose abbot also exercised the episcopate at this time. Under this donation, the King aimed to reinforce the Regensburg clergy as an institution in his favour. </p>
 
-<p>Being <a href="https://en.wikipedia.org/wiki/Bishops_of_Regensburg">Tuto</a> bishop of Regensburg (<i>abbot ex oficio</i>), the first reference of the castle is found. This document, dated between 914 and 930, mentions arrangements in the castle area, <i>Castellum quod dicitur Stufo</i>. Probably this first fortification was mounted over the remains of the Celtic structures and in the same dimensions. The excavations in 1982 proved that wood and earth walls were erected over the celtic structures. The initial phase of the castle was used as refuge. After that the castle was seriously improved, presumably in order to be protected against the <a href="https://en.wikipedia.org/wiki/Hungarian_invasions_of_Europe">Hungarian raids</a>, which during the first half of the 10<sup>th</sup> century affected the <a href="https://en.wikipedia.org/wiki/Upper_Palatinate">Upper Palatinate</a>. This first period of invasions was finished in 955 when important Hungarian military leaders are hanged in Regensburg, after the victory of <a href="https://en.wikipedia.org/wiki/Otto_I,_Holy_Roman_Emperor">Otto I the Great</a> in <a href="https://en.wikipedia.org/wiki/Battle_of_Lechfeld_(955)">the battle of Lechfeld</a>.</p>
+<p>Being <a href="https://en.wikipedia.org/wiki/Bishops_of_Regensburg">Tuto</a> bishop of Regensburg (<i>abbot ex oficio</i>), the first reference of the castle is found. This document, dated between 914 and 930, mentions arrangements in the castle area, <i>Castellum quod dicitur Stufo</i>. The name Stufo is the Old High German name for a conical rock or mountaintop. Probably this first fortification was mounted over the remains of the Celtic structures and in the same dimensions. The excavations in 982 proved that wood and earth walls were erected over the celtic structures. The initial phase of the castle was used as refuge. After that the castle was seriously improved, presumably in order to be protected against the <a href="https://en.wikipedia.org/wiki/Hungarian_invasions_of_Europe">Hungarian raids</a>, which during the first half of the 10<sup>th</sup> century affected the <a href="https://en.wikipedia.org/wiki/Upper_Palatinate">Upper Palatinate</a>. This first period of invasions was finished in 955 when important Hungarian military leaders are hanged in Regensburg, after the victory of <a href="https://en.wikipedia.org/wiki/Otto_I,_Holy_Roman_Emperor">Otto I the Great</a> in <a href="https://en.wikipedia.org/wiki/Battle_of_Lechfeld_(955)">the battle of Lechfeld</a>.</p>
 
 </div>
 
 <div class="col-sm-7">
 
-<p>In 975, <a href="https://en.wikipedia.org/wiki/Wolfgang_of_Regensburg">Saint Wolfgang of Regensburg</a>> (bishop of Regensburg at that time), gave up voluntarily the position of abbot, making the abbot of St. Emmeram's independant of the bishopric. He was one of the first German bishops to do this, and it was copied across Germany in the subsequent years . Bus this decision, the castle and the forest of Sulzbach came Episcopal possesion. In order to protect the bishops of Regensburg the castle is important fortified as stronghold. In the second half of the 11<sup>th</sup>, it became into the seconday episcopal residence and it was generously expanded.</p>
+<p>In 975, <a href="https://en.wikipedia.org/wiki/Wolfgang_of_Regensburg">Saint Wolfgang of Regensburg</a> (bishop of Regensburg at that time), gave up voluntarily the position of abbot, making the abbey of St. Emmeram's independant of the bishopric. He was one of the first German bishops to do this, and it was copied repeteadly across Germany in the subsequent years. Within this decision, the castle and the forest of Sulzbach became Episcopal possesion. In order to protect the bishops of Regensburg the castle is important fortified as stronghold. In the second half of the 11<sup>th</sup>, it became into the seconday episcopal residence and it was generously expanded.</p>
 
   <p>
 
@@ -224,6 +278,7 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
 </div>
 
 
+
  
 
 <div class="col-sm-5" ALIGN="center">
@@ -233,22 +288,408 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
               <img class="img-responsive" src="chrono2.PNG" alt="" Title="" usemap="#chrono"></a>
               <map name="chrono">
 
+    
 
 
-<area alt="" shape="circle" coords="154,40,5" Title="739, St. Emmeram's Abbey is found" href="#st_michael">
-<area alt="" shape="circle" coords="154,95,5" Title="Hungarian invasions" href="#st_michael">
-<area alt="" shape="circle" coords="154,150,5" Title="975, abbey and bishop separation" href="#st_michael">
-<area alt="" shape="circle" coords="154,205,5" Title="Parochial church of St. Michael" href="#st_michael">
-<area alt="" shape="circle" coords="154,260,5" Title="Parochial church of St. Michael" href="#st_michael">
-<area alt="" shape="circle" coords="154,315,5" Title="Parochial church of St. Michael" href="#st_michael">
-<area alt="" shape="circle" coords="154,367,5" Title="Parochial church of St. Michael" href="#st_michael">
-<area alt="" shape="circle" coords="193,367,5" Title="Parochial church of St. Michael" href="#st_michael">
-<area alt="" shape="circle" coords="193,40,5" Title="914-930, first document mentioned the castle" href="#st_michael">
-<area alt="" shape="circle" coords="193,95,5" Title="955, battle of Lechfeld" href="#st_michael">
-<area alt="" shape="circle" coords="193,150,5" Title="934-994, Saint Wolfgang of Regensburg" href="#st_michael">
-<area alt="" shape="circle" coords="193,205,5" Title="Parochial church of St. Michael" href="#st_michael">
-<area alt="" shape="circle" coords="193,260,5" Title="Parochial church of St. Michael" href="#st_michael">
-<area alt="" shape="circle" coords="193,315,5" Title="Parochial church of St. Michael" href="#st_michael">
+
+
+<area data-toggle="modal" data-target="#myModal" alt="" shape="circle" coords="157,38,4" Title="739, St. Emmeram's Abbey is found">
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog ">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button></button>
+          <h3 class="modal-title">739, St. Emmeram's Abbey foundation</h3>
+        </div>
+        <div class="modal-body">
+          <p>The St. Emmeram's Abbey was founded in 739 on an early Christian cemetery, which laid in the area of ​​the Roman Castra Regina settlement. The order of the Benedictines headed the abbey during the first centuries. The abbey had an important role in the history of the area, evidenced by facts such as St. Emmeram's Abbots where at the same time Bishop of Regensburg until 975 or their place in the imperial Diet. Furthermore, important personalities have been buried in the monastery, such as St. Emmeram, after who the abbey was named, St. Wolfgang and Arnulf of Carinthia (King of the East Franks and Holy Roman Emperor).       
+           </p>
+           <p>The abbey had an important role in the history of the castle. There the first document of referred to the castle if found. Morover the abbey was the owner of the castle until 975.</p>
+           <p>The Abbey finally was given to Bavaria and finally to the Thurn and Taxis family, who converted it in their residence. Now known as Schloss Thurn und Taxis , Schloss St. Emmeram, and St. Emmeram's Basilica is one of the attractions of Regensburg. </p><br></br>
+
+
+           <figure class="margin-b-2"> 
+              <a name="Figurec1"></a>              
+              <img class="img-responsive" src="st_emmeram.jpg" alt="" Title="Celtic iron brooch with metal inserts and celtic wall" style="max-width: 70%;"></a>     
+              <p  class="text-center">Figure xx: St. Emmeram's Abbey (Regensburg)</p>
+                      </figure>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+<area data-toggle="modal" data-target="#myModal2" alt="" shape="circle" coords="157,95,4" Title="Hungarian invasions">
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">839-973, Hungarian raids</h4>
+        </div>
+        <div class="modal-body">
+          <p>The Hungarian invasions of Europe took place in the 9th and 10th centuries, the period of transition in the history of Europe between the early and high medieval period, when the territory of the former Carolingian Empire was threatened by invasion from multiple hostile forces, the Magyars (Hungarians) from the east, the Norsemen from the north and the Arabs from the south (wiki).</p>
+          <p>Donaustauf castle was strengthened in order to be defended against the invasions. This first period of invasions was finished in 955 when important Hungarian military leaders are hanged in Regensburg, after the victory of Otto I the Great in the battle of Lechfeld. The battle has been viewed as a symbolic victory who would define European warfare in the High Middle Ages.</p><br></br>
+           <figure class="margin-b-2"> 
+              <a name="Figurec1"></a>              
+              <img class="img-responsive" src="Hungarian_raids.jpg" alt="" Title="Celtic iron brooch with metal inserts and celtic wall" style="max-width: 70%;"></a>     
+              <p  class="text-center">Figure xx: Hungarian raids in Europe (10<sup>th</sup>)</p>
+                      </figure>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Closee</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+<area data-toggle="modal" data-target="#myModal3" alt="" shape="circle" coords="154,150,5" Title="975, abbey and bishop separation" >
+
+ <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>bbbbbbbbbbbbbb.</p>
+           <figure class="margin-b-2"> 
+              <a name="Figurec1"></a>              
+              <img class="img-responsive" src="st_emmeram.jpg" alt="" Title="Celtic iron brooch with metal inserts and celtic wall" style="max-width: 70%;"></a>     
+              <p  class="text-center">Figure b2: Celtic findings; irong brooch and Celtic wall.</p>
+                      </figure>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Closdddde</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+<area data-toggle="modal" data-target="#myModal4" alt="" shape="circle" coords="154,205,5" Title="Parochial church of St. Michael" href="#st_michael">
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>bbbbbbbbbbbssdfsdfsdfsfdfsdfsdfsdfsdbbb.</p>
+           <figure class="margin-b-2"> 
+              <a name="Figurec1"></a>              
+              <img class="img-responsive" src="Hungarian_raids.jpg" alt="" Title="Celtic iron brooch with metal inserts and celtic wall" style="max-width: 70%;"></a>     
+              <p  class="text-center">Figure b2: Celtic findings; irong brooch and Celtic wall.</p>
+                      </figure>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Closdddde</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<area data-toggle="modal" data-target="#myModal5" alt="" shape="circle" coords="154,260,5" Title="Parochial church of St. Michael" href="#st_michael">
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>bbbbbbbbbbbbbb.</p>
+           <figure class="margin-b-2"> 
+              <a name="Figurec1"></a>              
+              <img class="img-responsive" src="st_emmeram.jpg" alt="" Title="Celtic iron brooch with metal inserts and celtic wall" style="max-width: 70%;"></a>     
+              <p  class="text-center">Figure b2: Celtic findings; irong brooch and Celtic wall.</p>
+                      </figure>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Closdddde</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<area data-toggle="modal" data-target="#myModal6" alt="" shape="circle" coords="154,315,5" Title="Parochial church of St. Michael" href="#st_michael">
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>bbbbbbbbbbbbbb.</p>
+           <figure class="margin-b-2"> 
+              <a name="Figurec1"></a>              
+              <img class="img-responsive" src="st_emmeram.jpg" alt="" Title="Celtic iron brooch with metal inserts and celtic wall" style="max-width: 70%;"></a>     
+              <p  class="text-center">Figure b2: Celtic findings; irong brooch and Celtic wall.</p>
+                      </figure>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Closdddde</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<area data-toggle="modal" data-target="#myModal7" alt="" shape="circle" coords="154,367,5" Title="Parochial church of St. Michael" href="#st_michael">
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal7" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>bbbbbbbbbbbbbb.</p>
+           <figure class="margin-b-2"> 
+              <a name="Figurec1"></a>              
+              <img class="img-responsive" src="st_emmeram.jpg" alt="" Title="Celtic iron brooch with metal inserts and celtic wall" style="max-width: 70%;"></a>     
+              <p  class="text-center">Figure b2: Celtic findings; irong brooch and Celtic wall.</p>
+                      </figure>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Closdddde</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<area data-toggle="modal" data-target="#myModal8" alt="" shape="circle" coords="193,367,5" Title="Parochial church of St. Michael" href="#st_michael">
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal8" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>bbbbbbbbbbbbbb.</p>
+           <figure class="margin-b-2"> 
+              <a name="Figurec1"></a>              
+              <img class="img-responsive" src="st_emmeram.jpg" alt="" Title="Celtic iron brooch with metal inserts and celtic wall" style="max-width: 70%;"></a>     
+              <p  class="text-center">Figure b2: Celtic findings; irong brooch and Celtic wall.</p>
+                      </figure>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Closdddde</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<area data-toggle="modal" data-target="#myModal9" alt="" shape="circle" coords="193,40,5" Title="914-930, first document mentioned the castle" href="#st_michael">
+<!-- Modal -->
+  <div class="modal fade" id="myModal9" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>bbbbbbbbbbbbbb.</p>
+           <figure class="margin-b-2"> 
+              <a name="Figurec1"></a>              
+              <img class="img-responsive" src="st_emmeram.jpg" alt="" Title="Celtic iron brooch with metal inserts and celtic wall" style="max-width: 70%;"></a>     
+              <p  class="text-center">Figure b2: Celtic findings; irong brooch and Celtic wall.</p>
+                      </figure>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Closdddde</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<area data-toggle="modal" data-target="#myModal10" alt="" shape="circle" coords="193,95,5" Title="955, battle of Lechfeld" href="#st_michael">
+<!-- Modal -->
+  <div class="modal fade" id="myModal10" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>bbbbbbbbbbbbbb.</p>
+           <figure class="margin-b-2"> 
+              <a name="Figurec1"></a>              
+              <img class="img-responsive" src="st_emmeram.jpg" alt="" Title="Celtic iron brooch with metal inserts and celtic wall" style="max-width: 70%;"></a>     
+              <p  class="text-center">Figure b2: Celtic findings; irong brooch and Celtic wall.</p>
+                      </figure>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Closdddde</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+<area data-toggle="modal" data-target="#myModal11" alt="" shape="circle" coords="193,150,5" Title="934-994, Saint Wolfgang of Regensburg" href="#st_michael">
+<!-- Modal -->
+  <div class="modal fade" id="myModal11" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>bbbbbbbbbbbbbb.</p>
+           <figure class="margin-b-2"> 
+              <a name="Figurec1"></a>              
+              <img class="img-responsive" src="st_emmeram.jpg" alt="" Title="Celtic iron brooch with metal inserts and celtic wall" style="max-width: 70%;"></a>     
+              <p  class="text-center">Figure b2: Celtic findings; irong brooch and Celtic wall.</p>
+                      </figure>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Closdddde</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<area data-toggle="modal" data-target="#myModal12" alt="" shape="circle" coords="193,205,5" Title="Parochial church of St. Michael" href="#st_michael">
+<!-- Modal -->
+  <div class="modal fade" id="myModal12" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>bbbbbbbbbbbbbb.</p>
+           <figure class="margin-b-2"> 
+              <a name="Figurec1"></a>              
+              <img class="img-responsive" src="st_emmeram.jpg" alt="" Title="Celtic iron brooch with metal inserts and celtic wall" style="max-width: 70%;"></a>     
+              <p  class="text-center">Figure b2: Celtic findings; irong brooch and Celtic wall.</p>
+                      </figure>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Closdddde</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<area data-toggle="modal" data-target="#myModal13" alt="" shape="circle" coords="193,260,5" Title="Parochial church of St. Michael" href="#st_michael">
+<!-- Modal -->
+  <div class="modal fade" id="myModal13" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>bbbbbbbbbbbbbb.</p>
+           <figure class="margin-b-2"> 
+              <a name="Figurec1"></a>              
+              <img class="img-responsive" src="st_emmeram.jpg" alt="" Title="Celtic iron brooch with metal inserts and celtic wall" style="max-width: 70%;"></a>     
+              <p  class="text-center">Figure b2: Celtic findings; irong brooch and Celtic wall.</p>
+                      </figure>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Closdddde</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<area data-toggle="modal" data-target="#myModal14" aldata-toggle="modal" data-target="#myModal4" t="" shape="circle" coords="193,315,5" Title="Parochial church of St. Michael" href="#st_michael">
+<!-- Modal -->
+  <div class="modal fade" id="myModal14" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>bbbbbbbbbbbbbb.</p>
+           <figure class="margin-b-2"> 
+              <a name="Figurec1"></a>              
+              <img class="img-responsive" src="st_emmeram.jpg" alt="" Title="Celtic iron brooch with metal inserts and celtic wall" style="max-width: 70%;"></a>     
+              <p  class="text-center">Figure b2: Celtic findings; irong brooch and Celtic wall.</p>
+                      </figure>      
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Closdddde</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
 
 
 
@@ -300,6 +741,7 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
 
 </div>
 </div>
+
 
 
 <div  class="row section clients topspace">
@@ -403,6 +845,13 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     
     viewer.loadGUI();
 
+    var materialImg_hs = THREE.ImageUtils.loadTexture('label_torre.png');
+    var img_hs= new THREE.MeshBasicMaterial({ map: materialImg_hs, transparent:true });
+    
+    var materialImg_hs2 = THREE.ImageUtils.loadTexture('label_loggia.png');
+    var img_hs2= new THREE.MeshBasicMaterial({ map: materialImg_hs2, transparent:true });
+
+
 
     hotspots = new THREE.Object3D();
     planes=new THREE.Object3D();
@@ -434,6 +883,44 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     cube4.position.y = 90;
     cube4.position.z = -320; 
     cube4.rotation.y = (-0.05);
+
+    //plane of the torre aquila
+    plane_hs = new THREE.Mesh(new THREE.PlaneGeometry(961, 870),img_hs);
+    plane_hs.overdraw = true;
+    plane_hs.position.x = 200;
+    plane_hs.position.y = 80;
+    plane_hs.position.z = -276;
+    plane_hs.scale.x = 0.05;
+    plane_hs.scale.y = 0.05;
+    plane_hs.scale.z = 0.05;
+    
+    //plane of the loggia
+    plane_hs2 = new THREE.Mesh(new THREE.PlaneGeometry(961, 870),img_hs2);
+    plane_hs2.overdraw = true;
+    plane_hs2.position.x = -470;
+    plane_hs2.position.y = 115;
+    plane_hs2.position.z = -280;
+    plane_hs2.scale.x = 0.05;
+    plane_hs2.scale.y = 0.05;
+    plane_hs2.scale.z = 0.05;
+
+
+viewer.scenePointCloud.add(planes);
+    
+    planes.add(plane_hs);
+    planes.add(plane_hs2); ////// plane of the loggia
+
+ 
+    plane_hs.visible=false
+    plane_hs2.visible=false  /////////plane of the loggia
+
+    plane_hs.lookAt(viewer.camera.position);
+    plane_hs2.lookAt(viewer.camera.position);  //////plane of the loggia
+
+    
+
+
+
 
     
     
