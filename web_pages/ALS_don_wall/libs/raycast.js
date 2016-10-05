@@ -104,27 +104,27 @@ function onMouseMove( event ) {
 	raycaster.setFromCamera( mouse, camera );
 
 	// create an array containing all objects in the scene with which the ray intersects
-	/*var intersects = raycaster.intersectObjects( [cube] );
+	var intersects = raycaster.intersectObjects( [cube] );
 
 	// if there is one (or more) intersections
 	if ( intersects.length > 0 )
 	{
 	//	console.log("Hit this @ " + toString( intersects[0].point ) );
 		// change the color of the closest face.
-		intersects[ 0 ].object.material.color.setRGB(1,0.3,1);
-		intersects[ 0 ].object.material.opacity=[0.3];
-		intersects[ 0 ].object.geometry.colorsNeedUpdate = true;
+		//intersects[ 0 ].object.material.color.setRGB(1,0.3,1);
+		//intersects[ 0 ].object.material.opacity=[0.3];
+		//intersects[ 0 ].object.geometry.colorsNeedUpdate = true;
 		plane_hs.visible=true
 	}
 	else {
-		cube.material.color.setRGB( 1,0,1);
-		cube.geometry.colorsNeedUpdate = true;
-		cube.material.opacity=[0];
+		//cube.material.color.setRGB( 1,0,1);
+		//cube.geometry.colorsNeedUpdate = true;
+		//cube.material.opacity=[0];
 		// cube2.material.color.setRGB( 1,0,1);
 		// cube2.geometry.colorsNeedUpdate = true
 ;		// cube2.material.opacity=[0];
 		plane_hs.visible=false
-	}*/
+	}
 
 	/*//for the loggia cube	// create an array containing all objects in the scene with which the ray intersects
 	var intersects_4 = raycaster.intersectObjects( [cube4] );
