@@ -77,13 +77,13 @@ function onDocumentMouseDown( event )
 
 	}
 
-	else {
+	//else {
 		//cube3.material.color.setRGB( 1,0,1);
 		//cube3.material.color.setRGB( 1,0.3,1);
 		//cube3.geometry.colorsNeedUpdate = true;
 		//cube3.material.opacity=[0.6];
-		plane_hs3.visible=false
-	}
+		//plane_hs3.visible=false
+	//}
 
 	// else{
 	// 	viewer.scenePointCloud.remove(plane);
@@ -104,10 +104,10 @@ function onMouseMove( event ) {
 	raycaster.setFromCamera( mouse, camera );
 
 	// create an array containing all objects in the scene with which the ray intersects
-	var intersects = raycaster.intersectObjects( [cube] );
+	var intersects_1 = raycaster.intersectObjects( [cube] );
 
 	// if there is one (or more) intersections
-	if ( intersects.length > 0 )
+	if ( intersects_1.length > 0 )
 	{
 	//	console.log("Hit this @ " + toString( intersects[0].point ) );
 		// change the color of the closest face.
@@ -122,7 +122,7 @@ function onMouseMove( event ) {
 		//cube.material.opacity=[0];
 		// cube2.material.color.setRGB( 1,0,1);
 		// cube2.geometry.colorsNeedUpdate = true
-;		// cube2.material.opacity=[0];
+		// cube2.material.opacity=[0];
 		plane_hs.visible=false
 	}
 
@@ -172,6 +172,6 @@ function onMouseMove( event ) {
 	}*/
 	plane_hs.lookAt(viewer.camera.position);
 	plane_hs2.lookAt(viewer.camera.position);
-	plane_hs3.lookAt(viewer.camera.position);
+	//plane_hs3.lookAt(viewer.camera.position);
 
 }
