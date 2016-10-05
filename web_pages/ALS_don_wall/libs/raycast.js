@@ -77,6 +77,8 @@ function onDocumentMouseDown( event )
 
 	}
 
+}
+
 	//else {
 		//cube3.material.color.setRGB( 1,0,1);
 		//cube3.material.color.setRGB( 1,0.3,1);
@@ -89,7 +91,7 @@ function onDocumentMouseDown( event )
 	// 	viewer.scenePointCloud.remove(plane);
 	// }
 
-}
+
 function onMouseMove( event ) {
 	var camera = viewer.camera;
 
@@ -166,10 +168,11 @@ function onMouseMove( event ) {
 	}
 	else {
 		//cube3.material.color.setRGB( 1,0,1);
-		cube3.geometry.colorsNeedUpdate = true;
-		cube3.material.opacity=[0];
+		//cube3.geometry.colorsNeedUpdate = true;
+		//cube3.material.opacity=[0];
 		plane_hs3.visible=false
-	}*/
+	}
+
 	plane_hs.lookAt(viewer.camera.position);
 	plane_hs2.lookAt(viewer.camera.position);
 	plane_hs3.lookAt(viewer.camera.position);
