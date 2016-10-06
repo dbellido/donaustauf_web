@@ -176,5 +176,6 @@ function onMouseMove( event ) {
 	plane_hs.lookAt(viewer.camera.position);
 	plane_hs2.lookAt(viewer.camera.position);
 	plane_hs3.lookAt(viewer.camera.position);
+	plane_hs4.lookAt(viewer.camera.position);
 
 }

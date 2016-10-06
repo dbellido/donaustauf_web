@@ -848,11 +848,14 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     var materialImg_hs = THREE.ImageUtils.loadTexture('label_torre.png');
     var img_hs= new THREE.MeshBasicMaterial({ map: materialImg_hs, transparent:true });
     
-    var materialImg_hs2 = THREE.ImageUtils.loadTexture('label_loggia.png');
+    var materialImg_hs2 = THREE.ImageUtils.loadTexture('Walhalla_terr.jpg.png');
     var img_hs2= new THREE.MeshBasicMaterial({ map: materialImg_hs2, transparent:true });
 
     var materialImg_hs3 = THREE.ImageUtils.loadTexture('label_loggia.png');
-    var img_hs3= new THREE.MeshBasicMaterial({ map: materialImg_hs2, transparent:true });
+    var img_hs3= new THREE.MeshBasicMaterial({ map: materialImg_hs3, transparent:true });
+
+    var materialImg_hs4 = THREE.ImageUtils.loadTexture('Institutions.png');
+    var img_hs4=new THREE.MeshBasicMaterial({map : materialImg_hs4, transparent:true})
 
 
 
@@ -897,24 +900,33 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     plane_hs.scale.y = 0.1;
     plane_hs.scale.z = 0.1;
     
-    //plane of the loggia
+    //plane of the Walhalla
     plane_hs2 = new THREE.Mesh(new THREE.PlaneGeometry(1800, 1600),img_hs2);
     plane_hs2.overdraw = true;
     plane_hs2.position.x = 750;
     plane_hs2.position.y = 170;
     plane_hs2.position.z = -320;
-    plane_hs2.scale.x = 0.05;
-    plane_hs2.scale.y = 0.05;
-    plane_hs2.scale.z = 0.05;
+    plane_hs2.scale.x = 0.1;
+    plane_hs2.scale.y = 0.1;
+    plane_hs2.scale.z = 0.1;
 
-     plane_hs3 = new THREE.Mesh(new THREE.PlaneGeometry(1800, 1600),img_hs2);
+    plane_hs3 = new THREE.Mesh(new THREE.PlaneGeometry(1800, 1600),img_hs3);
     plane_hs3.overdraw = true;
     plane_hs3.position.x = -470;
     plane_hs3.position.y = 200;
     plane_hs3.position.z = -280;
-    plane_hs3.scale.x = 0.05;
-    plane_hs3.scale.y = 0.05;
-    plane_hs3.scale.z = 0.05;
+    plane_hs3.scale.x = 0.1;
+    plane_hs3.scale.y = 0.1;
+    plane_hs3.scale.z = 0.1;
+
+     plane_hs4 = new THREE.Mesh(new THREE.PlaneGeometry(1800, 1600),img_hs4);
+    plane_hs4.overdraw = true;
+    plane_hs4.position.x = -470;
+    plane_hs4.position.y = 200;
+    plane_hs4.position.z = -280;
+    plane_hs4.scale.x = 0.1;
+    plane_hs4.scale.y = 0.1;
+    plane_hs4.scale.z = 0.1;
 
 
 viewer.scenePointCloud.add(planes);
@@ -922,14 +934,17 @@ viewer.scenePointCloud.add(planes);
     planes.add(plane_hs);
     planes.add(plane_hs2); ////// plane of the loggia
     planes.add(plane_hs3);
+    planes.add(plane_hs4);
  
     plane_hs.visible=false
     plane_hs2.visible=false
-    plane_hs3.visible=false  /////////plane of the loggia
+    plane_hs3.visible=false
+     plane_hs4.visible=true  /////////plane of the loggia
 
     plane_hs.lookAt(viewer.camera.position);
     plane_hs2.lookAt(viewer.camera.position); 
-    plane_hs3.lookAt(viewer.camera.position); //////plane of the loggia
+    plane_hs3.lookAt(viewer.camera.position);
+    plane_hs4.lookAt(viewer.camera.position); //////plane of the loggia
 
     
 
