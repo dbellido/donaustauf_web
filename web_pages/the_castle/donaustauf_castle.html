@@ -901,11 +901,11 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
 
     //// cube of the Walhalla
 
-    geom = new THREE.BoxGeometry( 85, 60, 157 )  //initial ( 2, 14, 38 )
+    geom = new THREE.BoxGeometry( 85, 70, 157 )  //initial ( 2, 14, 38 )
     mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.2})
     cube4 = new THREE.Mesh(geom, mat );
     cube4.position.x = 750;
-    cube4.position.y = 90;
+    cube4.position.y = 95;
     cube4.position.z = -320; 
     cube4.rotation.y = (-0.05);
 
@@ -930,10 +930,10 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     plane_hs.scale.z = 0.1;
     
     //plane of the Walhalla
-    plane_hs2 = new THREE.Mesh(new THREE.PlaneGeometry(2335, 1681),img_hs2);
+    plane_hs2 = new THREE.Mesh(new THREE.PlaneGeometry(1167, 841),img_hs2);
     plane_hs2.overdraw = true;
     plane_hs2.position.x = 750;
-    plane_hs2.position.y = 200;
+    plane_hs2.position.y = 230;
     plane_hs2.position.z = -320;
     plane_hs2.scale.x = 0.1;
     plane_hs2.scale.y = 0.1;
@@ -1007,11 +1007,11 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
 plane2 = new THREE.Mesh(new THREE.PlaneGeometry(2035, 1196),img2);
     plane2.overdraw = true;
     plane2.rotation.x = (-Math.PI / 2);
-      plane2.rotation.y = (0.1);
+      plane2.rotation.y = (1);
       
-      plane2.position.x = -300;
+      plane2.position.x = -200;
       plane2.position.y = 30;
-      plane2.position.z = 500;
+      plane2.position.z = 600;
       plane2.scale.x = 0.1;
       plane2.scale.y = 0.1;
       plane2.scale.z= 0.1;
@@ -1022,7 +1022,7 @@ plane2 = new THREE.Mesh(new THREE.PlaneGeometry(2035, 1196),img2);
     plane3.rotation.x = (-Math.PI / 2);
       plane3.rotation.y = (0.1);
       
-      plane3.position.x = -1300;
+      plane3.position.x = 1300;
       plane3.position.y = 30;
       plane3.position.z = 0;
       plane3.scale.x = 0.1;
