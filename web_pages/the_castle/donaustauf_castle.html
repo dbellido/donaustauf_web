@@ -845,7 +845,7 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     
     viewer.loadGUI();
 
-    var materialImg_hs = THREE.ImageUtils.loadTexture('label_torre.png');
+    var materialImg_hs = THREE.ImageUtils.loadTexture('St_salvator.png');
     var img_hs= new THREE.MeshBasicMaterial({ map: materialImg_hs, transparent:true });
     
     var materialImg_hs2 = THREE.ImageUtils.loadTexture('Walhalla_terr.png');
@@ -863,7 +863,7 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     var materialImg_hs6 = THREE.ImageUtils.loadTexture('info.png');
     var img_hs6=new THREE.MeshBasicMaterial({map : materialImg_hs6, transparent:false});
 
-    var materialImg_hs7 = THREE.ImageUtils.loadTexture('label_torre.png');
+    var materialImg_hs7 = THREE.ImageUtils.loadTexture('info_PC.png');
     var img_hs7=new THREE.MeshBasicMaterial({map : materialImg_hs7, transparent:true});
 
 
@@ -886,7 +886,7 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.2})
     cube = new THREE.Mesh(geom, mat );
     cube.position.x = 200;
-    cube.position.y = 50;
+    cube.position.y = 60;
     cube.position.z = -276; 
     cube.rotation.y = (-0.1);
     
@@ -920,14 +920,14 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     cube5.rotation.y = (-0.05);
 
     //plane of St Slavator
-    plane_hs = new THREE.Mesh(new THREE.PlaneGeometry(1800, 1600),img_hs);
+    plane_hs = new THREE.Mesh(new THREE.PlaneGeometry(350, 232),img_hs);
     plane_hs.overdraw = true;
     plane_hs.position.x = 200;
-    plane_hs.position.y = 160;
+    plane_hs.position.y = 190;
     plane_hs.position.z = -276;
-    plane_hs.scale.x = 0.1;
-    plane_hs.scale.y = 0.1;
-    plane_hs.scale.z = 0.1;
+    plane_hs.scale.x = 0.2;
+    plane_hs.scale.y = 0.2;
+    plane_hs.scale.z = 0.2;
     
     //plane of the Walhalla
     plane_hs2 = new THREE.Mesh(new THREE.PlaneGeometry(1167, 841),img_hs2);
@@ -984,7 +984,7 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     plane_hs7 = new THREE.Mesh(new THREE.PlaneGeometry(1800, 1600),img_hs7);
     plane_hs7.overdraw = true;
     plane_hs7.position.x = 1000;
-    plane_hs7.position.y = 140;
+    plane_hs7.position.y = 190;
     plane_hs7.position.z = -600;
     plane_hs7.scale.x = 0.1;
     plane_hs7.scale.y = 0.1;
@@ -994,8 +994,8 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     plane1 = new THREE.Mesh(new THREE.PlaneGeometry(1729, 983),img1);
     plane1.overdraw = true;
     plane1.rotation.x = (-Math.PI / 2);
-      plane1.rotation.y = (0.1);
-      plane1.rotation.z = (0.2);
+      plane1.rotation.y = (0);
+      plane1.rotation.z = (0.3);
       
       plane1.position.x = -1300;
       plane1.position.y = 30;
@@ -1008,7 +1008,7 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
 plane2 = new THREE.Mesh(new THREE.PlaneGeometry(2035, 1196),img2);
     plane2.overdraw = true;
     plane2.rotation.x = (-Math.PI / 2);
-      plane2.rotation.z = (1);
+      plane2.rotation.z = (1.5);
       
       plane2.position.x = -100;
       plane2.position.y = 30;
@@ -1021,7 +1021,7 @@ plane2 = new THREE.Mesh(new THREE.PlaneGeometry(2035, 1196),img2);
     plane3 = new THREE.Mesh(new THREE.PlaneGeometry(1920, 1134),img3);
     plane3.overdraw = true;
     plane3.rotation.x = (-Math.PI / 2);
-      plane3.rotation.y = (0);
+      plane3.rotation.z = (-0.3);
       
       plane3.position.x = 1400;
       plane3.position.y = 30;
@@ -1060,7 +1060,7 @@ viewer.scenePointCloud.add(planes);
     plane_hs3.lookAt(viewer.camera.position);
     //plane_hs4.lookAt(viewer.camera.position);
     plane_hs5.lookAt(viewer.camera.position);
-     plane_hs6.lookAt(viewer.camera.position);
+     //plane_hs6.lookAt(viewer.camera.position);
      plane_hs7.lookAt(viewer.camera.position); //////plane of the loggia
 
     
