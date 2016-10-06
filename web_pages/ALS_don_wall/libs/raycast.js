@@ -83,7 +83,7 @@ function onDocumentMouseDown( event )
 	if ( intersects_5.length > 0 )
 	{
 		//console.log("Hit right @ " + toString( intersects[0].point ) );
-		//window.open("‪http://dbellido.github.io/Donaustauf_castle/Donaustauf/index.html","_blank")
+		window.open("‪../index.html")
 		// change the color of the closest face.
 		//intersects[0].object.callback();
 		intersects_5[ 0 ].face.color.setRGB( 0.8 * Math.random() + 0.2, 0, 0 );
@@ -192,7 +192,7 @@ function onMouseMove( event ) {
 		plane_hs3.visible=false
 	}
 
-	/*var intersects_5 = raycaster.intersectObjects( [cube5] );
+	var intersects_5 = raycaster.intersectObjects( [cube5] );
 
 	// if there is one (or more) intersections
 	if ( intersects_5.length > 0 )
@@ -204,13 +204,13 @@ function onMouseMove( event ) {
 		//intersects_3[ 0 ].object.material.color.setRGB(1,0.3,1);
 		//intersects_3[ 0 ].object.material.opacity=[0.3];
 		//intersects_3[ 0 ].object.geometry.colorsNeedUpdate = true;
-		plane_hs5.visible=true
+		plane_hs7.visible=true
 	}
 	else {
 		//cube3.material.color.setRGB( 1,0,1);
 		//cube3.geometry.colorsNeedUpdate = true;
 		//cube3.material.opacity=[0];
-		plane_hs5.visible=false
+		plane_hs7.visible=false
 	}*/
 
 	plane_hs.lookAt(viewer.camera.position);
@@ -219,5 +219,6 @@ function onMouseMove( event ) {
 	plane_hs4.lookAt(viewer.camera.position);
 	plane_hs5.lookAt(viewer.camera.position);
 	plane_hs6.lookAt(viewer.camera.position);
+	plane_hs7.lookAt(viewer.camera.position);
 
 }
