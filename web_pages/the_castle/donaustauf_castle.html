@@ -861,7 +861,7 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     var img_hs5=new THREE.MeshBasicMaterial({map : materialImg_hs5, transparent:true});
 
     var materialImg_hs6 = THREE.ImageUtils.loadTexture('info.png');
-    var img_hs6=new THREE.MeshBasicMaterial({map : materialImg_hs6, transparent:false});
+    var img_hs6=new THREE.MeshBasicMaterial({map : materialImg_hs6, transparent:true});
 
     var materialImg_hs7 = THREE.ImageUtils.loadTexture('info_PC.png');
     var img_hs7=new THREE.MeshBasicMaterial({map : materialImg_hs7, transparent:true});
@@ -875,6 +875,9 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
 
     var materialImg3 = THREE.ImageUtils.loadTexture('worth.png');
     var img3 = new THREE.MeshBasicMaterial({ map: materialImg3, transparent:true });
+
+    var materialImg4 = THREE.ImageUtils.loadTexture('north.png');
+    var img4 = new THREE.MeshBasicMaterial({ map: materialImg4, transparent:true });
 
 
 
@@ -1030,6 +1033,19 @@ plane2 = new THREE.Mesh(new THREE.PlaneGeometry(2035, 1196),img2);
       plane3.scale.y = 0.1;
       plane3.scale.z= 0.1;
 
+        //Worth
+    plane4 = new THREE.Mesh(new THREE.PlaneGeometry(564, 566),img4);
+    plane4.overdraw = true;
+    plane4.rotation.x = (-Math.PI / 2);
+      plane4.rotation.z = (-0.22);
+      
+      plane4.position.x = 100;
+      plane4.position.y = 30;
+      plane4.position.z = -700;
+      plane4.scale.x = 0.1;
+      plane4.scale.y = 0.1;
+      plane4.scale.z= 0.1;
+
 viewer.scenePointCloud.add(planes);
     
     planes.add(plane_hs);
@@ -1043,6 +1059,7 @@ viewer.scenePointCloud.add(planes);
     planes.add(plane1);
     planes.add(plane2);
     planes.add(plane3);
+    planes.add(plane4);
  
     plane_hs.visible=false
     plane_hs2.visible=false
@@ -1054,6 +1071,7 @@ viewer.scenePointCloud.add(planes);
       plane1.visible=true;
       plane2.visible=true;
       plane3.visible=true;
+      plane4.visible=true;
 
     plane_hs.lookAt(viewer.camera.position);
     plane_hs2.lookAt(viewer.camera.position); 
