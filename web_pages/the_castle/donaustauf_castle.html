@@ -981,11 +981,11 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
 
     plane1 = new THREE.Mesh(new THREE.PlaneGeometry(1729, 983),img1);
     plane1.overdraw = true;
-    plane1.rotation.x = (-Math.PI / 2);
+    plane1.rotation.x = (0);
       plane1.rotation.z = (-1.15);
-      plane1.position.x = 1200;
+      plane1.position.x = -1000;
       plane1.position.y = 50;
-      plane1.position.z = -100;
+      plane1.position.z = 0;
       plane1.scale.x = 0.1;
       plane1.scale.y = 0.1;
       plane1.scale.z= 0.1;
@@ -1010,6 +1010,7 @@ viewer.scenePointCloud.add(planes);
      plane_hs5.visible=true
      plane_hs6.visible=true 
      plane_hs7.visible=false /////////plane of the loggia
+      planes1.visible=true;
 
     plane_hs.lookAt(viewer.camera.position);
     plane_hs2.lookAt(viewer.camera.position); 
