@@ -851,14 +851,17 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     var materialImg_hs2 = THREE.ImageUtils.loadTexture('Walhalla_terr.png');
     var img_hs2= new THREE.MeshBasicMaterial({ map: materialImg_hs2, transparent:true });
 
-    var materialImg_hs3 = THREE.ImageUtils.loadTexture('Imagen.png');
+    var materialImg_hs3 = THREE.ImageUtils.loadTexture('Imagen1.png');
     var img_hs3= new THREE.MeshBasicMaterial({ map: materialImg_hs3, transparent:true });
 
     var materialImg_hs4 = THREE.ImageUtils.loadTexture('Institutions.png');
-    var img_hs4=new THREE.MeshBasicMaterial({map : materialImg_hs4, transparent:true})
+    var img_hs4=new THREE.MeshBasicMaterial({map : materialImg_hs4, transparent:true});
 
     var materialImg_hs5 = THREE.ImageUtils.loadTexture('X_Citor.png');
-    var img_hs5=new THREE.MeshBasicMaterial({map : materialImg_hs5, transparent:true})
+    var img_hs5=new THREE.MeshBasicMaterial({map : materialImg_hs5, transparent:true});
+
+    var materialImg_hs6 = THREE.ImageUtils.loadTexture('info.png');
+    var img_hs6=new THREE.MeshBasicMaterial({map : materialImg_hs6, transparent:true})
 
 
 
@@ -892,6 +895,16 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     cube4.position.y = 90;
     cube4.position.z = -320; 
     cube4.rotation.y = (-0.05);
+
+    //// cube of information
+
+    geom = new THREE.BoxGeometry( 85, 60, 157 )  //initial ( 2, 14, 38 )
+    mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.2})
+    cube5 = new THREE.Mesh(geom, mat );
+    cube5.position.x = -700;
+    cube5.position.y = 140;
+    cube5.position.z = -550; 
+    cube5.rotation.y = (-0.05);
 
     //plane of the torre aquila
     plane_hs = new THREE.Mesh(new THREE.PlaneGeometry(1800, 1600),img_hs);
@@ -931,7 +944,7 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     plane_hs4.scale.y = 0.1;
     plane_hs4.scale.z = 0.1;
 
-    plane_hs5 = new THREE.Mesh(new THREE.PlaneGeometry(2690, 388),img_hs4);
+    plane_hs5 = new THREE.Mesh(new THREE.PlaneGeometry(2690, 388),img_hs5);
     plane_hs5.overdraw = true;
     plane_hs5.position.x = 750;
     plane_hs5.position.y = 400;
@@ -939,6 +952,15 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     plane_hs5.scale.x = 0.1;
     plane_hs5.scale.y = 0.1;
     plane_hs5.scale.z = 0.1;
+
+     plane_hs6 = new THREE.Mesh(new THREE.PlaneGeometry(512, 512),img_hs6);
+    plane_hs6.overdraw = true;
+    plane_hs6.position.x = -700;
+    plane_hs6.position.y = 140;
+    plane_hs6.position.z = -550;
+    plane_hs6.scale.x = 0.1;
+    plane_hs6.scale.y = 0.1;
+    plane_hs6.scale.z = 0.1;
 
 
 viewer.scenePointCloud.add(planes);
@@ -948,17 +970,21 @@ viewer.scenePointCloud.add(planes);
     planes.add(plane_hs3);
     planes.add(plane_hs4);
     planes.add(plane_hs5);
+    planes.add(plane_hs6);
  
     plane_hs.visible=false
     plane_hs2.visible=false
     plane_hs3.visible=false
-     plane_hs4.visible=true  /////////plane of the loggia
+     plane_hs4.visible=true
+     plane_hs5.visible=true
+     plane_hs6.visible=true  /////////plane of the loggia
 
     plane_hs.lookAt(viewer.camera.position);
     plane_hs2.lookAt(viewer.camera.position); 
     plane_hs3.lookAt(viewer.camera.position);
     plane_hs4.lookAt(viewer.camera.position);
-    plane_hs5.lookAt(viewer.camera.position); //////plane of the loggia
+    plane_hs5.lookAt(viewer.camera.position);
+     plane_hs6.lookAt(viewer.camera.position); //////plane of the loggia
 
     
 
@@ -991,6 +1017,7 @@ viewer.scenePointCloud.add(hotspots);
     //hotspots.add(cube2);
     hotspots.add(cube3);
     hotspots.add(cube4);
+    hotspots.add(cube5);
     
 //document.addEventListener('mouseover', onMouseOver, false);
     document.addEventListener('mousedown', onDocumentMouseDown, false);
