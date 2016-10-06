@@ -870,6 +870,12 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     var materialImg1 = THREE.ImageUtils.loadTexture('Regensburg.png');
     var img1 = new THREE.MeshBasicMaterial({ map: materialImg1, transparent:true });
 
+    var materialImg2 = THREE.ImageUtils.loadTexture('gugi.png');
+    var img2 = new THREE.MeshBasicMaterial({ map: materialImg2, transparent:true });
+
+    var materialImg3 = THREE.ImageUtils.loadTexture('worth.png');
+    var img3 = new THREE.MeshBasicMaterial({ map: materialImg3, transparent:true });
+
 
 
     hotspots = new THREE.Object3D();
@@ -908,16 +914,16 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     geom = new THREE.BoxGeometry( 20, 20, 20 )  //initial ( 2, 14, 38 )
     mat = new THREE.MeshBasicMaterial({color: 0x74ACFA, transparent: true, opacity: 0.0})
     cube5 = new THREE.Mesh(geom, mat );
-    cube5.position.x = 1015;
-    cube5.position.y = 140;
-    cube5.position.z = -615; 
+    cube5.position.x = 1000;
+    cube5.position.y = 160;
+    cube5.position.z = -600; 
     cube5.rotation.y = (-0.05);
 
-    //plane of the torre aquila
+    //plane of St Slavator
     plane_hs = new THREE.Mesh(new THREE.PlaneGeometry(1800, 1600),img_hs);
     plane_hs.overdraw = true;
     plane_hs.position.x = 200;
-    plane_hs.position.y = 140;
+    plane_hs.position.y = 160;
     plane_hs.position.z = -276;
     plane_hs.scale.x = 0.1;
     plane_hs.scale.y = 0.1;
@@ -927,7 +933,7 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     plane_hs2 = new THREE.Mesh(new THREE.PlaneGeometry(2335, 1681),img_hs2);
     plane_hs2.overdraw = true;
     plane_hs2.position.x = 750;
-    plane_hs2.position.y = 170;
+    plane_hs2.position.y = 200;
     plane_hs2.position.z = -320;
     plane_hs2.scale.x = 0.1;
     plane_hs2.scale.y = 0.1;
@@ -943,6 +949,8 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     plane_hs3.scale.y = 0.1;
     plane_hs3.scale.z = 0.1;
 
+    //institutions
+
      plane_hs4 = new THREE.Mesh(new THREE.PlaneGeometry(2690, 388),img_hs4);
     plane_hs4.overdraw = true;
     plane_hs4.position.x = -470;
@@ -952,6 +960,7 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     plane_hs4.scale.y = 0.1;
     plane_hs4.scale.z = 0.1;
 
+    //x_citor
     plane_hs5 = new THREE.Mesh(new THREE.PlaneGeometry(570, 630),img_hs5);
     plane_hs5.overdraw = true;
     plane_hs5.position.x = 750;
@@ -961,15 +970,17 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     plane_hs5.scale.y = 0.1;
     plane_hs5.scale.z = 0.1;
 
+    //info
      plane_hs6 = new THREE.Mesh(new THREE.PlaneGeometry(512, 512),img_hs6);
     plane_hs6.overdraw = true;
     plane_hs6.position.x = 1000;
-    plane_hs6.position.y = 140;
+    plane_hs6.position.y = 160;
     plane_hs6.position.z = -600;
     plane_hs6.scale.x = 0.1;
     plane_hs6.scale.y = 0.1;
     plane_hs6.scale.z = 0.1;
 
+    //infor_PC
     plane_hs7 = new THREE.Mesh(new THREE.PlaneGeometry(1800, 1600),img_hs7);
     plane_hs7.overdraw = true;
     plane_hs7.position.x = 1000;
@@ -979,18 +990,44 @@ In 12<sup>th</sup> century, Donaustauf castle was one of the scenarios where hea
     plane_hs7.scale.y = 0.1;
     plane_hs7.scale.z = 0.1;
 
+    //Regensburg
     plane1 = new THREE.Mesh(new THREE.PlaneGeometry(1729, 983),img1);
     plane1.overdraw = true;
     plane1.rotation.x = (-Math.PI / 2);
-      plane1.rotation.y = (0);
+      plane1.rotation.y = (0.1);
       
-      plane1.position.x = -1200;
-      plane1.position.y = 50;
+      plane1.position.x = -1300;
+      plane1.position.y = 30;
       plane1.position.z = 0;
       plane1.scale.x = 0.1;
       plane1.scale.y = 0.1;
       plane1.scale.z= 0.1;
 
+//plano gugi
+plane2 = new THREE.Mesh(new THREE.PlaneGeometry(2035, 1196),img2);
+    plane2.overdraw = true;
+    plane2.rotation.x = (-Math.PI / 2);
+      plane2.rotation.y = (0.1);
+      
+      plane2.position.x = -300;
+      plane2.position.y = 30;
+      plane2.position.z = 500;
+      plane2.scale.x = 0.1;
+      plane2.scale.y = 0.1;
+      plane2.scale.z= 0.1;
+
+      //Worth
+    plane3 = new THREE.Mesh(new THREE.PlaneGeometry(1920, 1134),img3);
+    plane3.overdraw = true;
+    plane3.rotation.x = (-Math.PI / 2);
+      plane3.rotation.y = (0.1);
+      
+      plane3.position.x = -1300;
+      plane3.position.y = 30;
+      plane3.position.z = 0;
+      plane3.scale.x = 0.1;
+      plane3.scale.y = 0.1;
+      plane3.scale.z= 0.1;
 
 viewer.scenePointCloud.add(planes);
     
@@ -1003,6 +1040,8 @@ viewer.scenePointCloud.add(planes);
     planes.add(plane_hs7);
 
     planes.add(plane1);
+    planes.add(plane2);
+    planes.add(plane3);
  
     plane_hs.visible=false
     plane_hs2.visible=false
@@ -1012,6 +1051,8 @@ viewer.scenePointCloud.add(planes);
      plane_hs6.visible=true 
      plane_hs7.visible=false /////////plane of the loggia
       plane1.visible=true;
+      plane2.visible=true;
+      plane3.visible=true;
 
     plane_hs.lookAt(viewer.camera.position);
     plane_hs2.lookAt(viewer.camera.position); 
