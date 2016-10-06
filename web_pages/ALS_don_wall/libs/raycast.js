@@ -211,7 +211,7 @@ function onMouseMove( event ) {
 		//cube3.geometry.colorsNeedUpdate = true;
 		//cube3.material.opacity=[0];
 		plane_hs7.visible=false
-	}*/
+	}
 
 	plane_hs.lookAt(viewer.camera.position);
 	plane_hs2.lookAt(viewer.camera.position);
