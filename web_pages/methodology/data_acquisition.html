@@ -21,6 +21,61 @@
     <script src="../assets/js/jquery-1.12.2.min.js"></script>
 
 
+<style>
+#popup {
+  left: 0;
+    position: absolute;
+    top: 0;
+    width: 80%;
+    z-index: 1001;
+}
+
+.content-popup {
+  margin:0px auto;
+  margin-top:40px;
+  position:relative;
+  padding:10px;
+  width:400px;
+  min-height:250px;
+  border-radius:4px;
+  background-color:#FFFFFF;
+  box-shadow: 0 2px 5px #666666;
+}
+
+.content-popup h3 {
+  color:#48484B;
+  border-bottom: 1px solid #48484B;
+    margin-top: 0;
+    padding-bottom: 0px;
+}
+
+
+
+.close {
+  position: absolute;
+    right: 5px;
+}
+</style>
+
+<!--<script type="text/javascript" src="jquery.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#open').click(function(){
+    $('#popup').fadeIn('slow');
+    $('.popup-overlay').fadeIn('slow');
+    $('.popup-overlay').height($(window).height());
+    return false;
+  });
+  
+  $('#close').click(function(){
+    $('#popup').fadeOut('slow');
+    $('.popup-overlay').fadeOut('slow');
+    return false;
+  });
+});
+</script>
+
+
   </head>
 
   <body>
@@ -40,30 +95,30 @@
       <div class="container-fluid">
 
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+       <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            
+        <a class="navbar-brand"  href="../index.html">Donaustauf project</a>    
         </div>
         <!-- /.navbar-header -->
 
          <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="../index.html">Donaustauf project</a> </li>
+            <!--<li><a href="../index.html">Donaustauf project</a> </li>-->
             <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">The castle <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                      <li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Donaustauf castle</a></li>
+                      <li><a href="../the_castle/donaustauf_castle.html">Donaustauf castle</a></li>
                       <li role="separator" class="divider"></li>
-                      <li><a href="http://dbellido.github.io/Donaustauf_castle/Donaustauf/index.html">Donaustauf Village</a></li>
+                      <li><a href="../the_castle/donaustauf_village.html">Donaustauf Village</a></li>
                       <li role="separator" class="divider"></li>
-                      <li><a href="http://dbellido.github.io/Donaustauf_viewer/don_2015/">Castles in Bayern</a></li>
-                      <li role="separator" class="divider"></li>
+                      <!--<li><a href="the_castle/castles_in_bayern.html">Castles in Bayern</a></li>
+                      <li role="separator" class="divider"></li>-->
                     </ul>
             </li>
             
@@ -130,13 +185,27 @@
 		<div class="container-fluid">
 
       <!--IMAGEN DINÁMICA-->
-			<div ALIGN="center"><IMG class="img-responsive" SRC="../images/03_header/Data_acquisition.jpg" ><br></br></div>
+			<div ALIGN="center"><IMG class="img-responsive" SRC="../images/03_header/Data_acquisition.png" ><br></br></div>
 			
         <!--FIRST SECTION, THE PROJECT-->
 
 
-				<div  class="row section clients topspace"><br></br>
+        <div class="row">  
+
+          <div class="col-sm-12">
+
+
+          
+          </div>
+        
+        </div>
+
+
+				<div  class="row section clients topspace">
           <h2  class="section-title"><span>Surveying</span></h2>
+          <p>Topographic surveys are used for documenting CH, as standalone or auxiliary measurements. Instruments such as total stations (Figure 2) measure distances and angles with the use of a laser beam, which can generate 2D and 3D coordinates of sparse, characteristic points of an object. The development of the so-called reflectorless total stations strongly encouraged CH topographical surveying, as they also enable capturing of 3D coordinates for unreachable points. 3D coordinates are also calculated directly with the use of satellite navigation, such as Global Positioning System (GPS) (Parkinson and Spilker, 1996; Prasad and Ruggieri, 2005). Such measurements are highly accurate, in the order of magnitude of some centimeters or even below 1cm, and help by providing a solid network of ground control points (GCPs), evaluating the accuracy of other methods, and georeferencing their data. They are suitable for relatively large-scale objects, such as buildings and other structures. Measuring tapes are traditionally used to estimate inclined distances and assign a scale to the object. This method does not provide high accuracy, some cm, and nowadays is applied where no total station can be used (e.g., underwater applications).</p>
+
+          <p>Although classical surveying methods have mostly been overcome by newer technologies, in some cases they are the only available and feasible method for collecting geometric information of an object.</p>
         </div>
 			
 
